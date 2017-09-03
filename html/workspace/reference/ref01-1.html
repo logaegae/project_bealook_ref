@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Be A Look - Reference 1</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+        // saveClass = "li-cell-01";
+        
+        $('.menu li button').click(function(){
+            btnId = $(this).attr('id');
+            btnIdNum = btnId.substring(8);
+            
+            liTypeClass = $('.ul-style01').attr('class').substring(11);
+            liTypeNum = liTypeClass.substring(8);
+         
+            selectorName = "."+liTypeClass;
+            changeTo = "li-cell-"+btnIdNum;
+            $(selectorName).addClass(changeTo).removeClass(liTypeClass);
+            
+            
+            
+            // selectorName = "."+saveClass;
+            // changeTo = "li-cell-"+btnIdNum;
+            // // $(selectorName).addClass(changeTo).removeClass(saveClass);
+            // saveClass = changeTo;
+            
+        });
+        
+    });
+    
+</script>
+<body id="ref01">
+    <div class="wrapper ovh">
+        <div class="menu">
+            <ul>
+                <li><button id="li-type-01">1</button></li>
+                <li><button id="li-type-02">2</button></li>
+                <li><button id="li-type-03">3</button></li>
+                <li><button id="li-type-04">4</button></li>
+            </ul>
+        </div>
+        
+        <div class="header">
+            <div class="box-01 w50per mgauto bg-white ta-c">
+                <h1><img src="img/basics_logo.jpg"></h1>
+            </div>
+        </div>
+        
+        <div class="contents ovh p60-0">
+            <ul class="ul-style01 li-cell-01">
+                <li class="li-horizon">
+                    <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics03.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Seoul</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="li-horizon">
+                   <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics02.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Paris</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-horizon">
+                   <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics01.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Seoul</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-horizon">
+                    <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics04.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Paris</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-horizon">
+                   <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics05.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Seoul</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-horizon">
+                    <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics06.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Paris</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-horizon">
+                   <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics07.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Seoul</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-horizon">
+                    <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics08.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Paris</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+                <li class="li-vertical">
+                   <div class="li-box">
+                        <div class="img-wrap">
+                            <img src="img/basics09.jpg">
+                        </div>
+                        <div class="txt-box">
+                            <span class="tit">Seoul</span>
+                            <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <a href="#none">BUY IT</a>
+                        </div>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+</html>

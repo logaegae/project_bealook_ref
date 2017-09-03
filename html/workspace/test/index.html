@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head> 
+    <title>WYSIWYG Editor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <link rel="stylesheet" href="./css/editor.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/headTool.js"></script>
+    <script type="text/javascript" src="./js/editorBeta.js"></script>
+    <style>
+        /*임의*/
+        div.wEditor {
+            padding:5px;height:120px;width:500px;margin:10px auto;
+            overflow-y:scroll;border:1px solid #DBDBDB;
+            font:12px/1.5 gulim;
+        }
+        div.wEditor p {
+            margin:0;
+            padding:0;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="content-wrapper">
+    <div id="editorExam1" class="wEditor editorable">
+        이미 안에 콘텐츠가 있다
+        <a href="#">링크도 있다</a>
+    </div>
+    <div id="editorExam2" class="wEditor editorable listable">
+        2번 박스
+        <a href="#">ㅎㅎㅎ</a>
+    </div>
+</div>
+</body>
+</html>
