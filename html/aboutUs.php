@@ -33,7 +33,7 @@
 		<div class="container">
 			<div class="row irow-xs cards">
 				<div class="col-sm-6 text-wrap">
-					<h2>Be A Look 소개</h2>
+					<h2>Be A Look 소개개개개</h2>
 						<div class="heading-divider"></div>
 							<p>BEALOOK은 벼룩시장의 아이디어에서 시작한 웹페이지 서비스 브랜드입니다.</p>
 							<p>벼룩시장에서는 누구나 가판을 열고 자신의 가게를 쉽게 만들 수 있듯<br />
