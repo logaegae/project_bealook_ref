@@ -11,4 +11,8 @@ git ftp catchup
 # Work and deploy
 echo "new content" >> index.txt
 git commit index.txt -m "Add new content"
+
+# Invite Link
+https://github.com/logaegae/project_bealook_ref/invitations
+
 git ftp push
