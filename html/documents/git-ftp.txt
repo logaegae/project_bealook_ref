@@ -12,7 +12,8 @@ git ftp catchup
 echo "new content" >> index.txt
 git commit index.txt -m "Add new content"
 
-# Invite Link
-https://github.com/logaegae/project_bealook_ref/invitations
+# 단축키
+terminal : cmd+shift+T
+git command : cmd+shift+H
 
 git ftp push
