@@ -37,11 +37,11 @@
 				<div class="col-sm-8 text-right">
 					<ul class="mix-category">
 						<li class="active"><a href="#all" class="filter active" data-filter="*">전체</a></li>
-						<li><a href="#shop" class="filter" data-filter=".shop">마켓</a></li>
+						<!-- <li><a href="#shop" class="filter" data-filter=".shop">마켓</a></li>
 						<li><a href="#portfolio" class="filter" data-filter=".portfolio">포트폴리오</a></li>
 						<li><a href="#menu" class="filter" data-filter=".menu">메뉴판</a></li>
 						<li><a href="#marketing" class="filter" data-filter=".marketing">홍보·마케팅</a></li>
-						<li><a href="#personal" class="filter" data-filter=".personal">개인페이지</a></li>
+						<li><a href="#personal" class="filter" data-filter=".personal">개인페이지</a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>Creativity</h4>
+								<h4>기능1</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -67,7 +67,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>Creativity</h4>
+								<h4>기능2</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -78,7 +78,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>Creativity</h4>
+								<h4>기능3</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -89,7 +89,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>Creativity</h4>
+								<h4>기능4</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -100,7 +100,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>Creativity</h4>
+								<h4>기능5</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -111,7 +111,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>Creativity</h4>
+								<h4>기능6</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
