@@ -42,7 +42,7 @@
 		<div id="navbar" class="navbar-collapse collapse pull-right">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="aboutUs.php">서비스 안내</a>
+					<a href="aboutUs.php">비어룩</a>
 				</li>
 				<li>
 					<a href="service.php">데모</a>
