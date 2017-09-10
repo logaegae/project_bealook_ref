@@ -36,9 +36,10 @@
 				</div>
 				<div class="col-sm-8 text-right">
 					<ul class="mix-category">
-						<!--
+
 						<li class="active"><a href="#all" class="filter active" data-filter="*">전체</a></li>
-						<li><a href="#shop" class="filter" data-filter=".shop">마켓</a></li>
+						<li><a href="#fn" class="filter" data-filter=".fn">기능</a></li>
+						<!--
 						<li><a href="#portfolio" class="filter" data-filter=".portfolio">포트폴리오</a></li>
 						<li><a href="#menu" class="filter" data-filter=".menu">메뉴판</a></li>
 						<li><a href="#marketing" class="filter" data-filter=".marketing">홍보·마케팅</a></li>
@@ -52,7 +53,7 @@
 		<!-- CONTAINER -->
 		<div class="container">
 			<div class="row isotope-wrap gallery-wrap magnific-wrap margin-wrap">
-				<div class="col-xs-6 mix shop">
+				<div class="col-xs-6 mix fn">
 					<figure class="figure">
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="/workspace/reference/ref01.html" class="mask mask-info mask-dark text-center">
@@ -63,7 +64,7 @@
 						</a>
 					</figure>
 				</div>
-				<div class="col-xs-6 mix portfolio">
+				<div class="col-xs-6 mix fn">
 					<figure class="figure">
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
@@ -74,7 +75,7 @@
 						</a>
 					</figure>
 				</div>
-				<div class="col-xs-6 mix menu">
+				<div class="col-xs-6 mix fn">
 					<figure class="figure">
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
@@ -85,7 +86,7 @@
 						</a>
 					</figure>
 				</div>
-				<div class="col-xs-6 mix marketing">
+				<div class="col-xs-6 mix fn">
 					<figure class="figure">
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
@@ -96,7 +97,7 @@
 						</a>
 					</figure>
 				</div>
-				<div class="col-xs-6 mix personal">
+				<div class="col-xs-6 mix fn">
 					<figure class="figure">
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
