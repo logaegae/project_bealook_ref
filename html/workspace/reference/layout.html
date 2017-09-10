@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Layout</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
@@ -19,13 +19,26 @@
                 <span></span>
             </div>
             <div class="actions">
-                <button type="button" class="btn btn-icon btn-undo">이전 작업으로 돌아가기</button>
-                <button type="button" class="btn btn-icon btn-redo">다음 작업으로 되돌리기</button>
-                <button type="button" class="btn btn-txt">저장</button>
+                <span>
+                    <button type="button" class="btn btn-icon btn-undo" title="실행 취소">실행 취소</button>
+                    <button type="button" class="btn btn-icon btn-redo" title="다시 실행">다시 실행</button>
+                </span>
+                <button type="button" class="btn btn-txt btn-save">저장하기</button>
             </div>
         </div>
-
-
+        <div class="tool-common tool-text tool-text-01">
+            <button type="button" class="btn btn-bold">두껍게</button>
+            <button type="button" class="btn btn-italic">이탤릭</button>
+            <button type="button" class="btn btn-linethrough">가운데 줄</button>
+            <button type="button" class="btn btn-underline">밑 줄</button>
+            <button type="button" class="btn btn-color">글씨 색</button>
+            <button type="button" class="btn btn-bgcolor">배경 색</button>
+            <button type="button" class="btn btn-ta-left">좌측 정렬</button>
+            <button type="button" class="btn btn-ta-center">가운데 정렬</button>
+            <button type="button" class="btn btn-ta-right">우측 정렬</button>
+            <button type="button" class="btn btn-ul">글머리 불릿</button>
+            <button type="button" class="btn btn-ol">글머리 숫자</button>
+        </div>
     </div>
 </body>
 </html>
