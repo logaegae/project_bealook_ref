@@ -10,37 +10,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="../test/js/headTool.js"></script>
     <script type="text/javascript" src="../test/js/editorBeta.js"></script>
-    
+
 </head>
 <script type="text/javascript">
     $(document).ready(function(){
-        
+
         // saveClass = "li-cell-01";
-        
+
         $('.menu li button').click(function(){
             btnId = $(this).attr('id');
             btnIdNum = btnId.substring(8);
-            
+
             liTypeClass = $('.ul-list').attr('class').substring(11);
             liTypeNum = liTypeClass.substring(8,10);
-         
+
             selectorName = "."+liTypeClass;
             changeTo = "li-cell-"+btnIdNum;
             $(selectorName).addClass(changeTo).removeClass(liTypeClass);
-            
-            
-            
+
+
+
             // selectorName = "."+saveClass;
             // changeTo = "li-cell-"+btnIdNum;
             // // $(selectorName).addClass(changeTo).removeClass(saveClass);
             // saveClass = changeTo;
-            
+
         });
-        
+
     });
-    
+
 </script>
 <body id="ref01">
+    <div class="prev">
+        <button style="position:fixed; right:10px; bottom : 10px; padding:10px;" type="button" name="뒤로가기" onclick="window.history.back()">뒤로가기</button>
+    </div>
     <div class="wrapper ovh editor-wrapper">
         <div class="menu">
             <ul>
@@ -50,13 +53,13 @@
                 <li><button id="li-type-04">4</button></li>
             </ul>
         </div>
-        
+
         <div class="header">
             <div class="box-01 w50per mgauto bg-white ta-c">
                 <h1><img src="img/basics_logo.jpg"></h1>
             </div>
         </div>
-        
+
         <div class="contents ovh p60-0">
             <ul class="ul-list li-type-01 li-cell-02">
                 <li class="li-horizon">
@@ -69,7 +72,7 @@
                             <span id="a1" class="con editable">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>    
+                    </div>
                 </li>
                 <li class="li-horizon">
                    <div class="li-box">
@@ -81,7 +84,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-horizon">
                    <div class="li-box">
@@ -93,7 +96,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-horizon">
                     <div class="li-box">
@@ -105,7 +108,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-horizon">
                    <div class="li-box">
@@ -117,7 +120,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-horizon">
                     <div class="li-box">
@@ -129,7 +132,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-horizon">
                    <div class="li-box">
@@ -141,7 +144,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-horizon">
                     <div class="li-box">
@@ -153,7 +156,7 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
                 <li class="li-vertical">
                    <div class="li-box">
@@ -165,13 +168,13 @@
                             <span class="con">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
-                    </div>  
+                    </div>
                 </li>
             </ul>
         </div>
-        
+
         <div class="footer">
-            
+
         </div>
     </div>
 </body>
