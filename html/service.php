@@ -67,7 +67,7 @@
 				<div class="col-xs-6 mix fn">
 					<figure class="figure">
 						<img src="http://placehold.it/2000x1333" alt="">
-						<a href="" class="mask mask-info mask-dark text-center">
+						<a href="/workspace/reference/ref02.php" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
 								<h4>기능2</h4>
 								<div class="heading-divider"></div>
