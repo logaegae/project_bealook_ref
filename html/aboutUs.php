@@ -18,7 +18,7 @@
 				<div class="divcell text-right">
 					<ol class="breadcrumb">
 						<li><a href="index.php">Home</a></li>
-						<li class="active"><span>서비스 안내</span></li>
+						<li class="active"><span>비어룩</span></li>
 					</ol>
 				</div>
 			</div>
