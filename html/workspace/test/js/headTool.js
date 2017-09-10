@@ -1,6 +1,6 @@
 var depth1 = `
 <div class="hTDepth1">
-    <button exec="bold" class="d1noArgBtn">두껍게</button> 
+    <button exec="bold" class="d1noArgBtn">두껍게</button>
     <button exec="italic" class="d1noArgBtn">이탤릭</button>
     <button exec="underline" class="d1noArgBtn">밑줄</button>
     <button exec="StrikeThrough" class="d1noArgBtn">중간줄</button>
@@ -16,7 +16,7 @@ var depth1 = `
 `;
 var depth2 = `
 <div class="hTDepth2">
-    <button exec="bold" class="d2noArgBtn">두껍게</button> 
+    <button exec="bold" class="d2noArgBtn">두껍게</button>
     <button exec="italic" class="d2noArgBtn">이탤릭</button>
     <button exec="underline" class="d2noArgBtn">밑줄</button>
     <button exec="StrikeThrough" class="d2noArgBtn">중간줄</button>
@@ -34,11 +34,11 @@ var depth2 = `
     <button exec="fontName" class="d2withArgBtn">폰트</button>
     <button exec="createLink">링크</button>
     <button exec="unlink">링크해제</button>
-    <button exec="html">html 넣기</button> 
+    <button exec="html">html 넣기</button>
     <button exec="print">출력 </button>
 </div>
 `;
-$(function(){
+$(function() {
     $("body").prepend(depth1);
     $("body").prepend(depth2);
 })
