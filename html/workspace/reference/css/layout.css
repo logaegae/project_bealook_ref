@@ -1,23 +1,85 @@
-body {font-family: "Noto Sans KR Light", "Nanum Gothic";}
-body img {vertical-align: top;}
+body {
+    font-family: "Noto Sans KR Light", "Nanum Gothic";
+}
+
+body img {
+    vertical-align: top;
+}
+
 
 /*btn*/
-.btn {border:0;background:none;cursor:pointer;}
-.btn.btn-icon {vertical-align: top;text-align:center;font-size:0;text-indent:-999999%;}
-.btn.btn-undo {background:url(../img/ico_undo@2x.png) no-repeat center; background-size:25px 23px;}
-.btn.btn-redo {background:url(../img/ico_redo@2x.png) no-repeat center; background-size:25px 23px;}
-.layout .header .actions .btn {height:34px;line-height:34px;border:1px #979797 solid;}
-.layout .header .actions .btn-icon {width:34px;}
-.layout .header .actions .btn-txt {font-size:15px;}
 
-.layout .wrapper {position:relative;}
-.layout .header {overflow:hidden;position: absolute;top:0;left:0;width:100%;height:80px;border-bottom:1px red solid;
+.btn {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.btn.btn-icon {
+    vertical-align: top;
+    text-align: center;
+    font-size: 0;
+    text-indent: -999999%;
+}
+
+.btn.btn-undo {
+    background: url(../img/ico_undo@2x.png) no-repeat center;
+    background-size: 25px 23px;
+}
+
+.btn.btn-redo {
+    background: url(../img/ico_redo@2x.png) no-repeat center;
+    background-size: 25px 23px;
+}
+
+.layout .header .actions .btn {
+    height: 34px;
+    line-height: 34px;
+    border: 1px #979797 solid;
+}
+
+.layout .header .actions .btn-icon {
+    width: 34px;
+}
+
+.layout .header .actions .btn-txt {
+    font-size: 15px;
+}
+
+.layout .wrapper {
+    position: relative;
+}
+
+.layout .header {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px red solid;
     display: -webkit-flex;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
-.layout .header .menu {margin-left:50px;}
-.layout .header .menu span {display:block;margin-top:8px;width:30px;height:3px;background:#979797;}
-.layout .header .menu span:first-child {margin-top:0;}
-.layout .header .actions {margin-right:50px;}
+
+.layout .header .menu {
+    margin-left: 50px;
+}
+
+.layout .header .menu span {
+    display: block;
+    margin-top: 8px;
+    width: 30px;
+    height: 3px;
+    background: #979797;
+}
+
+.layout .header .menu span:first-child {
+    margin-top: 0;
+}
+
+.layout .header .actions {
+    margin-right: 50px;
+}
