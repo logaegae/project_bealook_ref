@@ -1,47 +1,54 @@
-/*정의*/
-.editable{
-    outline : 1px tomato solid;
-    cursor : pointer;
-    min-height:20px;
+.editable {
+    outline: 1px tomato solid;
+    cursor: pointer;
+    min-height: 20px;
 }
-.editable li{
+
+.editable li {
     float: none !important;
     text-align: justify;
 }
-.editable ol{
+
+.editable ol {
     list-style: initial;
     list-style-type: decimal;
 }
-.editable ul{
-    overflow : inherit;
+
+.editable ul {
+    overflow: inherit;
     list-style: initial;
     list-style-type: disc;
 }
-.editable.ed-selected{
-    cursor : auto;
-}
-.ed-selected{
-    outline : 3px tomato solid;
-}
-.listable{
 
+.editable.ed-selected {
+    cursor: auto;
 }
-.hTDepth1, .hTDepth2{
-    padding : 5px;
+
+.ed-selected {
+    outline: 3px tomato solid;
+}
+
+.listable {}
+
+.hTDepth1, .hTDepth2 {
+    padding: 5px;
     text-align: center;
-    position : fixed;
-    top:-100px;
-    z-index : 10000;
+    position: fixed;
+    top: -100px;
+    z-index: 10000;
     background-color: #fff;
-    width:100%;
+    width: 100%;
     transition: top 500ms ease-in-out;
 }
-b{
+
+b {
     font-weight: bold !important;
 }
-i{
+
+i {
     font-style: italic !important;
 }
-.hTDepth1.on, .hTDepth2.on{
-    top:0px;
+
+.hTDepth1.on, .hTDepth2.on {
+    top: 0px;
 }
