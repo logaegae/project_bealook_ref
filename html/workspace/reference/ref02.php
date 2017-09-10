@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Be A Look - Reference 2</title>
-    <link rel="stylesheet" href="./css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="./css/common.css" type="text/css" />
-    <script src="/static/js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <script type="text/javascript">
     // $(document).ready(function(){
@@ -39,7 +40,7 @@
 
         <div class="header">
             <div class="box-01 mgauto ta-c">
-                <h1><img src="./img/basics_logo.jpg"></h1>
+                <h1><img src="img/basics_logo.jpg"></h1>
             </div>
         </div>
 
@@ -111,7 +112,7 @@
                     </p>
                 </div>
                 <div class="./img-box mgauto">
-                    <img src="./img/basics08.jpg" class="w100per">
+                    <img src="img/basics08.jpg" class="w100per">
                 </div>
             </div>
             <div class="con-box-03">
@@ -127,63 +128,63 @@
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics01.jpg">
+                                <img src="img/basics01.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics02.jpg">
+                                <img src="img/basics02.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics03.jpg">
+                                <img src="img/basics03.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics04.jpg">
+                                <img src="img/basics04.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics05.jpg">
+                                <img src="img/basics05.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics11.jpg">
+                                <img src="img/basics11.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics01.jpg">
+                                <img src="img/basics01.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics02.jpg">
+                                <img src="img/basics02.jpg">
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="li-box">
                             <div class="./img-wrap-rpsv img-wrap">
-                                <img src="./img/basics03.jpg">
+                                <img src="img/basics03.jpg">
                             </div>
                         </div>
                     </li>
