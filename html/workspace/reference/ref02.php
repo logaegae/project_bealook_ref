@@ -6,8 +6,7 @@
     <title>Be A Look - Reference 2</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css" />
     <link rel="stylesheet" href="./css/common.css" type="text/css" />
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/jquery-2.1.4.min.js"></script>
 </head>
 <script type="text/javascript">
     // $(document).ready(function(){
