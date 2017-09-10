@@ -55,7 +55,7 @@
 			<div class="row isotope-wrap gallery-wrap magnific-wrap margin-wrap">
 				<div class="col-xs-6 mix fn">
 					<figure class="figure">
-						<div style="back"src="/workspace/reference/img/basics03.jpg" alt="">
+						<img src="/workspace/reference/img/basics03.jpg" alt="">
 						<a href="/workspace/reference/ref01.html" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
 								<h4>기능1</h4>
