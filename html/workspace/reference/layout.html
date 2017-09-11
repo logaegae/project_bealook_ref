@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/layout.css" type="text/css" />
+    <script>
+        $(document).ready(function(){
+            var select = $("select#fontFamily");
+    
+    		select.change(function(){
+    			var select_name = $(this).children("option:selected").text();
+    			$(this).siblings("label").text(select_name);
+    		});
+        })
+    </script>
 </head>
 <body class="layout">
     <div class="wrapper">
@@ -27,17 +37,47 @@
             </div>
         </div>
         <div class="tool-common tool-text tool-text-01">
-            <button type="button" class="btn btn-bold">두껍게</button>
-            <button type="button" class="btn btn-italic">이탤릭</button>
-            <button type="button" class="btn btn-linethrough">가운데 줄</button>
-            <button type="button" class="btn btn-underline">밑 줄</button>
-            <button type="button" class="btn btn-color">글씨 색</button>
-            <button type="button" class="btn btn-bgcolor">배경 색</button>
-            <button type="button" class="btn btn-ta-left">좌측 정렬</button>
-            <button type="button" class="btn btn-ta-center">가운데 정렬</button>
-            <button type="button" class="btn btn-ta-right">우측 정렬</button>
-            <button type="button" class="btn btn-ul">글머리 불릿</button>
-            <button type="button" class="btn btn-ol">글머리 숫자</button>
+            <div class="select-box bl">
+				<label for="fontFamily">Noto Sans</label>
+				<select name="s01" id="fontFamily" required="required">
+				    <option selected>Noto Sans</option>
+                    <option>나눔고딕</option>
+                    <option>나눔바른고딕</option>
+                    <option>한겨례체</option>
+                    <option>정음체</option>
+                    <option>대한체</option>
+                    <option>이롭게바탕체</option>
+				</select>
+			</div>
+			<div class="select-box">
+				<label for="fontSize">제목 1 (30pt)</label>
+				<select name="s02" id="fontSize" required="required">
+				    <option>제목 1 (30pt) </option>
+                    <option>제목 2 (25pt)</option>
+                    <option>제목 3 (20pt)</option>
+                    <option>본문 1 (15pt)</option>
+                    <option>본문 2 (12pt)</option>
+				</select>
+			</div>
+            
+            <button type="button" title="두껍게" class="btn btn-icon btn-bold">두껍게</button>
+            <button type="button" title="이탤릭" class="btn btn-icon btn-italic">이탤릭</button>
+            <button type="button" title="가운데 줄" class="btn btn-icon btn-linethrough">가운데 줄</button>
+            <button type="button" title="밑 줄" class="btn btn-icon btn-underline">밑 줄</button>
+            <button type="button" title="글씨 색" class="btn btn-icon btn-color">글씨 색</button>
+            <button type="button" title="배경 " class="btn btn-icon btn-bgcolor">배경 색</button>
+            <button type="button" title="좌측 정" class="btn btn-icon btn-ta-left">좌측 정렬</button>
+            <button type="button" title="가운데 정렬" class="btn btn-icon btn-ta-center">가운데 정렬</button>
+            <button type="button" title="우측 정" class="btn btn-icon btn-ta-right">우측 정렬</button>
+            <button type="button" title="글머리 불릿" class="btn btn-icon btn-ul">글머리 불릿</button>
+            <button type="button" title="글머리 숫자" class="btn btn-icon btn-ol">글머리 숫자</button>
+        </div>
+        <div class="contents">
+            <div class="section">
+                <p>에디팅 래퍼런스</p><br><br>
+                <span class="txt-area-click" contenteditable>텍스트 영역 클릭</span><br>
+                <span class="txt-drag" contenteditable>텍스트 드레그</span>
+            </div>
         </div>
     </div>
 </body>
