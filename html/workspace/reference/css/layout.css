@@ -8,31 +8,31 @@ body img {
 
 
 /*btn*/
-.btn {margin:0;font-size:0;border:0;background:none;cursor:pointer;vertical-align:middle;}
+.btn {margin:0;font-size:0;border:0;background:none;cursor:pointer;vertical-align:middle;outline:none;}
 .btn.btn-icon {vertical-align: top;text-align:center;text-indent:-999999%;}
 .btn.btn-undo {background:url(../img/ico_undo@2x.png) no-repeat center;background-size:25px 23px;}
 .btn.btn-redo {background:url(../img/ico_redo@2x.png) no-repeat center;background-size:25px 23px;}
-.layout .header .actions {font-size:0;}
-.layout .header .actions span, .layout .header .actions .btn-save {border-radius: 5px;}
-.layout .header .actions span {display:inline-block;height:32px;line-height:32px;vertical-align:middle;border:1px #979797 solid;}
-.layout .header .actions .btn-icon {width:37px;height:32px;line-height:32px;background-size:50%;}
-.layout .header .actions .btn-undo {position:relative;}
-.layout .header .actions .btn-undo:before {position:absolute;display:block;content:"";top:5px;right:0;width:1px;height:23px;background: #979797;}
-.layout .header .actions .btn-save {display:inline-block;margin-left:10px;padding:0 10px;height:34px;line-height:34px;font-size:13px;border:1px #979797 solid;}
+.header .actions {font-size:0;}
+.header .actions span, .layout .header .actions .btn-save {border-radius: 5px;}
+.header .actions span {display:inline-block;height:32px;line-height:32px;vertical-align:middle;border:1px #979797 solid;}
+.header .actions .btn-icon {width:37px;height:32px;line-height:32px;background-size:50%;}
+.header .actions .btn-undo {position:relative;}
+.header .actions .btn-undo:before {position:absolute;display:block;content:"";top:5px;right:0;width:1px;height:23px;background: #979797;}
+.header .actions .btn-save {display:inline-block;margin-left:10px;padding:0 10px;height:34px;line-height:34px;font-size:13px;border:1px #979797 solid;}
 
-.layout .wrapper {position:relative;}
-.layout .header {overflow:hidden;position: absolute;top:0;left:0;width:100%;height:80px;border-bottom:1px red solid;
+.wrapper {position:relative;}
+.header {overflow:hidden;position: absolute;top:0;left:0;width:100%;height:80px;border-bottom:1px red solid;
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.layout .header .menu {
+.header .menu {
     margin-left: 50px;
 }
 
-.layout .header .menu span {
+.header .menu span {
     display: block;
     margin-top: 8px;
     width: 30px;
@@ -40,14 +40,16 @@ body img {
     background: #979797;
 }
 
-.layout .header .menu span:first-child {
+.header .menu span:first-child {
     margin-top: 0;
 }
 
-.layout .header .actions {
+.header .actions {
     margin-right: 50px;
 }
-.layout .header .menu {margin-left:50px;}
-.layout .header .menu span {display:block;margin-top:6px;width:27px;height:3px;background:#979797;}
-.layout .header .menu span:first-child {margin-top:0;}
-.layout .header .actions {margin-right:50px;}
+.header .menu {margin-left:50px;}
+.header .menu span {display:block;margin-top:6px;width:27px;height:3px;background:#979797;}
+.header .menu span:first-child {margin-top:0;}
+.header .actions {margin-right:50px;}
+.tool-common {position: absolute; top:19px; left:50%; margin-left:-500px; width:1000px; height:40px; outline:1px red solid;}
+
