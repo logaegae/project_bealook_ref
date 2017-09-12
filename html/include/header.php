@@ -28,7 +28,7 @@
 	<nav class="navbar container">
 
 		<!-- NAVBAR BRAND -->
-		<a class="navbar-brand pull-left" href="/">
+		<a class="navbar-brand pull-left" href="index.php">
 			<!-- <img src="http://placehold.it/22x22" alt="Mexico"> -->
 			Be A Look
 		</a>

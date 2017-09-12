@@ -2117,6 +2117,11 @@ body.container
 {
     padding: 0;
 }
+.container.bg-beige
+{
+    padding: 50px 0;
+    background:#e0dcd6;
+}
 body.overlaymenu
 {
     overflow: hidden;
@@ -2706,12 +2711,13 @@ h3 + .heading-divider
     color: #fff;
     font-weight:300;
     background-color: #000;
+    /*border:1px #63afa6 solid;*/
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus
 {
     color: #fff;
-    background-color: #63afa6;
+    background-color: #000;
 }
 .btn.btn-primary.btn-3d
 {
@@ -6307,7 +6313,7 @@ a.icon.icon-color:hover
     position: relative;
     z-index: 221;
 
-    background-color: #e0ded6;
+    background-color: #fff;
 }
 .header[class*=fixed]
 {
@@ -6612,11 +6618,11 @@ a.navbar-brand
     letter-spacing: 1px;
     /*text-transform: uppercase;*/
 
-    color: #000;
+    color: #63afa6;
 }
 a.navbar-brand:hover
 {
-    color: #63afa6;
+    color: #b3d6d2;
 }
 a.navbar-brand img
 {
@@ -11556,7 +11562,7 @@ body > .overlay
 }
 .overlay-white:before
 {
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.7);
 }
 .overlay-light:before
 {
@@ -11565,6 +11571,10 @@ body > .overlay
 .overlay-dark:before
 {
     background-color: rgba(33,33,33,.9);
+}
+.overlay-gray:before
+{
+    background-color: rgba(107,107,107,0.5);
 }
 .pattern
 {
@@ -13789,8 +13799,10 @@ ul.pagination-contour li .next.next-text
 .banner .tp-caption.large_bold_white,
 .banner .tp-caption.large_bold_black
 {
-    font-size: 42px;
+    font-size: 35px !important;
     font-weight: 600;
+    padding:20px;
+    background: #fff;
     /*line-height:30px !important;*/
 }
 .banner .tp-caption.large_bold_red
@@ -13825,11 +13837,11 @@ ul.pagination-contour li .next.next-text
 }
 .banner p
 {
-    padding:0 4px;
-    font-size: 17px;
+    padding:3px 8px;
+    font-size: 15px;
     line-height: 24px;
     color: #000;
-    background: rgba(99,175,166,0.5)
+    background: rgba(99,175,166,0.9)
 }
 .banner-light .banner p,
 .banner p.text-primary

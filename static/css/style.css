@@ -6307,7 +6307,7 @@ a.icon.icon-color:hover
     position: relative;
     z-index: 221;
 
-    background-color: #fff;
+    background-color: #e0ded6;
 }
 .header[class*=fixed]
 {
