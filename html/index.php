@@ -12,7 +12,7 @@
 				<li data-transition="fade" data-slotamount="7" data-saveperformance="on" class="background overlay overlay-light" style="background-image: url(./static/images/index/s3.jpg);">
 					<div class="tp-caption sft large_bold_black"  data-x="center" data-y="center" data-voffset="-85" data-speed="700" data-start="700" data-easing="easeOutBack">서비스 웹페이지 플랫폼<span class="tit-eng">Service Webpage Platform</span></div>
 					<p class="tp-caption fade text-center" data-x="center" data-y="center" data-speed="500" data-start="900" data-easing="easeOutBack">BE A LOOK에서 원하는 웹 페이지를 자동으로 쉽고 빠르게</p>
-					<a href="service.php" class="tp-caption sfb btn btn-primary btn-lg btn-wide slider-scroll" data-x="center" data-y="center" data-voffset="80" data-hoffset="-10" data-speed="300" data-start="1000">How To Use</a>
+					<a href="service.php" class="tp-caption sfb btn btn-primary btn-lg btn-wide slider-scroll" data-x="center" data-y="center" data-voffset="80" data-hoffset="-10" data-speed="300" data-start="1000">데모 버전 테스트 참여하기</a>
 				</li>
 
 			</ul>
@@ -27,12 +27,11 @@
 			<div class="row irow-xs cards">
 				<div class="col-sm-6 text-wrap">
 					<h2>Be A Look 소개</h2>
-						<div class="heading-divider"></div>
-							<p>BEALOOK은 벼룩시장의 아이디어에서 시작한 웹페이지 서비스 브랜드입니다.</p>
-							<p>벼룩시장에서는 누구나 가판을 열고 자신의 가게를 쉽게 만들 수 있듯<br />
-							BEALOOK에서도 쉽고 간단하게 사용자가 직접 원하는 웹페이지를 만들 수 있습니다.</p>
-							<p>BEALOOK만의 서비스로 웹이 주는 모든 편의를 느껴보세요</p>
-
+					<div class="heading-divider"></div>
+					<p>BEALOOK은 벼룩시장의 아이디어에서 시작한 웹페이지 서비스 브랜드입니다.</p>
+					<p>벼룩시장에서는 누구나 가판을 열고 자신의 가게를 쉽게 만들 수 있듯<br />
+					BEALOOK에서도 쉽고 간단하게 사용자가 직접 원하는 웹페이지를 만들 수 있습니다.</p>
+					<p>BEALOOK만의 서비스로 웹이 주는 모든 편의를 느껴보세요</p>
 				</div>
 				<div class="col-sm-6">
 					<div class="card card-image">
