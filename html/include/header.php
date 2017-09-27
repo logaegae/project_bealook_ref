@@ -10,12 +10,12 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-	<link href="./static/css/preloader.css" rel="stylesheet">
-	<link href="./static/css/bootstrap.css" rel="stylesheet">
-	<link href="./static/css/font-awesome.min.css" rel="stylesheet">
-	<link href="./static/css/animate.css" rel="stylesheet">
-	<link href="./static/css/revolution.css" rel="stylesheet">
-	<link href="./static/css/style.css" rel="stylesheet">
+	<link href="./static/css/preloader.css?v=0.1" rel="stylesheet">
+	<link href="./static/css/bootstrap.css?v=0.1" rel="stylesheet">
+	<link href="./static/css/font-awesome.min.css?v=0.1" rel="stylesheet">
+	<link href="./static/css/animate.css?v=0.1" rel="stylesheet">
+	<link href="./static/css/revolution.css?v=0.1" rel="stylesheet">
+	<link href="./static/css/style.css?v=0.1" rel="stylesheet">
 </head>
 <body>
 
@@ -29,7 +29,7 @@
 
 		<!-- NAVBAR BRAND -->
 		<a class="navbar-brand pull-left" href="index.php">
-			 <img src="./static/images/index/logo_header_black_s.png" alt="Mexico"> 
+			 <img src="./static/images/index/logo_header_black_s.png" alt="Mexico">
 		</a>
 		<!-- /.navbar-brand -->
 
