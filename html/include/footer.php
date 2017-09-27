@@ -6,7 +6,7 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-md-6 col-md-push-6">		
+				<div class="col-md-6 col-md-push-6">
 					<nav class="extra-menu pull-right">
 						<a>logaegae@gmail.com</a>
 						<!-- <a href="javascript:alert('준비중입니다');">Privacy Policy</a>
@@ -30,14 +30,19 @@
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	
+
 	ga('create', 'UA-94068709-2', 'auto');
 	ga('send', 'pageview');
+
+	$(document).ready(function(){
+	  $(".owl-carousel").owlCarousel();
+	});
 
 </script>
 <script src="./static/js/jquery-2.1.4.min.js"></script>
 <script src="./static/js/bootstrap.min.js"></script>
 <script src="./static/js/plugins.js"></script>
 <script src="./static/js/custom.js"></script>
+<script src="./static/js/owl.carousel.min.js"></script>
 </body>
 </html>

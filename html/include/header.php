@@ -16,6 +16,7 @@
 	<link href="./static/css/animate.css?v=0.1" rel="stylesheet">
 	<link href="./static/css/revolution.css?v=0.1" rel="stylesheet">
 	<link href="./static/css/style.css?v=0.1" rel="stylesheet">
+	<link href="./static/css/owl.carousel.css?v=0.1" rel="stylesheet">
 </head>
 <body>
 
