@@ -1384,7 +1384,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tpclear		{	clear:both}
 
 
-.tp-bullets									{	z-index:100; position:absolute;
+.tp-bullets									{	display:none;z-index:100; position:absolute;
 												-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 												-moz-opacity: 1;
 												-khtml-opacity: 1;

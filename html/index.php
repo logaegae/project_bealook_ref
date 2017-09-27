@@ -5,16 +5,14 @@
 
 <!-- WRAPPER -->
 <div class="wrapper">
-
 	<div class="bannercontainer">
+		<div class="logo-box"><img src="./static/images/index/main_banner_bealook.png"></div>
 		<div class="banner" data-fullscreen="on" data-auto="true" data-hidetimerbar="off" data-fullscreenoffsetcontainer=".header">
 			<ul>
-				<li data-transition="fade" data-slotamount="7" data-saveperformance="on" class="background overlay overlay-gray" style="background-image: url(./static/images/index/main_bg_02.jpg);">
-					<div class="tp-caption sft large_bold_black"  data-x="center" data-y="center" data-voffset="-85" data-speed="700" data-start="700" data-easing="easeOutBack">서비스 웹페이지 플랫폼<span class="tit-eng">Service Webpage Platform</span></div>
-					<p class="tp-caption fade text-center" data-x="center" data-y="center" data-speed="500" data-start="900" data-easing="easeOutBack">BE A LOOK에서 원하는 웹 페이지를 쉽고 빠르게</p>
-					<a href="service.php" class="tp-caption sfb btn btn-primary btn-lg btn-wide slider-scroll" data-x="center" data-y="center" data-voffset="80" data-hoffset="-10" data-speed="300" data-start="1000">데모 버전 테스트 참여하기</a>
-				</li>
-
+				<li data-transition="fade" data-masterspeed="5" data-slotamount="1" data-saveperformance="on" class="background overlay overlay-light" style="background-image: url(./static/images/index/main_bg_02_2.jpg);"></li>
+				<li data-transition="fade" data-masterspeed="5" data-slotamount="1" data-saveperformance="on" class="background overlay overlay-light" style="background-image: url(./static/images/index/main_bg_01.jpg);"></li>
+				<li data-transition="fade" data-masterspeed="5" data-slotamount="1" data-saveperformance="on" class="background overlay overlay-light" style="background-image: url(./static/images/index/main_bg_07.jpg);"></li>
+				<li data-transition="fade" data-masterspeed="5" data-slotamount="1" data-saveperformance="on" class="background overlay overlay-light" style="background-image: url(./static/images/index/main_bg_08.jpg);"></li>
 			</ul>
 		</div>
 	</div>

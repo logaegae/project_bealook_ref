@@ -13774,8 +13774,7 @@ ul.pagination-contour li .next.next-text
 .banner .internal:focus
 {
     color: #da3636;
-}
-.tp-bannertimer
+}.tp-bannertimer
 {
     top: auto;
     bottom: 0;

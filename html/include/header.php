@@ -29,8 +29,7 @@
 
 		<!-- NAVBAR BRAND -->
 		<a class="navbar-brand pull-left" href="index.php">
-			<!-- <img src="http://placehold.it/22x22" alt="Mexico"> -->
-			Be A Look
+			 <img src="./static/images/index/logo_header_black_s.png" alt="Mexico"> 
 		</a>
 		<!-- /.navbar-brand -->
 

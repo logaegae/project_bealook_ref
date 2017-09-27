@@ -857,7 +857,7 @@
 
                     $this.revolution({
                         autoplay: ($this.data('auto')) ? $this.data('auto') : false,
-                        delay         : ($this.data('timeout')) ? $this.data('timeout') : "9000",
+                        delay         : ($this.data('timeout')) ? $this.data('timeout') : "4000",
                         startwidth    : 1110,
                         startheight   : ($this.data('startheight')) ? $this.data('startheight') : 550,
                         startWithSlide: 0,

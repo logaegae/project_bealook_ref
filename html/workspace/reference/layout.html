@@ -28,12 +28,15 @@
     		function toolTxtMovement(e){
     		    e.show().animate({
     		        'opacity': '1',
-    		        'top':'30px'
+    		        'top':'20px'
     		    },100)
     		}
     		
-    		$('.txt-click').click(function(){
+    		$('.txt-click-01').click(function(){
     		    toolTxtMovement($('.tool-txt-01'));
+    		})
+    		$('.txt-click-02').click(function(){
+    		    toolTxtMovement($('.tool-txt-02'));
     		})
         })
     </script>
@@ -85,15 +88,16 @@
             <button type="button" title="가운데 줄" class="btn btn-icon btn-linethrough">가운데 줄</button>
             <button type="button" title="밑 줄" class="btn btn-icon btn-underline">밑 줄</button>
             <button type="button" title="글씨 색" class="btn btn-icon btn-color">글씨 색</button>
-            <button type="button" title="배경 " class="btn btn-icon btn-bgcolor">배경 색</button>
-            <button type="button" title="좌측 정" class="btn btn-icon btn-ta-left">좌측 정렬</button>
+            <button type="button" title="배경 색" class="btn btn-icon btn-bgcolor">배경 색</button>
+            <button type="button" title="좌측 정렬" class="btn btn-icon btn-ta-left">좌측 정렬</button>
             <button type="button" title="가운데 정렬" class="btn btn-icon btn-ta-center">가운데 정렬</button>
-            <button type="button" title="우측 정" class="btn btn-icon btn-ta-right">우측 정렬</button>
+            <button type="button" title="우측 정렬" class="btn btn-icon btn-ta-right">우측 정렬</button>
             <button type="button" title="글머리 불릿" class="btn btn-icon btn-ul">글머리 불릿</button>
             <button type="button" title="글머리 숫자" class="btn btn-icon btn-ol">글머리 숫자</button>
+            <button type="button" title="링크 걸기" class="btn btn-icon btn-link1">링크 걸기</button>
         </div>
         
-        <div class="tool-common tool-txt tool-txt-02">
+        <div class="tool-common tool-txt tool-txt-02 bl">
             <div class="select-box">
 				<label for="fontFamily">Noto Sans</label>
 				<select name="s01" id="fontFamily" required="required">
@@ -121,19 +125,21 @@
             <button type="button" title="이탤릭" class="btn btn-icon btn-italic">이탤릭</button>
             <button type="button" title="가운데 줄" class="btn btn-icon btn-linethrough">가운데 줄</button>
             <button type="button" title="밑 줄" class="btn btn-icon btn-underline">밑 줄</button>
-            <button type="button" title="글씨 색" class="btn btn-icon btn-color">글씨 색</button>
+            <button type="button" title="글씨 색" class="btn btn-icon btn-color bl">글씨 색</button>
             <button type="button" title="배경 " class="btn btn-icon btn-bgcolor">배경 색</button>
-            <button type="button" title="좌측 정" class="btn btn-icon btn-ta-left">좌측 정렬</button>
+            <button type="button" title="좌측 정" class="btn btn-icon btn-ta-left bl">좌측 정렬</button>
             <button type="button" title="가운데 정렬" class="btn btn-icon btn-ta-center">가운데 정렬</button>
             <button type="button" title="우측 정" class="btn btn-icon btn-ta-right">우측 정렬</button>
-            <button type="button" title="글머리 불릿" class="btn btn-icon btn-ul">글머리 불릿</button>
+            <button type="button" title="글머리 불릿" class="btn btn-icon btn-ul bl">글머리 불릿</button>
             <button type="button" title="글머리 숫자" class="btn btn-icon btn-ol">글머리 숫자</button>
+            <button type="button" title="링크 걸기" class="btn btn-icon btn-link2 bl br">링크 걸기</button>
         </div>
         
         <div class="contents">
             <div class="section">
                 <p>에디팅 래퍼런스</p><br><br>
-                <span class="txt-click" contenteditable>텍스트 영역 클릭</span><br>
+                <span class="txt-click-01" contenteditable>텍스트 영역 클릭1</span><br>
+                <span class="txt-click-02" contenteditable>텍스트 영역 클릭2</span><br>
                 <span class="txt-drag" contenteditable>텍스트 드레그</span><br>
                 <p>&nbsp;</p>
                 <br><br><br><br><br><br><br><br><br>
