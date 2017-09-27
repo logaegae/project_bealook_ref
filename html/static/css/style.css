@@ -6310,7 +6310,7 @@ a.icon.icon-color:hover
 }
 .header
 {
-    position: absolute;
+    position: relative;
     z-index: 221;
 
     background-color: #fff;
