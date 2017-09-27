@@ -6,7 +6,7 @@
 <!-- WRAPPER -->
 <div class="wrapper">
 	<div class="bannercontainer">
-		<div class="logo-box"><img src="./static/images/index/main_banner_bealook.png"></div>
+		<!-- <div class="logo-box"><img src="./static/images/index/main_banner_bealook.png"></div> -->
 		<div class="banner" data-fullscreen="on" data-auto="true" data-hidetimerbar="off" data-fullscreenoffsetcontainer=".header">
 			<ul>
 				<li data-transition="fade" data-masterspeed="5" data-slotamount="7" data-saveperformance="on" class="background overlay overlay-light" style="background-image: url(./static/images/index/main_bg_02_2.jpg);"></li>
