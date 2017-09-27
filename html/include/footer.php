@@ -46,8 +46,8 @@
 			animateOut: 'fadeOut',
 			loop:true,
 			autoplay:true,
-			autoplayTimeout:500,
-			autoplayHoverPause:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false,
 			items:1,
 			margin:10
 	  });
