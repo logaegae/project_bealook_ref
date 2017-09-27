@@ -17,7 +17,7 @@
 		</div>
 	</div>
 
-	<div class="slider">
+	<div class="main-slider">
 		<div class="logo-box"><img src="./static/images/index/main_banner_bealook.png"></div>
 		<div class="img-wrapper owl-carousel">
 			<ul>
