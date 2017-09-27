@@ -19,13 +19,11 @@
 
 	<div class="main-slider">
 		<div class="logo-box"><img src="./static/images/index/main_banner_bealook.png"></div>
-		<div class="img-wrapper">
-			<div class="owl-carousel">
-				<div style="background-image: url(./static/images/index/main_bg_02_2.jpg);"></div>
-				<div style="background-image: url(./static/images/index/main_bg_01.jpg);"></div>
-				<div style="background-image: url(./static/images/index/main_bg_07.jpg);"></div>
-				<div style="background-image: url(./static/images/index/main_bg_08.jpg);"></div>
-			</div>
+		<div class="img-wrapper owl-carousel">
+			<div style="background-image: url(./static/images/index/main_bg_02_2.jpg);"></div>
+			<div style="background-image: url(./static/images/index/main_bg_01.jpg);"></div>
+			<div style="background-image: url(./static/images/index/main_bg_07.jpg);"></div>
+			<div style="background-image: url(./static/images/index/main_bg_08.jpg);"></div>
 		</div>
 	</div>
 
