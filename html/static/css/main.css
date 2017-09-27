@@ -1,4 +1,4 @@
-.main-slider .img-wrapper>div {
+.main-slider .img-wrapper li {
     height: 100vh;
     width: 100%;
     background-size: cover;
