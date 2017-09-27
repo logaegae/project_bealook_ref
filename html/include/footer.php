@@ -25,6 +25,13 @@
 
 <!-- /.footer -->
 <!-- SCRIPTS -->
+
+<script src="./static/js/jquery-2.1.4.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/js/plugins.js"></script>
+<script src="./static/js/custom.js"></script>
+<script src="./static/js/owl.carousel.min.js"></script>
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -39,10 +46,6 @@
 	});
 
 </script>
-<script src="./static/js/jquery-2.1.4.min.js"></script>
-<script src="./static/js/bootstrap.min.js"></script>
-<script src="./static/js/plugins.js"></script>
-<script src="./static/js/custom.js"></script>
-<script src="./static/js/owl.carousel.min.js"></script>
+
 </body>
 </html>
