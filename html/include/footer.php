@@ -46,9 +46,10 @@
 			animateOut: 'fadeOut',
 			loop:true,
 			autoplay:true,
-			autoplayTimeout:1000,
+			autoplayTimeout:500,
 			autoplayHoverPause:true,
-			items:1
+			items:1,
+			margin:10
 	  });
 	});
 
