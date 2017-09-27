@@ -42,7 +42,14 @@
 	ga('send', 'pageview');
 
 	$(document).ready(function(){
-	  $(".owl-carousel").owlCarousel();
+	  $(".owl-carousel").owlCarousel({
+			animateOut: 'fadeOut',
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:1000,
+			autoplayHoverPause:true,
+			items:1
+	  });
 	});
 
 </script>
