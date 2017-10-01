@@ -8,11 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 	require_once './require/connectDb.php';
 
 	$query = sprintf("INSERT INTO contact (name, question1, question2, question3, question4) VALUES ('%s', '%s', '%s', '%s', '%s')",
-            mysql_real_escape_string($_POST["name"]),
-            mysql_real_escape_string($_POST["question1"]),
-			mysql_real_escape_string($_POST["question2"]),
-			mysql_real_escape_string($_POST["question3"]),
-			mysql_real_escape_string($_POST["question4"]));
+            mysqli_real_escape_string($_POST["name"]),
+            mysqli_real_escape_string($_POST["question1"]),
+			mysqli_real_escape_string($_POST["question2"]),
+			mysqli_real_escape_string($_POST["question3"]),
+			mysqli_real_escape_string($_POST["question4"]));
 
 	$sql = "INSERT INTO contact (name, question1, question2, question3, question4) VALUES ('".$_POST["name"]."', '".$_POST["question1"]."', '".$_POST["question2"]."', '".$_POST["question3"]."', '".$_POST["question4"]."')";
 
