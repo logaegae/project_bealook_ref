@@ -17181,3 +17181,6 @@ form .rating-wrap .raty i
         margin-bottom: 15px;
     }
 }
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+    color:#333;
+}
