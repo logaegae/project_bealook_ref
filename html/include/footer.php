@@ -68,7 +68,7 @@
             rules: {
                 name: {
                     required : true,
-                    minlength : 6,
+                    minlength : 3,
 					maxlength : 15
                 },
                 question1: {
