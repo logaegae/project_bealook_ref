@@ -32,6 +32,10 @@
 <script src="./static/js/custom.js"></script>
 <script src="./static/js/owl.carousel.min.js"></script>
 
+<script type="text/javascript" src="jquery.validate.min.js"></script>
+<script type="text/javascript" src="additional-methods.min.js"></script>
+<script type="text/javascript" src="messages_ko.min.js"></script>
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -50,6 +54,63 @@
 			autoplayHoverPause:false,
 			items:1,
 			margin:10
+	  });
+      $("form").validate({
+		  submitHandler: function() {
+                var f = confirm("설문작성을 다 쓰셨나요?");
+                if(f){
+                    return true;
+                } else {
+                    return false;
+                }
+            },
+            //규칙
+            rules: {
+                name: {
+                    required : true,
+                    minlength : 6,
+					maxlength : 15
+                },
+                question1: {
+                    required : true,
+                    minlength : 3
+                },
+				question2: {
+                    required : true,
+                    minlength : 3
+                },
+				question3: {
+                    required : true,
+                    minlength : 3
+                },
+				question4: {
+                    required : true,
+                    minlength : 3
+                }
+            },
+            //규칙체크 실패시 출력될 메시지
+            messages : {
+                id: {
+                    required : "필수로 입력하세요",
+                    minlength : "최소 {0}글자이상이어야 합니다"
+                },
+                question1: {
+                    required : "필수로 입력하세요",
+                    minlength : "최소 {0}글자이상이어야 합니다"
+                },
+				question2: {
+                    required : "필수로 입력하세요",
+                    minlength : "최소 {0}글자이상이어야 합니다"
+                },
+				question3: {
+                    required : "필수로 입력하세요",
+                    minlength : "최소 {0}글자이상이어야 합니다"
+                },
+				question4: {
+                    required : "필수로 입력하세요",
+                    minlength : "최소 {0}글자이상이어야 합니다"
+                }
+            }
 	  });
 	});
 

@@ -61,31 +61,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 						<div class="form-group">
 							<label for="textbox9" class="col-sm-5">성함</label>
 							<div class="col-sm-7">
-								<input type="text" name="name" id="textbox9">
+								<input type="text" name="name" id="textbox9" required="true">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문1.</label>
 							<div class="col-sm-7">
-								<textarea name="question1" id="form-message9" size="1000"></textarea>
+								<textarea name="question1" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문2.</label>
 							<div class="col-sm-7">
-								<textarea name="question2" id="form-message9" size="1000"></textarea>
+								<textarea name="question2" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문3.</label>
 							<div class="col-sm-7">
-								<textarea name="question3" id="form-message9" size="1000"></textarea>
+								<textarea name="question3" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문4.</label>
 							<div class="col-sm-7">
-								<textarea name="question4" id="form-message9" size="1000"></textarea>
+								<textarea name="question4" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<hr />

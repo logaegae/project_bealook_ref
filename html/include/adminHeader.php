@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<title>Admin</title>
-	
+
 	<script src="../static/js/jquery-2.1.4.min.js"></script>
-	
+
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
@@ -17,6 +17,7 @@
 	<link href="../static/css/animate.css" rel="stylesheet">
 	<link href="../static/css/revolution.css" rel="stylesheet">
 	<link href="../static/css/style.css" rel="stylesheet">
+
 	<!-- Mexico - Responsive Multipurpose Template - v.1.1-->
 </head>
 <body>
@@ -51,7 +52,7 @@
 			<button class="navbar-toggle pull-right" data-target="#header-vertical" data-toggle="collapse" type="button">
 				<i class="fa fa-bars"></i>
 			</button>
-		</div>		
+		</div>
 	</div>
 	<!-- /.header-vertical-top -->
 
@@ -66,7 +67,7 @@
 			<ul class="nav navbar-nav">
 				<li>
 					<a href="./contact.php">Contact</a>
-				</li>				
+				</li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
