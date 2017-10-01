@@ -78,4 +78,10 @@ button {cursor: pointer;}
 
 /*CONTENTS*/
 .contents {padding-top:200px; width:100%;}
-.contents .section {margin:0 auto; padding:20px;width:1200px;border-left:1px #ccc solid;border-right:1px #ccc solid;}
+.sec {margin:0 auto; width:1200px; outline:1px #ccc solid;}
+.sec-txt {padding:20px; width:1160px;}
+.sec-img {width:1200px; text-align: center;}
+.sec-img.img-full img {width:100%;}
+.sec-img.img-max img {max-width:100%;}
+.sec-img.window-full {width:100%; min-width:1200px;}
+.sec-img.window-full img {width:100%;}
