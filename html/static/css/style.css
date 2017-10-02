@@ -8683,7 +8683,8 @@ body > .navbar-toggle:first-child
 .no-menu .header:not(.header-vertical) .navbar-collapse .navbar-nav > li > a
 {
     line-height: 36px;
-
+    text-align: right;
+    padding:0;
     border: 0;
     border-left: 2px solid transparent;
 }
