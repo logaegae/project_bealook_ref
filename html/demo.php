@@ -7,12 +7,12 @@
 <div class="wrapper">
 
 	<!-- PAGE TITLE -->
-	<header class="pagetitle pagetitle-sm">
+	<!-- <header class="pagetitle pagetitle-sm">
 		<div class="container">
 			<div class="divtable irow">
-				<!-- <div class="divcell">
+				<div class="divcell">
 					<h1>체험하기</h1>
-				</div> -->
+				</div>
 				<div class="divcell text-right">
 					<ol class="breadcrumb">
 						<li><a href="index.php">Home</a></li>
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-	</header>
+	</header> -->
 	<!-- /.pagetitle -->
 
 	<!-- CONTENT -->
@@ -32,7 +32,7 @@
 
 			<div class="row irow-xs">
 				<div class="col-sm-4">
-					<h2>레퍼런스</h2>
+					<h2>데모</h2>
 				</div>
 				<div class="col-sm-8 text-right">
 					<ul class="mix-category">
