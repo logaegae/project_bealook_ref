@@ -82,7 +82,7 @@ var depth2 = `
 </div>
 `;
 $(function() {
-    $("body").prepend(header);
-    $("body").prepend(depth1);
     $("body").prepend(depth2);
+    $("body").prepend(depth1);
+    $("body").prepend(header);
 })

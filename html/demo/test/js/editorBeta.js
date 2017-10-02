@@ -49,8 +49,9 @@ $(function() {
             console.log("removed");
             $(".ed-selected").removeAttr("contenteditable");
             $(".ed-selected").removeClass("ed-selected");
-            $(".hTDepth1").removeClass("on");
-            $(".hTDepth2").removeClass("on");
+            toolTxtHide($('.tool-txt-click'));
+            toolTxtHide($('.tool-txt-drag'));
+
             selected = null;
             removed = false;
         } else {

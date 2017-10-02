@@ -2,6 +2,7 @@
 
 body {
     font-family: "Noto Sans KR Light", "Nanum Gothic";
+    position: relative;
 }
 
 body img {
@@ -10,10 +11,6 @@ body img {
 
 button {
     cursor: pointer;
-}
-
-.wrapper {
-    position: relative;
 }
 
 
@@ -198,7 +195,7 @@ button {
 
 .header {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
