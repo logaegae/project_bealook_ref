@@ -1,3 +1,17 @@
+var header = `
+<div class="header">
+    <div class="actions">
+        <button type="button" class="btn btn-txt btn-preview">미리보기</button>
+        <span>
+            <button type="button" class="btn btn-icon btn-undo" title="실행 취소">실행 취소</button>
+            <button type="button" class="btn btn-icon btn-redo" title="다시 실행">다시 실행</button>
+        </span>
+    </div>
+    <div class="save">
+        <button type="button" class="btn btn-txt btn-save">저장하기</button>
+    </div>
+</div>
+`;
 var depth1 = `
 <div class="tool-common tool-txt tool-txt-click bl hTDepth1">
     <div class="select-box">
@@ -68,6 +82,7 @@ var depth2 = `
 </div>
 `;
 $(function() {
+    $("body").prepend(header);
     $("body").prepend(depth1);
     $("body").prepend(depth2);
 })

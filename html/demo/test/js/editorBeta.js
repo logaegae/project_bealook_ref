@@ -10,7 +10,9 @@ $(function() {
     $(".editor-wrapper").on('mousedown', '.editable', function(e) {
         console.log("selected");
         if (!$(this).hasClass("ed-selected")) {
-            $(".hTDepth1").addClass("on");
+            toolTxtShow($('.tool-txt-click'));
+            $('.header').addClass('mask');
+
             $(".ed-selected").removeClass("ed-selected");
             $(this).addClass("ed-selected");
             removed = true;
@@ -30,8 +32,9 @@ $(function() {
     //depth2
     $(".editor-wrapper").on('mousedown', '.editable.ed-selected', function(e) {
         console.log("edoitable");
-        $(".hTDepth1").removeClass("on");
-        $(".hTDepth2").addClass("on");
+        toolTxtShow($('.tool-txt-drag'));
+        toolTxtHide($('.tool-txt-click'));
+
         btnConfigDepth2($(this).attr("id"));
         $("*[contenteditable=true]").removeAttr("contenteditable");
         $(this).attr("contenteditable", "true");
@@ -58,6 +61,20 @@ $(function() {
     });
 });
 
+function toolTxtShow(e) {
+    e.show().animate({
+        'opacity': '1',
+        'top': '20px'
+    }, 100);
+}
+
+function toolTxtHide(e) {
+    e.animate({
+        'opacity': '0',
+        'top': '0px',
+        'display': 'none'
+    }, 100);
+}
 // 버튼 클릭 이벤트 추가
 function btnConfigDepth1(target) {
     var _editor = document.getElementById(target);
