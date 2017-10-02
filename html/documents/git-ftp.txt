@@ -1,6 +1,6 @@
 git config git-ftp.url "223.26.138.5"
 git config git-ftp.user "logaegae"
-git config git-ftp.password "123qweasd"
+git config git-ftp.password "???"
 
 # Upload all files
 git ftp init
