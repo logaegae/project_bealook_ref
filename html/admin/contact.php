@@ -45,7 +45,7 @@
 					<tbody>
 					<?php
 						require_once '../require/connectDb.php';
-						$sql = "SELECT * FROM contact WHERE delYn='N'";
+						$sql = "SELECT * FROM contact WHERE delYn='N' ORDER BY time DESC";
 
 						$result = $mysqli->query($sql);
 

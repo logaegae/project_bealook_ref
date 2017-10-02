@@ -1,4 +1,3 @@
-<?php require '../require/sessionCheck.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
