@@ -11,7 +11,7 @@ if(isset($_SESSION["id"])){
 	   $id = $_POST['id'];
 	   $pw = $_POST['pw'];
 
-		$UserInput = preg_replace(“/[\r\n\s\t\’\;\”\=\-\-\#\/*]+/”,“”, $pw);
+		$UserInput = preg_replace(“/[\r\n\s\t\’\;\”\=\-\-\/\*]+/”,“”, $pw);
     		if(preg_match(‘/(union|select|from|where)/i’, $UserInput)) {
  	    	$this–>Error_popup(‘No SQL-Injection’);
  		}
