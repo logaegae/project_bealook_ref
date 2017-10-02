@@ -65,7 +65,7 @@
 
 		<hr class="hr-nobg"/>
 
-		<div class="container bg-beige">
+		<div class="container">
 			<div class="row irow-xs">
 				<div class="col-sm-4">
 					<div class="media">

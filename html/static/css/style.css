@@ -6627,7 +6627,7 @@ a.navbar-brand:hover
 a.navbar-brand img
 {
     display: inline-block;
-
+    width:115px;
     max-height: 100%;
     margin-top: -4px;
     margin-right: 4px;
@@ -7649,7 +7649,7 @@ a.navbar-brand-rows img
 
     vertical-align: middle;
 
-    background-color: #63afa6;
+    background-color: #e0ded6;
 }
 .pagetitle .subtitle
 {
@@ -17173,7 +17173,7 @@ form .rating-wrap .raty i
     }
     .mix-category > li
     {
-        display: block;
+        /*display: block;*/
 
         margin-bottom: 5px;
     }
