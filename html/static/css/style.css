@@ -7649,7 +7649,7 @@ a.navbar-brand-rows img
 
     vertical-align: middle;
 
-    background-color: #d9d9d9;
+    background-color: #63afa6;
 }
 .pagetitle .subtitle
 {
@@ -10458,11 +10458,11 @@ img.mfp-img
     display: inline-block;
 
     margin: 0 0 25px;
-    padding: 0 30px 0 0;
+    /*padding: 0 30px 0 0;*/
 
     vertical-align: middle;
 
-    border-right: 1px dotted #595959;
+    /*border-right: 1px dotted #595959;*/
 }
 .text-right .mix-category
 {

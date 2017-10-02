@@ -37,7 +37,7 @@
 				<!-- <div class="col-sm-4">
 					<h2>데모</h2>
 				</div> -->
-				<div class="col-sm-8 text-right">
+				<div class="col-sm-12 text-center">
 					<ul class="mix-category">
 
 						<li class="active"><a href="#all" class="filter active" data-filter="*">전체</a></li>
