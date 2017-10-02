@@ -17,6 +17,7 @@
 	<link href="../static/css/animate.css" rel="stylesheet">
 	<link href="../static/css/revolution.css" rel="stylesheet">
 	<link href="../static/css/style.css" rel="stylesheet">
+	<link href="../static/css/custom.css" rel="stylesheet">
 
 	<!-- Mexico - Responsive Multipurpose Template - v.1.1-->
 </head>
