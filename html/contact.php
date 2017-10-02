@@ -7,9 +7,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 
 	require_once './require/connectDb.php';
 
+	$query = sprintf("INSERT INTO contact (name, question1, question2, question3, question4) VALUES ('%s', '%s', '%s', '%s', '%s')",
+            $mysqli->real_escape_string($_POST["name"]),
+            $mysqli->real_escape_string($_POST["question1"]),
+			$mysqli->real_escape_string($_POST["question2"]),
+			$mysqli->real_escape_string($_POST["question3"]),
+			$mysqli->real_escape_string($_POST["question4"]));
+
 	$sql = "INSERT INTO contact (name, question1, question2, question3, question4) VALUES ('".$_POST["name"]."', '".$_POST["question1"]."', '".$_POST["question2"]."', '".$_POST["question3"]."', '".$_POST["question4"]."')";
 
-	if ($conn->query($sql) === TRUE) {
+	if ($conn->query($query) === TRUE) {
 	    $message = '입력이 완료되었습니다. 소중한 의견 감사합니다<br/>';
 	} else {
 	    $message = '오류 발생';
@@ -61,31 +68,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 						<div class="form-group">
 							<label for="textbox9" class="col-sm-5">성함</label>
 							<div class="col-sm-7">
-								<input type="text" name="name" id="textbox9">
+								<input type="text" name="name" id="textbox9" required="true">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문1.</label>
 							<div class="col-sm-7">
-								<textarea name="question1" id="form-message9" size="1000"></textarea>
+								<textarea name="question1" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문2.</label>
 							<div class="col-sm-7">
-								<textarea name="question2" id="form-message9" size="1000"></textarea>
+								<textarea name="question2" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문3.</label>
 							<div class="col-sm-7">
-								<textarea name="question3" id="form-message9" size="1000"></textarea>
+								<textarea name="question3" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="form-message9" class="col-sm-5">질문4.</label>
 							<div class="col-sm-7">
-								<textarea name="question4" id="form-message9" size="1000"></textarea>
+								<textarea name="question4" id="form-message9" size="1000" required="true"></textarea>
 							</div>
 						</div>
 						<hr />

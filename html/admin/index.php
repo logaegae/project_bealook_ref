@@ -11,19 +11,14 @@ if(isset($_SESSION["id"])){
 	   $id = $_POST['id'];
 	   $pw = $_POST['pw'];
 
-	   $UserInput = preg_replace(“/[\r\n\s\t\’\;\”\=\-\-\#\/*]+/”,“”, $id);
-   		if(preg_match(‘/(union|select|from|where)/i’, $UserInput)) {
-	    	$this–>Error_popup(‘No SQL-Injection’);
-		}
-
 		$UserInput = preg_replace(“/[\r\n\s\t\’\;\”\=\-\-\#\/*]+/”,“”, $pw);
     		if(preg_match(‘/(union|select|from|where)/i’, $UserInput)) {
  	    	$this–>Error_popup(‘No SQL-Injection’);
  		}
 
 	   $query = sprintf("SELECT id FROM adminMember WHERE id='%s' AND pw='%s'",
-            mysqli_real_escape_string($_POST['id']),
-            mysqli_real_escape_string($_POST['pw']));
+            $mysqli->real_escape_string($_POST['id']),
+            $mysqli->real_escape_string($_POST['pw']));
 
 		$result = $conn->query($query);
 
