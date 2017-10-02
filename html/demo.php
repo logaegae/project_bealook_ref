@@ -10,7 +10,7 @@
 	<header class="pagetitle pagetitle-sm">
 		<div class="container">
 			<div class="divtable irow">
-				<div class="divcell">
+				<div class="divcell text-center">
 					<i class="fa fa-flask"></i>
 					<h1>데모</h1>
 					<div class="divider"></div>

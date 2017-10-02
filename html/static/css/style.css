@@ -13781,7 +13781,7 @@ ul.pagination-contour li .next.next-text
     overflow: hidden !important;
 }
 .main-slider {
-    padding: 0 73px 73px;
+    /*padding: 0 73px 73px;*/
 }
 .main-slider .logo-box {
     position:absolute;
