@@ -25,22 +25,44 @@
     			$(this).siblings("label").text(select_name);
     		});
 
-    		function toolTxtMovement(e){
+    		function toolTxtShow(e){
     		    e.show().animate({
     		        'opacity': '1',
     		        'top':'20px'
-    		    },100)
+    		    },100);
+    		}
+            function toolTxtHide(e){
+    		    e.animate({
+    		        'opacity': '0',
+    		        'top':'0px',
+                    'display':'none'
+    		    },100);
     		}
 
     		$('.txt-click').click(function(){
-    		    toolTxtMovement($('.tool-txt-click'));
+    		    toolTxtShow($('.tool-txt-click'));
                 $('.header').addClass('mask')
     		})
 
             $('.txt-drag').click(function(){
-    		    toolTxtMovement($('.tool-txt-drag'));
+    		    toolTxtShow($('.tool-txt-drag'));
                 $('.header').addClass('mask')
     		})
+
+            $('.btn-plus').click(function(){
+                $(this).addClass('on')
+                $('.layout-btn-box').show().animate({
+                    'opacity': '1',
+    		        'top':'0px'
+                },200);
+    		})
+            // $('body').click(function(){
+            //     $(this).removeClass('on')
+            //     $('.layout-btn-box').animate({
+            //         'opacity': '0',
+    		//         'top':'60px'
+            //     },200).hide();
+    		// })
         })
     </script>
 </head>
@@ -131,22 +153,24 @@
             <button type="button" title="배경 " class="btn btn-icon btn-bgcolor">배경 색</button>
             <button type="button"  title="글머리 불릿" class="btn btn-icon btn-ul bl">글머리 불릿</button>
             <button type="button" title="글머리 숫자" class="btn btn-icon btn-ol">글머리 숫자</button>
-            <button type="button" title="링크 걸기" class="btn btn-icon btn-link2 bl br">링크 걸기</button>
+            <button type="button" title="링크 걸기" class="btn btn-icon btn-link bl br">링크 걸기</button>
         </div>
         <!--// tool-txt-drag -->
 
         <!-- tool-layout -->
         <div class="tool-common tool-layout">
+            <div class="layout-btn-box">
+                <button type="button" title="배경 색/이미지" class="btn btn-icon btn-bg">배경 색/이미지</button>
+                <button type="button" title="리스트" class="btn btn-icon btn-list">리스트</button>
+                <button type="button" title="그리드" class="btn btn-icon btn-grid">그리드</button>
+                <button type="button" title="사진" class="btn btn-icon btn-img">사진</button>
+                <button type="button" title="비디오" class="btn btn-icon btn-video">비디오</button>
+                <button type="button" title="지도" class="btn btn-icon btn-map">지도</button>
+                <button type="button" title="첨부파일" class="btn btn-icon btn-attach">첨부파일</button>
+                <button type="button" title="타이포그라피" class="btn btn-icon btn-typo">타이포그라피</button>
+                <button type="button" title="구분 선" class="btn btn-icon btn-hr">구분 선</button>
+            </div>
             <span class="btn btn-plus">+</span>
-            <button type="button" title="배경 색/이미지" class="btn btn-icon btn-bg">배경 색/이미지</button>
-            <button type="button" title="리스트" class="btn btn-icon btn-list">리스트</button>
-            <button type="button" title="그리드" class="btn btn-icon btn-grid">그리드</button>
-            <button type="button" title="사진" class="btn btn-icon btn-img">사진</button>
-            <button type="button" title="비디오" class="btn btn-icon btn-video">비디오</button>
-            <button type="button" title="지도" class="btn btn-icon btn-map">지도</button>
-            <button type="button" title="첨부파일" class="btn btn-icon btn-map">첨부파일</button>
-            <button type="button" title="타이포그라피" class="btn btn-icon btn-typo">타이포그라피</button>
-            <button type="button" title="구분 선" class="btn btn-icon btn-hr">구분 선</button>
         </div>
         <!--// tool-layout -->
 

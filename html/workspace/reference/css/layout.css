@@ -22,7 +22,7 @@ button {cursor: pointer;}
 .btn-ta-right {background: #fff url('../img/btn_ta_right.png') no-repeat center;}
 .btn-ul {background: #fff url('../img/btn_ul.png') no-repeat center;}
 .btn-ol {background: #fff url('../img/btn_ol.png') no-repeat center;}
-.btn-link {background: #fff url('../img/btn_link2.png') no-repeat center;}
+.btn-link1 {background: #fff url('../img/btn_link1.png') no-repeat center;}
 .btn-bg {background: #fff url('../img/btn_bg.png') no-repeat center;}
 .btn-list {background: #fff url('../img/btn_list.png') no-repeat center;}
 .btn-grid {background: #fff url('../img/btn_grid.png') no-repeat center;}
@@ -34,6 +34,7 @@ button {cursor: pointer;}
 .btn-hr {background: #fff url('../img/btn_hr.png') no-repeat center;}
 .tool-txt .btn {background-size:40px;}
 .tool-txt .btn.bl {padding-left:10px;}
+.tool-layout .btn-plus {display: block;font-size:35px; color:#fff; width:45px; height:45px; line-height:45px; text-align: center; background: #63afa6; border-radius: 50%;}
 
 .header .actions {float:left;margin-left:20px;font-size:0;}
 .header .actions span {display:inline-block;height:38px;line-height:38px;vertical-align:middle;border:1px #979797 solid; border-radius: 5px;}
@@ -71,12 +72,7 @@ button {cursor: pointer;}
 .tool-txt .btn:hover {border-bottom:3px #63afa6 solid;background-color:#f1f1f1;}
 
 .tool-layout {right:30px; bottom:5%; background: none;}
-.tool-layout .layout-btn-box {display:none;opacity: 0;position:relative; top:60px;}
-.tool-layout .layout-btn-box .btn {display:block;width:41px; height:41px; border:1px #979797 solid; border-top:0;}
-.tool-layout .layout-btn-box .btn:first-child {border-top:1px #979797 solid;}
-.tool-layout .layout-btn-box .btn.on {background-color: #f1f1f1;}
-.tool-layout .btn-plus {margin-top: 15px;display: block;font-size:35px; color:#fff; width:41px; height:41px; line-height:41px; text-align: center; border:0; background: #63afa6; border-radius: 50%;}
-.tool-layout .btn-plus.on {background-color: #222;}
+.tool-layout .btn {display:block;width:41px; height:41px; border:1px #979797 solid;}
 
 /*CONTENTS*/
 .contents {padding-top:200px; width:100%;}
