@@ -37,16 +37,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 			<div class="divtable irow">
 				<div class="divcell">
 					<i class="fa fa-pencil"></i>
-					<h1>Contact</h1>
+					<h1>설문조사</h1>
 					<div class="divider"></div>
-					<span class="subtitle">의견을 남겨주세요</span>
+					<span class="subtitle">데모에 대한 의견을 남겨주세요.</span>
 				</div>
-				<div class="divcell text-right">
+				<!-- <div class="divcell text-right">
 					<ol class="breadcrumb">
 						<li><a href="#">Home</a></li>
 						<li class="active"><span>Contact</span></li>
 					</ol>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</header>

@@ -7,21 +7,25 @@
 <div class="wrapper">
 
 	<!-- PAGE TITLE -->
-	<!-- <header class="pagetitle pagetitle-sm">
+	<header class="pagetitle pagetitle-sm">
 		<div class="container">
 			<div class="divtable irow">
 				<div class="divcell">
-					<h1>체험하기</h1>
+					<i class="fa fa-flask"></i>
+					<i class="fa fa-wrench"></i>
+					<h1>데모</h1>
+					<div class="divider"></div>
+					<span class="subtitle">데모 버전을 체험해 보세요.</span>
 				</div>
-				<div class="divcell text-right">
+				<!-- <div class="divcell text-right">
 					<ol class="breadcrumb">
 						<li><a href="index.php">Home</a></li>
 						<li class="active"><span>데모</span></li>
 					</ol>
-				</div>
+				</div> -->
 			</div>
 		</div>
-	</header> -->
+	</header>
 	<!-- /.pagetitle -->
 
 	<!-- CONTENT -->
@@ -31,9 +35,9 @@
 		<div class="container">
 
 			<div class="row irow-xs">
-				<div class="col-sm-4">
+				<!-- <div class="col-sm-4">
 					<h2>데모</h2>
-				</div>
+				</div> -->
 				<div class="col-sm-8 text-right">
 					<ul class="mix-category">
 
