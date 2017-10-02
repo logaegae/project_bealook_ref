@@ -12,7 +12,6 @@
 			<div class="divtable irow">
 				<div class="divcell">
 					<i class="fa fa-flask"></i>
-					<i class="fa fa-wrench"></i>
 					<h1>데모</h1>
 					<div class="divider"></div>
 					<span class="subtitle">데모 버전을 체험해 보세요.</span>

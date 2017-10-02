@@ -2209,7 +2209,7 @@ body.overlaymenu
     padding-top: 45px;
     padding-bottom: 80px;
 
-    background-color: #e0dcd6;
+    background-color: #fff;
 }
 .content [class*=container] + [class*=container]
 {
@@ -7499,7 +7499,7 @@ a.navbar-brand-rows img
 
     position: relative;
 
-    background-color: #e0dcd6;
+    background-color: #fff;
 }
 .pagetitle.pagetitle-xs
 {
