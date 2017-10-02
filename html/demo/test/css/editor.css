@@ -195,7 +195,7 @@ button {
 
 .header {
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -204,6 +204,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 .header.mask:after {
@@ -401,4 +402,12 @@ b {
 
 i {
     font-style: italic !important;
+}
+
+.hTDepth1 {
+    z-index: 1001;
+}
+
+.hTDepth2 {
+    z-index: 1001;
 }
