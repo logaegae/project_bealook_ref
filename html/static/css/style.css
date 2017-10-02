@@ -7990,9 +7990,12 @@ a.navbar-brand-rows img
     margin: 0;
     padding: 0;
 
-    color: #222;
+    color: #63afa6;
     border: 0;
     border-radius: 0;
+}
+.navbar-toggle.collapsed {
+    color:#222;
 }
 .header-light .navbar-toggle
 {
@@ -8074,7 +8077,7 @@ a.navbar-brand-rows img
 }
 .navbar-toggle:hover
 {
-    color: #4d4d4d;
+    color: #222;
 }
 .navbar-toggle:first-child
 {
