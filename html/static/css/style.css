@@ -7957,7 +7957,7 @@ a.navbar-brand-rows img
     min-height: 1px;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0 30px;
+    padding: 0 40px;
 
     border: 0;
     border-radius: 0;
@@ -7990,7 +7990,7 @@ a.navbar-brand-rows img
     margin: 0;
     padding: 0;
 
-    color: #fff;
+    color: #222;
     border: 0;
     border-radius: 0;
 }
@@ -8000,7 +8000,7 @@ a.navbar-brand-rows img
 }
 .navbar-toggle i
 {
-    font-size: 16px;
+    font-size: 30px;
 }
 .no-menu .navbar-toggle
 {
