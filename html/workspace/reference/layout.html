@@ -32,8 +32,14 @@
     		    },100)
     		}
 
-    		$('.txt-click-01').click(function(){
-    		    toolTxtMovement($('.tool-txt-01'));
+    		$('.txt-click').click(function(){
+    		    toolTxtMovement($('.tool-txt-click'));
+                $('.header').addClass('mask')
+    		})
+
+            $('.txt-drag').click(function(){
+    		    toolTxtMovement($('.tool-txt-drag'));
+                $('.header').addClass('mask')
     		})
         })
     </script>
@@ -47,19 +53,19 @@
                 <span></span>
             </div> -->
             <div class="actions">
+                <button type="button" class="btn btn-txt btn-preview">미리보기</button>
                 <span>
                     <button type="button" class="btn btn-icon btn-undo" title="실행 취소">실행 취소</button>
                     <button type="button" class="btn btn-icon btn-redo" title="다시 실행">다시 실행</button>
                 </span>
             </div>
-            <div class="pre-save">
-                <button type="button" class="btn btn-txt btn-preview">미리보기</button>
+            <div class="save">
                 <button type="button" class="btn btn-txt btn-save">저장하기</button>
             </div>
         </div>
 
-
-        <div class="tool-common tool-txt tool-txt-01 bl">
+        <!-- tool-txt-click -->
+        <div class="tool-common tool-txt tool-txt-click bl">
             <div class="select-box">
 				<label for="fontFamily">Noto Sans</label>
 				<select name="s01" id="fontFamily" required="required">
@@ -82,47 +88,92 @@
                     <option>본문 2 (12pt)</option>
 				</select>
 			</div>
+            <button type="button" title="두껍게" class="btn btn-icon btn-bold">두껍게</button>
+            <button type="button" title="이탤릭" class="btn btn-icon btn-italic">이탤릭</button>
+            <button type="button" title="가운데 줄" class="btn btn-icon btn-linethrough">가운데 줄</button>
+            <button type="button" title="밑 줄" class="btn btn-icon btn-underline">밑 줄</button>
+            <button type="button" title="글씨 색" class="btn btn-icon btn-color bl">글씨 색</button>
+            <button type="button" title="좌측 정" class="btn btn-icon btn-ta-left bl">좌측 정렬</button>
+            <button type="button" title="가운데 정렬" class="btn btn-icon btn-ta-center">가운데 정렬</button>
+            <button type="button" title="우측 정" class="btn btn-icon btn-ta-right br">우측 정렬</button>
+        </div>
+        <!--// tool-txt-click -->
 
+        <!-- tool-txt-drag -->
+        <div class="tool-common tool-txt tool-txt-drag bl">
+            <div class="select-box">
+				<label for="fontFamily">Noto Sans</label>
+				<select name="s01" id="fontFamily" required="required">
+				    <option selected>Noto Sans</option>
+                    <option>나눔고딕</option>
+                    <option>나눔바른고딕</option>
+                    <option>한겨례체</option>
+                    <option>정음체</option>
+                    <option>대한체</option>
+                    <option>이롭게바탕체</option>
+				</select>
+			</div>
+			<div class="select-box">
+				<label for="fontSize">제목 1 (30pt)</label>
+				<select name="s02" id="fontSize" required="required">
+				    <option>제목 1 (30pt) </option>
+                    <option>제목 2 (25pt)</option>
+                    <option>제목 3 (20pt)</option>
+                    <option>본문 1 (15pt)</option>
+                    <option>본문 2 (12pt)</option>
+				</select>
+			</div>
             <button type="button" title="두껍게" class="btn btn-icon btn-bold">두껍게</button>
             <button type="button" title="이탤릭" class="btn btn-icon btn-italic">이탤릭</button>
             <button type="button" title="가운데 줄" class="btn btn-icon btn-linethrough">가운데 줄</button>
             <button type="button" title="밑 줄" class="btn btn-icon btn-underline">밑 줄</button>
             <button type="button" title="글씨 색" class="btn btn-icon btn-color bl">글씨 색</button>
             <button type="button" title="배경 " class="btn btn-icon btn-bgcolor">배경 색</button>
-            <button type="button" title="좌측 정" class="btn btn-icon btn-ta-left bl">좌측 정렬</button>
-            <button type="button" title="가운데 정렬" class="btn btn-icon btn-ta-center">가운데 정렬</button>
-            <button type="button" title="우측 정" class="btn btn-icon btn-ta-right">우측 정렬</button>
             <button type="button" title="글머리 불릿" class="btn btn-icon btn-ul bl">글머리 불릿</button>
             <button type="button" title="글머리 숫자" class="btn btn-icon btn-ol">글머리 숫자</button>
             <button type="button" title="링크 걸기" class="btn btn-icon btn-link2 bl br">링크 걸기</button>
         </div>
+        <!--// tool-txt-drag -->
+
+        <!-- tool-layout -->
+        <div class="tool-common tool-layout">
+            <span class="btn btn-plus">+</span>
+            <button type="button" title="배경 색/이미지" class="btn btn-icon btn-bg">배경 색/이미지</button>
+            <button type="button" title="리스트" class="btn btn-icon btn-list">리스트</button>
+            <button type="button" title="그리드" class="btn btn-icon btn-grid">그리드</button>
+            <button type="button" title="사진" class="btn btn-icon btn-img">사진</button>
+            <button type="button" title="비디오" class="btn btn-icon btn-video">비디오</button>
+            <button type="button" title="지도" class="btn btn-icon btn-map">지도</button>
+            <button type="button" title="첨부파일" class="btn btn-icon btn-map">첨부파일</button>
+            <button type="button" title="타이포그라피" class="btn btn-icon btn-typo">타이포그라피</button>
+            <button type="button" title="지도" class="btn btn-icon btn-map">지도</button>
+        </div>
+        <!--// tool-layout -->
 
         <div class="contents ex01">
             <div class="sec sec-txt">
                 <p>에디팅 영역</p><br><br>
-                <span class="txt-click-01" contenteditable>텍스트 영역 클릭1</span><br>
-                <span class="txt-click-02" contenteditable>텍스트 영역 클릭2</span><br>
-                <span class="txt-drag" contenteditable>텍스트 드레그</span><br>
+                <span class="txt-click" contenteditable>텍스트 영역 클릭</span><br>
+                <span class="txt-drag" contenteditable>텍스트 부분 드레그</span><br>
                 <p>&nbsp;</p>
                 <br><br><br><br><br><br><br><br><br>
                 <span class="txt-click" contenteditable>텍스트 영역 클릭</span><br>
                 <span class="txt-drag" contenteditable>텍스트 드레그</span><br>
             </div>
             <div class="sec sec-li">
-                
+
             </div>
-            
+
             <div class="sec sec-img img-full">
                 <img src="img/basics_bg03.jpg"></img>
             </div>
             <div class="sec sec-img img-max">
                 <img src="img/basics_bg03.jpg"></img>
             </div>
-            <div class="sec sec-img window-full"> 
+            <div class="sec sec-img window-full">
                 <img src="img/basics_bg03.jpg"></img>
             </div>
         </div>
-        
     </div>
 </body>
 </html>
