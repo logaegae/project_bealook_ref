@@ -44,7 +44,7 @@
 		<div id="navbar" class="navbar-collapse collapse pull-right">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="service.php">데모</a>
+					<a href="demo.php">데모</a>
 				</li>
 				<li>
 					<a href="contact.php">설문조사</a>
