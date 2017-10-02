@@ -28,8 +28,8 @@ if(isset($_SESSION["id"])){
 		$mysqli->close();
 	}
 }
-
-include("../include/adminHeader.php");?>
+?>
+<?php include("../include/adminHeader.php");?>
 
 
 <!-- WRAPPER -->
