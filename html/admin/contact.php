@@ -23,7 +23,7 @@
 	<div class="content">
 
 		<!-- CONTAINER -->
-		<div class="container">			
+		<div class="container">
 
 			<h3>List</h3>
 			<form action="delete.php" method="post">
@@ -46,10 +46,10 @@
 					<?php
 						require_once '../require/connectDb.php';
 						$sql = "SELECT * FROM contact WHERE delYn='N'";
-						
-						$result = $conn->query($sql);
-					
-						if ($result->num_rows > 0) {			
+
+						$result = $mysqli->query($sql);
+
+						if ($result->num_rows > 0) {
 							while($row = $result->fetch_assoc()) {
 								?>
 								<tr>
@@ -68,8 +68,8 @@
 									<td><?echo $row["time"]?></td>
 								</tr>
 								<?
-						    }		
-						   
+						    }
+
 						} else {?>
 							<tr>
 							    <td></td>
@@ -78,13 +78,13 @@
 								<td></td>
 							</tr>
 						<?}
-							
-						$conn->close();
-					?>				
+
+						$mysqli->close();
+					?>
 					</tbody>
 				</table>
 			</form>
 		</div>
 	</div>
-</div>			
+</div>
 <?php include("../include/adminFooter.php");?>

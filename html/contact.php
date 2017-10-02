@@ -16,13 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 
 	$sql = "INSERT INTO contact (name, question1, question2, question3, question4) VALUES ('".$_POST["name"]."', '".$_POST["question1"]."', '".$_POST["question2"]."', '".$_POST["question3"]."', '".$_POST["question4"]."')";
 
-	if ($conn->query($query) === TRUE) {
+	if ($mysqli->query($query) === TRUE) {
 	    $message = '입력이 완료되었습니다. 소중한 의견 감사합니다<br/>';
 	} else {
 	    $message = '오류 발생';
 	}
 
-	$conn->close();
+	$mysqli->close();
 
 }else{
 	$message = '';

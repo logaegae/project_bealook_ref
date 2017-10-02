@@ -20,7 +20,7 @@ if(isset($_SESSION["id"])){
             $mysqli->real_escape_string($_POST['id']),
             $mysqli->real_escape_string($_POST['pw']));
 
-		$result = $conn->query($query);
+		$result = $mysqli->query($query);
 
 		if ($result->num_rows == 1) {
 			while($row = $result->fetch_assoc()) {
@@ -30,7 +30,7 @@ if(isset($_SESSION["id"])){
 		} else {
 		    $message='아이디 혹은 비밀번호가 틀렸습니다';
 		}
-		$conn->close();
+		$mysqli->close();
 	}
 }
 ?>
