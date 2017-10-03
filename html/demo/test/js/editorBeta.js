@@ -18,9 +18,6 @@ $(function() {
 
             btnConfigDepth1($(this).attr("id"));
 
-            $("*[contenteditable=true]").removeAttr("contenteditable");
-            $(this).attr("contenteditable", "true");
-
             $(this).focus();
         }
         e.stopPropagation();
@@ -42,8 +39,8 @@ $(function() {
 
         btnConfigDepth2($(this).attr("id"));
 
-        // $("*[contenteditable=true]").removeAttr("contenteditable");
-        // $(this).attr("contenteditable", "true");
+        $("*[contenteditable=true]").removeAttr("contenteditable");
+        $(this).attr("contenteditable", "true");
         $(this).focus();
         removed = true;
         e.stopPropagation();
@@ -93,6 +90,7 @@ function btnConfigDepth1(target) {
         if ($(e).hasClass("d1noArgBtn")) {
             var exec = $(e).attr("exec");
             $(e).click(function() {
+                console.log(_editor)
                 _editor.setAttribute("contenteditable", "true");
                 _editor.focus();
                 document.execCommand('selectAll', false, null);
