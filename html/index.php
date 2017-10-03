@@ -36,7 +36,7 @@
 		<!-- CONTAINER -->
 		<div class="container">
 			<div class="row irow-xs cards">
-				<div class="col-sm-12 text-wrap text-center">
+				<div class="col-sm-12 text-center">
 					<h2><img src="./static/images/main_logo.png" alt="비어룩"></h2>
 					<div class="heading-divider heading-divider-lg"></div>
 					<p class="about">여기 하나의 룩이 있습니다.<br> 나만의 어떤 것이든 다양한 룩으로 포스팅하듯 툭 - <br>  비어룩에서 나만의 룩북을 만들어 보세요.</p>
@@ -53,13 +53,13 @@
 					<div class="col-sm-5">
 						<i class="fa fa-quote-right"></i>
 						<p>
-							본 사이트는 기능을 테스하기 위한 <b>데모 버전</b>입니다.<br>
+							본 사이트는 기능을 테스트하기 위한 <b>데모 버전</b>입니다.<br>
 							보다 완성도 높은 비어룩을 위해 데모 테스트에 참여 부탁 드리며,<br>
 							테스트 후 체험 후기에 대한 설문을 작성해주세요.
 						</p>
 					</div>
 					<div class="col-sm-3 text-right">
-						<a href="./demo.php">데모 테스트 하러 가기</a>
+						<a href="./demo.php" class="a-btn-demo">데모 테스트 하러 가기</a>
 					</div>
 					<div class="col-sm-2"></div>
 				</div>

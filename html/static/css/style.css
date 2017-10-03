@@ -15714,6 +15714,19 @@ form .rating-wrap .raty i
 .demo-info .row > div {
     padding:0;
 }
+.demo-info p {
+    font-family: 'Noto Sans KR Regular';
+}
+.demo-info p b {
+    color:#63afa6;
+}
+.a-btn-demo {
+    height:49px;
+    line-height:49px;
+    color:#fff;
+    background: #222 url(/static/images/btn_arrow_right.png) no-repeat right 20px center;
+    border-radius: 50%;
+}
 .container.steps .heading-divider {
     background-color:#e0ded6;
 }
