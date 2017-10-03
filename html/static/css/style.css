@@ -15721,6 +15721,11 @@ form .rating-wrap .raty i
     color:#63afa6;
     font-family: 'Noto Sans KR Bold';
 }
+.demo-info i {
+    display:block;
+    float:left;
+    width:40px;
+}
 .a-btn-demo {
     display:block;
     padding:0 35px;
