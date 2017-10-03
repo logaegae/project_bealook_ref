@@ -15709,6 +15709,9 @@ form .rating-wrap .raty i
 .container.demo-info .row > div {
     padding:0;
 }
+.container.steps .heading-divider {
+    background-color:#e0ded6;
+}
 p.about {
     font-size: 20px;
     letter-spacing: 1px;

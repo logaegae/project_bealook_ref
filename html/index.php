@@ -49,15 +49,17 @@
 
 		<div class="container demo-info">
 			<div class="row irow-xs">
-				<div class="col-sm-6">
+				<div class="col-sm-1">
 					<i class="fa fa-quote-right"></i>
+				</div>
+				<div class="col-sm-5">
 					<p>
 						본 사이트는 기능을 테스하기 위한 <b>데모 버전</b>입니다.<br>
 						보다 완성도 높은 비어룩을 위해 데모 테스트에 참여 부탁 드리며,<br>
 						테스트 후 체험 후기에 대한 설문을 작성해주세요.
 					</p>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 text-right">
 					<a href="./demo.php">데모 테스트 하러 가기</a>
 				</div>
 			</div>
@@ -68,31 +70,31 @@
 		<hr class="hr-nobg"/>
 
 		<!-- CONTAINER -->
-		<div class="container">
+		<div class="container steps">
 			<div class="row irow-sm text-center steps-1">
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>1</i></div>
 					<h4>회원가입</h4>
-					<p>회원가입을 통하여 다양한 콘텐츠를 접할 수 있습니다.</p>
 					<div class="heading-divider"></div>
+					<p>회원가입을 통하여 다양한 콘텐츠를 접할 수 있습니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>2</i></div>
 					<h4>디자인선택</h4>
-					<p>마음에 드는 콘텐츠·디자인을 선택합니다.</p>
 					<div class="heading-divider"></div>
+					<p>마음에 드는 콘텐츠·디자인을 선택합니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>3</i></div>
 					<h4>화면구성</h4>
-					<p>페이지에 비어있는 내용을 자신의 이야기로 채웁니다.</p>
 					<div class="heading-divider"></div>
+					<p>페이지에 비어있는 내용을 자신의 이야기로 채웁니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>4</i></div>
 					<h4>공유하기</h4>
-					<p>완성된 페이지에게 고유한 주소가 부여됩니다.</p>
 					<div class="heading-divider"></div>
+					<p>완성된 페이지에게 고유한 주소가 부여됩니다.</p>
 				</div>
 			</div>
 		</div>
