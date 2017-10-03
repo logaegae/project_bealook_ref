@@ -46,6 +46,7 @@
 	ga('send', 'pageview');
 
 	$(document).ready(function(){
+		console.log(window.location.pathname)
 	  $(".owl-carousel").owlCarousel({
 			animateOut: 'fadeOut',
 			loop:true,
@@ -53,7 +54,8 @@
 			autoplayTimeout:5000,
 			autoplayHoverPause:false,
 			items:1,
-			margin:10
+			margin:10,
+
 	  });
       $("form").validate({
 		  submitHandler: function() {

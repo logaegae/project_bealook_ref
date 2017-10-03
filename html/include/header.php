@@ -43,7 +43,7 @@
 
 		<div id="navbar" class="navbar-collapse collapse pull-right">
 			<ul class="nav navbar-nav">
-				<li class="active">
+				<li>
 					<a href="demo.php">데모</a>
 				</li>
 				<li>
