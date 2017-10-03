@@ -15751,6 +15751,14 @@ p.about {
     line-height:34px;
     font-family: 'Noto Sans KR Regular';
 }
+.steps p {
+    font-size:18px;
+    line-height:22px;
+}
+.steps p span {
+    color:#63afa6;
+    font-style: italic;
+}
 
 /*------------------------------------------------------------------
 [ FOOTER ]
