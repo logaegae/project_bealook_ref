@@ -13805,6 +13805,14 @@ ul.pagination-contour li .next.next-text
     margin-left:-47px;
     background: url(/static/images/main_arrow_down.png) no-repeat center;
 }
+.main-slider .triangle-box:after {
+    position:absolute;
+    width:25px; height:17px;
+    display: block; content: "";
+    top:50%; left:50%;
+    margin-left:-12.5px; margin-top:-8.5px;
+    background: url(/static/images/main_arrow_down.png) no-repeat center;
+}
 .main-slider .img-wrapper {position:relative;}
 .main-slider .img-wrapper:after {
     position:absolute;
