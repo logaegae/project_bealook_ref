@@ -46,7 +46,9 @@
 	ga('send', 'pageview');
 
 	$(document).ready(function(){
-		console.log(window.location.pathname)
+		$('.navbar-nav li a').each(function(i,e){
+			'/'+$(e).attr('href') === window.location.pathname ? $(e).addClass('active'): '';
+		});
 	  $(".owl-carousel").owlCarousel({
 			animateOut: 'fadeOut',
 			loop:true,
