@@ -59,10 +59,10 @@
 							테스트 후 체험 후기에 대한 설문을 작성해주세요.
 						</p>
 					</div>
-					<div class="col-sm-2"></div>
 					<div class="col-sm-4 text-right">
 						<a href="./demo.php">데모 테스트 하러 가기</a>
 					</div>
+					<div class="col-sm-2"></div>
 				</div>
 			</div>
 		</div>
