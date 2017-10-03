@@ -47,7 +47,7 @@
 		<hr class="hr-nobg"/>
 		<hr class="hr-nobg"/>
 
-		<div class="container">
+		<div class="container demo-info">
 			<div class="row irow-xs">
 				<div class="col-sm-6">
 					<i class="fa fa-quote-right"></i>

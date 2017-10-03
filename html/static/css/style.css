@@ -15694,8 +15694,13 @@ form .rating-wrap .raty i
     white-space: nowrap;
 }
 /*------------------------------------------------------------------
-[ custerm ]
+[ custom ]
 -------------------------------------------------------------------*/
+.container .demo-info {
+    padding-top:100px;
+    padding-bottom:85px;
+    background: #f5f5f5;
+}
 p.about {
     font-size: 20px;
     letter-spacing: 1px;
