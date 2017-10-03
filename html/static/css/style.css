@@ -13800,9 +13800,10 @@ ul.pagination-contour li .next.next-text
 .main-slider .triangle-box {
     position:absolute;
     z-index:10001;
-    bottom:-45px;
+    bottom:0;
     left:50%;
     margin-left:-47px;
+    background: url(/static/images/main_arrow_down.png) no-repeat center;
 }
 .main-slider .img-wrapper {position:relative;}
 .main-slider .img-wrapper:after {
