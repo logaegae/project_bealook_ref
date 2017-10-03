@@ -19,6 +19,7 @@
 
 	<div class="main-slider">
 		<div class="logo-box"><img src="./static/images/main_banner_bealook.png"></div>
+		<div class="triangle-box"><img src="./static/images/triangle_up.png"></div>
 		<div class="img-wrapper">
 			<ul class="owl-carousel">
 				<li style="background-image: url(./static/images/main_bg_02_2.jpg);"></li>
