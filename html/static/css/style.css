@@ -7502,7 +7502,7 @@ a.navbar-brand-rows img
     background-color: #f5f5f5;
 }
 .pagetitle:after {
-    position: absolute;
+    position: absolute; display: block; content: "";
     bottom:0; left:50%; margin-left:-47px;
     width:94px; height:45px;
     background: url(./static/images/triangle_down_gray.png) no-repeat;
