@@ -15721,11 +15721,12 @@ form .rating-wrap .raty i
     color:#63afa6;
 }
 .a-btn-demo {
+    padding:0 35px;
     height:49px;
     line-height:49px;
     color:#fff;
     background: #222 url(/static/images/btn_arrow_right.png) no-repeat right 20px center;
-    border-radius: 50%;
+    border-radius: 24.5px;
 }
 .container.steps .heading-divider {
     background-color:#e0ded6;
