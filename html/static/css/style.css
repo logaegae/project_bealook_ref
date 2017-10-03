@@ -15756,6 +15756,7 @@ p.about {
     line-height:22px;
 }
 .steps p span {
+    font-family: 'Noto Sans KR Regular';
     color:#63afa6;
     font-style: italic;
 }
