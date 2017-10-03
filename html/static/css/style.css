@@ -13807,10 +13807,10 @@ ul.pagination-contour li .next.next-text
 }
 .main-slider .triangle-box:after {
     position:absolute;
-    width:25px; height:17px;
+    width:17px; height:25px;
     display: block; content: "";
     top:50%; left:50%;
-    margin-left:-12.5px; margin-top:-8.5px;
+    margin-left:-8.5px; margin-top:-12.5px;
     background: url(/static/images/main_arrow_down.png) no-repeat center;
 }
 .main-slider .img-wrapper {position:relative;}
