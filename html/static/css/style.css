@@ -15731,9 +15731,14 @@ form .rating-wrap .raty i
     background: #222 url(/static/images/btn_arrow_right.png) no-repeat right 20px center;
     border-radius: 24.5px;
 }
-.a-btn-demo:hover {
+/*.a-btn-demo:hover {
     color:#fff;
     background-color: #63afa6;
+}*/
+.a-btn-demo:hover {
+    color:#222;
+    background-color: #fff;
+    border:1px #222 solid;
 }
 .container.steps .heading-divider {
     background-color:#e0ded6;
