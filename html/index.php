@@ -80,29 +80,30 @@
 					<h2>참여 방법</h2>
 					<div class="heading-divider"></div>
 				</div>
+				<hr class="hr-nobg"/>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>1</i></div>
 					<h4>'데모' 페이지</h4>
-					<div class="heading-divider"></div>
+					<div class="heading-divider gray"></div>
 					<p>메뉴에서 '데모'를 클릭합니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>2</i></div>
 					<h4>템플릿 선택</h4>
-					<div class="heading-divider"></div>
+					<div class="heading-divider gray"></div>
 					<p>마음에 드는 템플릿을 하나 선택합니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>3</i></div>
 					<h4>룩북 만들기</h4>
-					<div class="heading-divider"></div>
+					<div class="heading-divider gray"></div>
 					<p>자신의 이야기로 룩북을 체험해 보세요.</p>
 					<p><span class="italic">※ 데모 버전은 저장이 불가능하며,<br>미리보기 기능만 지원합니다.</span></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>4</i></div>
 					<h4>설문조사</h4>
-					<div class="heading-divider"></div>
+					<div class="heading-divider gray"></div>
 					<p>메뉴에서 ‘설문조사’를 클릭하여<br>체험 후기에 대한 설문을 작성해주세요.</p>
 				</div>
 			</div>

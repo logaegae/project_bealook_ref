@@ -15742,7 +15742,7 @@ form .rating-wrap .raty i
     background: #fff url(/static/images/btn_arrow_right_black.png) no-repeat right 20px center;
     border:1px #222 solid;
 }
-.container.steps .heading-divider {
+.heading-divider.gray {
     background-color:#e0ded6;
 }
 p.about {
