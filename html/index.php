@@ -33,6 +33,8 @@
 	<!-- CONTENT -->
 	<div class="content">
 
+		<hr class="hr-nobg"/>
+
 		<!-- CONTAINER -->
 		<div class="container">
 			<div class="row irow-xs cards">
