@@ -99,8 +99,8 @@
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>3</i></div>
 					<h4>룩북 만들기</h4>
 					<div class="heading-divider gray"></div>
-					<p>자신의 이야기로 룩북을 체험해 보세요.</p>
-					<p><span class="italic">※ 데모 버전은 저장이 불가능하며,<br>미리보기 기능만 지원합니다.</span></p>
+					<p>자신의 이야기로 룩북을 체험해 보세요.<br>
+						<span class="italic">※ 데모 버전은 저장이 불가능하며,<br>미리보기 기능만 지원합니다.</span></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>4</i></div>
