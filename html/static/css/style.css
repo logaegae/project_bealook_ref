@@ -15706,6 +15706,9 @@ form .rating-wrap .raty i
     width:790px;
     margin: 0 auto;
 }
+.container.demo-info .row > div {
+    padding:0;
+}
 p.about {
     font-size: 20px;
     letter-spacing: 1px;
