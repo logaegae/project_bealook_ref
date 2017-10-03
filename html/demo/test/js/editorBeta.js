@@ -11,12 +11,16 @@ $(function() {
         console.log("selected");
         if (!$(this).hasClass("ed-selected")) {
             toolTxtShow($('.tool-txt-click'));
-            $('.header').addClass('mask');
 
             $(".ed-selected").removeClass("ed-selected");
             $(this).addClass("ed-selected");
             removed = true;
+
             btnConfigDepth1($(this).attr("id"));
+
+            $("*[contenteditable=true]").removeAttr("contenteditable");
+            $(this).attr("contenteditable", "true");
+
             $(this).focus();
         }
         e.stopPropagation();
@@ -32,12 +36,14 @@ $(function() {
     //depth2
     $(".editor-wrapper").on('mousedown', '.editable.ed-selected', function(e) {
         console.log("edoitable");
-        toolTxtShow($('.tool-txt-drag'));
+
         toolTxtHide($('.tool-txt-click'));
+        toolTxtShow($('.tool-txt-drag'));
 
         btnConfigDepth2($(this).attr("id"));
-        $("*[contenteditable=true]").removeAttr("contenteditable");
-        $(this).attr("contenteditable", "true");
+
+        // $("*[contenteditable=true]").removeAttr("contenteditable");
+        // $(this).attr("contenteditable", "true");
         $(this).focus();
         removed = true;
         e.stopPropagation();
@@ -47,7 +53,7 @@ $(function() {
     $(".editor-wrapper").on('mousedown', '*', function(e) {
         if (!removed && $(this).parents(".editable").length == 0) {
             console.log("removed");
-            $(".ed-selected").removeAttr("contenteditable");
+            $("*[contenteditable=true]").removeAttr("contenteditable");
             $(".ed-selected").removeClass("ed-selected");
             toolTxtHide($('.tool-txt-click'));
             toolTxtHide($('.tool-txt-drag'));
@@ -67,6 +73,7 @@ function toolTxtShow(e) {
         'opacity': '1',
         'top': '20px'
     }, 100);
+    $('.header').addClass('mask');
 }
 
 function toolTxtHide(e) {
