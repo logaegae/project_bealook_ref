@@ -43,9 +43,8 @@
 
 		<div id="navbar" class="navbar-collapse collapse pull-right">
 			<ul class="nav navbar-nav">
-				<li>
+				<li class="active">
 					<a href="demo.php">데모</a>
-					<?php echo $_SERVER["REQUEST_URI"]; ?>
 				</li>
 				<li>
 					<a href="contact.php">설문조사</a>
