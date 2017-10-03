@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 	<header class="pagetitle pagetitle-sm">
 		<div class="container">
 			<div class="divtable irow">
-				<div class="divcell">
+				<div class="divcell text-center">
 					<i class="fa fa-pencil"></i>
 					<h1>설문조사</h1>
 					<div class="divider"></div>
