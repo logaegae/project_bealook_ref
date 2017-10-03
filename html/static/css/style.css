@@ -15724,6 +15724,7 @@ form .rating-wrap .raty i
     display:block;
     padding:0 35px;
     height:49px;
+    text-align: left;
     line-height:49px;
     color:#fff;
     background: #222 url(/static/images/btn_arrow_right.png) no-repeat right 20px center;
