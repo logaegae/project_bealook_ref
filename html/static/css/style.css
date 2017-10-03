@@ -15719,7 +15719,7 @@ form .rating-wrap .raty i
 }
 .demo-info p b {
     color:#63afa6;
-    font-weight:500;
+    font-family: 'Noto Sans KR Bold';
 }
 .a-btn-demo {
     display:block;
@@ -15733,7 +15733,7 @@ form .rating-wrap .raty i
 }
 .a-btn-demo:hover {
     color:#fff;
-    background: #63afa6;
+    background-color: #63afa6;
 }
 .container.steps .heading-divider {
     background-color:#e0ded6;
