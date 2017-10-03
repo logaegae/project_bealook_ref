@@ -15719,6 +15719,7 @@ form .rating-wrap .raty i
 }
 .demo-info p b {
     color:#63afa6;
+    font-weight:500;
 }
 .a-btn-demo {
     display:block;
@@ -15729,6 +15730,10 @@ form .rating-wrap .raty i
     color:#fff;
     background: #222 url(/static/images/btn_arrow_right.png) no-repeat right 20px center;
     border-radius: 24.5px;
+}
+.a-btn-demo:hover {
+    color:#fff;
+    background: #63afa6;
 }
 .container.steps .heading-divider {
     background-color:#e0ded6;
