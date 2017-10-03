@@ -76,29 +76,34 @@
 		<!-- CONTAINER -->
 		<div class="container steps">
 			<div class="row irow-sm text-center steps-1">
+				<div class="col-sm-12 text-center">
+					<h2>참여 방법</h2>
+					<div class="heading-divider"></div>
+				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>1</i></div>
-					<h4>회원가입</h4>
+					<h4>'데모' 페이지</h4>
 					<div class="heading-divider"></div>
-					<p>회원가입을 통하여 다양한 콘텐츠를 접할 수 있습니다.</p>
+					<p>메뉴에서 '데모'를 클릭합니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>2</i></div>
-					<h4>디자인선택</h4>
+					<h4>템플릿 선택</h4>
 					<div class="heading-divider"></div>
-					<p>마음에 드는 콘텐츠·디자인을 선택합니다.</p>
+					<p>마음에 드는 템플릿을 하나 선택합니다.</p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>3</i></div>
-					<h4>화면구성</h4>
+					<h4>룩북 만들기</h4>
 					<div class="heading-divider"></div>
-					<p>페이지에 비어있는 내용을 자신의 이야기로 채웁니다.</p>
+					<p>자신의 이야기로 룩북을 체험해 보세요.</p>
+					<p><span class="italic">※ 데모 버전은 저장이 불가능하며,<br>미리보기 기능만 지원합니다.</span></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>4</i></div>
-					<h4>공유하기</h4>
+					<h4>설문조사</h4>
 					<div class="heading-divider"></div>
-					<p>완성된 페이지에게 고유한 주소가 부여됩니다.</p>
+					<p>메뉴에서 ‘설문조사’를 클릭하여<br>체험 후기에 대한 설문을 작성해주세요.</p>
 				</div>
 			</div>
 		</div>
