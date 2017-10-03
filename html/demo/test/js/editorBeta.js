@@ -32,7 +32,7 @@ $(function() {
     });
     //depth2
     $(".editor-wrapper").on('mousedown', '.editable.ed-selected', function(e) {
-        console.log("edoitable");
+        console.log("editable");
 
         toolTxtHide($('.tool-txt-click'));
         toolTxtShow($('.tool-txt-drag'));
@@ -83,20 +83,17 @@ function toolTxtHide(e) {
 // 버튼 클릭 이벤트 추가
 function btnConfigDepth1(target) {
     var _editor = document.getElementById(target);
-    console.log(_editor);
     var btns = $('.hTDepth1 > button');
-
     btns.each(function(i, e) {
         if ($(e).hasClass("d1noArgBtn")) {
             var exec = $(e).attr("exec");
+            $(e).off('click');
             $(e).click(function() {
-                console.log(_editor)
                 _editor.setAttribute("contenteditable", "true");
                 _editor.focus();
                 document.execCommand('selectAll', false, null);
                 document.execCommand(exec);
                 _editor.removeAttribute("contenteditable");
-                _editor.focus();
             });
         }
         // switch ($(e).attr("exec")){
