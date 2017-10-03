@@ -15728,7 +15728,8 @@ form .rating-wrap .raty i
     text-align: left;
     line-height:49px;
     color:#fff;
-    background: #222 url(/static/images/btn_arrow_right.png) no-repeat right 20px center;
+    background: #222 url(/static/images/btn_arrow_right_white.png) no-repeat right 20px center;
+    border:1px #222 solid;
     border-radius: 24.5px;
 }
 /*.a-btn-demo:hover {
@@ -15737,7 +15738,7 @@ form .rating-wrap .raty i
 }*/
 .a-btn-demo:hover {
     color:#222;
-    background-color: #fff;
+    background: #fff url(/static/images/btn_arrow_right_black.png) no-repeat right 20px center;
     border:1px #222 solid;
 }
 .container.steps .heading-divider {
