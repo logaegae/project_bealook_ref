@@ -140,7 +140,7 @@ form,
 label
 {
     font-size: 100%;
-
+    font-family: 'Noto Sans KR Light';
     margin: 0;
     padding: 0;
 
@@ -13810,7 +13810,7 @@ ul.pagination-contour li .next.next-text
     width:17px; height:25px;
     display: block; content: "";
     top:15px; left:50%;
-    margin-left:-8.5px; 
+    margin-left:-8.5px;
     background: url(/static/images/main_arrow_down.png) no-repeat center;
 }
 .main-slider .img-wrapper {position:relative;}

@@ -18,7 +18,7 @@
 	</div> -->
 
 	<div class="main-slider">
-		<div class="logo-box"><img src="./static/images/main_banner_bealook.png"></div>
+		<div class="logo-box"><img src="./static/images/main_banner_bealook.png" alt="비어룩 로고"></div>
 		<div class="triangle-box"><img src="./static/images/triangle_up.png"></div>
 		<div class="img-wrapper">
 			<ul class="owl-carousel">
@@ -36,14 +36,9 @@
 		<!-- CONTAINER -->
 		<div class="container">
 			<div class="row irow-xs cards">
-				<div class="col-sm-6 text-wrap">
-					<h2>Be A Look 소개</h2>
+				<div class="col-sm-12 text-wrap text-center">
+					<h2><img src="./static/images/main_logo.png" alt="비어룩"></h2>
 					<div class="heading-divider"></div>
-					<p>본 사이트는</p>
-					<!--<p>BEALOOK은 벼룩시장의 아이디어에서 시작한 웹페이지 서비스 브랜드입니다.</p>-->
-					<!--<p>벼룩시장에서는 누구나 가판을 열고 자신의 가게를 쉽게 만들 수 있듯<br />-->
-					<!--BEALOOK에서도 쉽고 간단하게 사용자가 직접 원하는 웹페이지를 만들 수 있습니다.</p>-->
-					<!--<p>BEALOOK만의 서비스로 웹이 주는 모든 편의를 느껴보세요</p>-->
 				</div>
 				<div class="col-sm-6">
 					<div class="card card-image">
