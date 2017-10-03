@@ -10,15 +10,18 @@
 	<header class="pagetitle pagetitle-sm">
 		<div class="container">
 			<div class="divtable irow">
-				<!-- <div class="divcell">
-					<h1>체험하기</h1>
-				</div> -->
-				<div class="divcell text-right">
+				<div class="divcell text-center">
+					<i class="fa fa-flask"></i>
+					<h1>데모</h1>
+					<div class="divider"></div>
+					<span class="subtitle">데모 버전을 체험해 보세요.</span>
+				</div>
+				<!-- <div class="divcell text-right">
 					<ol class="breadcrumb">
 						<li><a href="index.php">Home</a></li>
 						<li class="active"><span>데모</span></li>
 					</ol>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</header>
@@ -31,10 +34,10 @@
 		<div class="container">
 
 			<div class="row irow-xs">
-				<div class="col-sm-4">
-					<h2>레퍼런스</h2>
-				</div>
-				<div class="col-sm-8 text-right">
+				<!-- <div class="col-sm-4">
+					<h2>데모</h2>
+				</div> -->
+				<div class="col-sm-12 text-center">
 					<ul class="mix-category">
 
 						<li class="active"><a href="#all" class="filter active" data-filter="*">전체</a></li>
