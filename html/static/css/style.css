@@ -15737,8 +15737,11 @@ form .rating-wrap .raty i
     border:1px #222 solid;
     border-radius: 24.5px;
 }
-
-
+.a-btn-demo:hover {
+    color:#222;
+    background: #fff url(/static/images/btn_arrow_right_black.png) no-repeat right 20px center;
+    border:1px #222 solid;
+}
 .container.steps .heading-divider {
     background-color:#e0ded6;
 }
