@@ -45,7 +45,7 @@
 			<ul class="nav navbar-nav">
 				<li>
 					<a href="demo.php">데모</a>
-					<?php echo $_SERVER["REQUEST_URI"]; ?>
+					<?php echo $_SERVER["HTTP_HOST"]; ?>
 				</li>
 				<li>
 					<a href="contact.php">설문조사</a>
