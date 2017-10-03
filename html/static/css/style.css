@@ -8166,8 +8166,8 @@ body > .navbar-toggle:first-child
 }
 .navbar-nav > li.active > a
 {
-    color: #fff;
-    border-top-color: #da3636;
+    color: #63afa6;
+    border-top-color: #63afa6;
 }
 .header-light .navbar-nav > li.active > a
 {
@@ -8176,7 +8176,7 @@ body > .navbar-toggle:first-child
 .header-bottom .navbar-nav > li.active > a
 {
     border-top-color: transparent;
-    border-bottom-color: #da3636;
+    border-bottom-color: #63afa6;
 }
 .navbar-nav > li.dropdown > a:after
 {
