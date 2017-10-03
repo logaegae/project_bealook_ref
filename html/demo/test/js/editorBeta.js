@@ -8,20 +8,21 @@ $(function() {
     });
     //depth1
     $(".editor-wrapper").on('mousedown', '.editable', function(e) {
+        var _t = $(this);
         console.log("selected");
-        if (!$(this).hasClass("ed-selected")) {
+        if (!_t.hasClass("ed-selected")) {
             toolTxtShow($('.tool-txt-click'));
 
             $(".ed-selected").removeClass("ed-selected");
-            $(this).addClass("ed-selected");
+            _t.addClass("ed-selected");
             removed = true;
 
             btnConfigDepth1($(this).attr("id"));
 
             $("*[contenteditable=true]").removeAttr("contenteditable");
-            $(this).attr("contenteditable", "true");
+            _t.attr("contenteditable", "true");
 
-            $(this).focus();
+            _t.focus();
         }
         e.stopPropagation();
     });
