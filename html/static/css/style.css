@@ -15698,7 +15698,9 @@ form .rating-wrap .raty i
 -------------------------------------------------------------------*/
 p.about {
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    line-height:34px;
+    font-family: 'Noto Sans KR Medium';
 }
 
 /*------------------------------------------------------------------
