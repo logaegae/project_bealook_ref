@@ -15753,7 +15753,8 @@ p.about {
 }
 .steps h4 {
     font-size:18px;
-    font-weight:400;
+    font-weight:normal;
+    font-family: 'Noto Sans KR Regular';
 }
 .steps p {
     font-size:13px;
