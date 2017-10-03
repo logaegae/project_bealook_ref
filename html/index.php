@@ -45,7 +45,6 @@
 		</div>
 
 		<hr class="hr-nobg"/>
-		<hr class="hr-nobg"/>
 
 		<div class="demo-info">
 			<div class="container">
