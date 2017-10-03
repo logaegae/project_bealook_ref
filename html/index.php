@@ -41,109 +41,24 @@
 					<div class="heading-divider heading-divider-lg"></div>
 					<p class="about">여기 하나의 룩이 있습니다.<br> 나만의 어떤 것이든 다양한 룩으로 포스팅하듯 툭 - <br>  비어룩에서 나만의 룩북을 만들어 보세요.</p>
 				</div>
-				<div class="col-sm-6">
-					<div class="card card-image">
-						<figure class="figure">
-							<a>
-								<!--<img src="./static/images/aboutUs/flea.jpg" alt="">-->
-							</a>
-							<!-- <div class="mask mask-light">
-								<nav>
-									<a class="icon icon-inverse icon-size-3 icon-bg-1 icon-rounded" href="">
-										<i class="fa fa-link"></i>
-									</a>
-								</nav>
-							</div> -->
-						</figure>
-					</div>
-				</div>
 			</div>
 		</div>
 
 		<hr class="hr-nobg"/>
+		<hr class="hr-nobg"/>
 
 		<div class="container">
 			<div class="row irow-xs">
-				<div class="col-sm-4">
-					<div class="media">
-						<div class="media-left">
-							<div class="icon icon-color icon-size-4" data-hover="rubberBand">
-								<i class="fa fa-globe"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3>SNS 마켓</h3>
-							<p>SNS와 연동하여 상품 판매 페이지를 제공합니다. SNS에서 표현하지 못했던 사용자의 감성을 표현할 수 있습니다. </p>
-						</div>
-					</div>
+				<div class="col-sm-6">
+					<i class="fa fa-quote-right"></i>
+					<p>
+						본 사이트는 기능을 테스하기 위한 <b>데모 버전</b>입니다.<br>
+						보다 완성도 높은 비어룩을 위해 데모 테스트에 참여 부탁 드리며,<br>
+						테스트 후 체험 후기에 대한 설문을 작성해주세요.
+					</p>
 				</div>
-				<div class="col-sm-4">
-					<div class="media">
-						<div class="media-left">
-							<div class="icon icon-color icon-size-4" data-hover="rubberBand">
-								<i class="fa fa-comments"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3>스토리텔링</h3>
-							<p>여러분의 이야기를 획일적인 블로그형식과 다른 감성적인 웹페이지로 표현하고 공유할 수 있습니다</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="media">
-						<div class="media-left">
-							<div class="icon icon-color icon-size-4" data-hover="rubberBand">
-								<i class="fa fa-camera-retro"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3>포트폴리오</h3>
-							<p>자신을 표현할 포트폴리오를 쉽게 제작할 수 있습니다.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row irow-xs">
-				<div class="col-sm-4">
-					<div class="media">
-						<div class="media-left">
-							<div class="icon icon-color icon-size-4" data-hover="rubberBand">
-								<i class="fa fa-navicon"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3>메뉴판</h3>
-							<p>디스플레이에 사용할 애니메이션 메뉴판을 제작할 수 있습니다</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="media">
-						<div class="media-left">
-							<div class="icon icon-color icon-size-4" data-hover="rubberBand">
-								<i class="fa fa-bullhorn"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3>홍보</h3>
-							<p>업체 및 사업을 홍보할 웹페이지를 제작할 수 있습니다</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="media">
-						<div class="media-left">
-							<div class="icon icon-color icon-size-4" data-hover="rubberBand">
-								<i class="fa fa-thumbs-o-up"></i>
-							</div>
-						</div>
-						<div class="media-body">
-							<h3>마음대로 쓰세요</h3>
-							<p>기타 여러분이 원하는 무엇이든 반영하여 서비스를 제공합니다</p>
-						</div>
-					</div>
+				<div class="col-sm-6">
+					<a href="./demo.php">데모 테스트 하러 가기</a>
 				</div>
 			</div>
 		</div>
@@ -154,7 +69,7 @@
 
 		<!-- CONTAINER -->
 		<div class="container">
-			<div class="row irow-sm text-center steps-2">
+			<div class="row irow-sm text-center steps-1">
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>1</i></div>
 					<h4>회원가입</h4>
