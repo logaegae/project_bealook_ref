@@ -15751,6 +15751,10 @@ p.about {
     line-height:34px;
     font-family: 'Noto Sans KR Regular';
 }
+.steps h4 {
+    font-size:18px;
+    font-family: 'Noto Sans KR Regular';
+}
 .steps p {
     font-size:13px;
     line-height:22px;
