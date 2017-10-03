@@ -20,7 +20,7 @@ $(function() {
 
             $("*[contenteditable=true]").removeAttr("contenteditable");
             $(this).attr("contenteditable", "true");
-            console.log($this)
+
             $(this).focus();
         }
         e.stopPropagation();
