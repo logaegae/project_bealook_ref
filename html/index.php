@@ -75,12 +75,14 @@
 
 		<!-- CONTAINER -->
 		<div class="container steps">
-			<div class="row irow-sm text-center steps-1">
-				<div class="col-sm-12 text-center">
+			<div class="row text-center">
+				<div class="col-sm-12">
 					<h2>참여 방법</h2>
 					<div class="heading-divider"></div>
 				</div>
-				<hr class="hr-nobg"/>
+			</div>
+			<hr class="hr-nobg"/>
+			<div class="row irow-sm text-center steps-1">
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>1</i></div>
 					<h4>'데모' 페이지</h4>
