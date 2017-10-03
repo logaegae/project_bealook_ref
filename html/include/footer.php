@@ -47,6 +47,7 @@
 
 	$(document).ready(function(){
 		$('.navbar-nav li a').each(function(i,e){
+			console.log(e)
 			'/'+$(e).attr('href') === window.location.pathname ? $(e).addClass('active'): '';
 		});
 	  $(".owl-carousel").owlCarousel({
