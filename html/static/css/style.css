@@ -17090,6 +17090,12 @@ form .rating-wrap .raty i
     span.br {
         display:block;
     }
+    .content {
+        padding-top:50px;
+    }
+    hr {
+        margin: 20px auto;
+    }
 }
 @media screen and (max-width: 639px)
 {
