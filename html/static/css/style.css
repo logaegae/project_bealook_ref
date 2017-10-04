@@ -17099,9 +17099,10 @@ form .rating-wrap .raty i
         margin: 20px auto;
     }
     .pagetitle:after {
-        width:50px;
-        height:24px;
         margin-left:-25px;
+        bottom:-24px;
+        width:50px;
+        height:24px;        
     }
 }
 @media screen and (max-width: 639px)
