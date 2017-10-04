@@ -14,15 +14,21 @@ $(function() {
         e.show().animate({
             'opacity': '1',
             'top': '20px'
-        }, 100);
-        $('.header').addClass('mask');
+        }, 150);
+        $('.header .mask').show().animate({
+            'opacity': '1'
+        }, 150);
     }
     x.toolTxtHide = function(e) {
         e.animate({
             'opacity': '0',
             'top': '0px',
             'display': 'none'
-        }, 100);
+        }, 150);
+        $('.header .mask').animate({
+            'opacity': '0',
+            'display': 'none'
+        }, 150);
     }
 
     //적용된 스타일 가져오기
