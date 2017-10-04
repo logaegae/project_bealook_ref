@@ -27,7 +27,7 @@ $(function() {
             'display': 'none'
         }, 150, function() {
             $(this).css('display', 'none');
-        }););
+        });
         $('.header .mask').stop().animate({
             'opacity': '0',
             'display': 'none'
