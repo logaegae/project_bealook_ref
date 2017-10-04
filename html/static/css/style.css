@@ -15736,9 +15736,13 @@ form .rating-wrap .raty i
 .quote-box p {
     float:left;
 }
+.demo-info row {
+    padding: 0 16%;
+}
 .a-btn-demo {
     float: right;
     display:block;
+    margin-top:10px;
     padding:0 25px;
     width:230px;
     height:49px;
