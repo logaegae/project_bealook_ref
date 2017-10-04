@@ -208,7 +208,7 @@ button {
     align-items: center;
     z-index: 1000;
 }
-.header:after {
+.header .mask {
     display:none;
     opacity: 0;
     position: absolute;
@@ -220,21 +220,8 @@ button {
     content: "";
     background: rgba(255, 255, 255, 0.6)
 }
-.header.mask:after {
-    display: block;
-    -webkit-animation-name: fade; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-    animation-name: fade;
-    animation-duration: 1s;
-}
-@-webkit-keyframes fade {
-    from {opacity: : 0;}
-    to {opacity: : 1;}
-}
-/* Standard syntax */
-@keyframes fade {
-    from {opacity: : 0;}
-    to {opacity: : 1;}
+.header .mask:after {
+    opacity:1;
 }
 .header .menu {
     margin-left: 50px;

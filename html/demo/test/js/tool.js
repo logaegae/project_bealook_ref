@@ -10,6 +10,7 @@ var header = `
     <div class="save">
         <button type="button" class="btn btn-txt btn-save">저장하기</button>
     </div>
+    <div class="mask"></div>
 </div>
 `;
 var depth1 = `
