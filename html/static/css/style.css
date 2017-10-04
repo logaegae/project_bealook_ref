@@ -15759,6 +15759,9 @@ form .rating-wrap .raty i
     line-height:34px;
     font-family: 'Noto Sans KR Regular';
 }
+.about p span {
+    font-family: 'Noto Sans KR Regular';
+}
 .steps h4 {
     font-size:18px;
     font-weight:normal;
