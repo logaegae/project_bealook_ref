@@ -15753,7 +15753,7 @@ form .rating-wrap .raty i
 .heading-divider.gray {
     background-color:#e0ded6;
 }
-p.about {
+.about p {
     font-size: 20px;
     letter-spacing: 1px;
     line-height:34px;
@@ -17076,6 +17076,16 @@ p.about {
     }
     .steps .col-md-3 {
         height:auto;
+    }
+    .about h2 img {
+        width:110px;
+    }
+    .about p {
+        font-size:16px;
+        line-height:28px;
+    }
+    span.br {
+        display:block;
     }
 }
 @media screen and (max-width: 639px)

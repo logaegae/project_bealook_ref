@@ -36,12 +36,12 @@
 		<hr class="hr-nobg"/>
 
 		<!-- CONTAINER -->
-		<div class="container">
+		<div class="container about">
 			<div class="row irow-xs cards">
 				<div class="col-sm-12 text-center">
 					<h2><img src="./static/images/main_logo.png" alt="비어룩"></h2>
 					<div class="heading-divider heading-divider-lg"></div>
-					<p class="about">여기 하나의 룩이 있습니다.<br> 나만의 어떤 것이든 다양한 룩으로 포스팅하듯 툭 - <br>  비어룩에서 나만의 룩북을 만들어 보세요.</p>
+					<p class="about">여기 하나의 룩이 있습니다.<br> <span class="br">나만의 어떤 것이든 다양한 룩으로</span> 포스팅하듯 툭 - <br>  <span class="br">비어룩에서 나만의 룩북을</span>만들어 보세요.</p>
 				</div>
 			</div>
 		</div>
