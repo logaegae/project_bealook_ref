@@ -13798,6 +13798,9 @@ ul.pagination-contour li .next.next-text
     margin-top:-164.5px;
     margin-left:-179.5px;
 }
+.main-slider .logo-box img {
+    width:100%;
+}
 .main-slider .triangle-box {
     position:absolute;
     z-index:10001;
@@ -16341,6 +16344,11 @@ p.about {
         display: block;
 
         margin-left: 0;
+    }
+    .main-slider .logo-box {
+        width:300px;
+        margin-left:-150px;
+        margin-top:-146.5px;
     }
 }
 @media screen and (max-width: 767px)
