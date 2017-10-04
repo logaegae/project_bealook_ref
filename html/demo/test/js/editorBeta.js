@@ -15,8 +15,7 @@ $(function() {
             'opacity': '1',
             'top': '20px'
         }, 150);
-        $('.header').addClass('mask')
-        $('.header.mask:after').fadeIn();
+        $('.header').addClass('mask');
     }
     x.toolTxtHide = function(e) {
         e.animate({
@@ -24,8 +23,7 @@ $(function() {
             'top': '0px',
             'display': 'none'
         }, 150);
-        $('.header').removeClass('mask')
-        $('.header.mask:after').fadeIn();.fadeOut();
+        $('.header').removeClass('mask');
     }
 
     // 버튼 클릭 이벤트 추가
