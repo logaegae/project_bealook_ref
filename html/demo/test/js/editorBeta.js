@@ -25,14 +25,56 @@ $(function() {
         }, 100);
     }
 
+    //적용된 스타일 가져오기
+    x.getComputedStyleProperty = function(el, propName) {
+        if (window.getComputedStyle) {
+            return window.getComputedStyle(el, null)[propName];
+        } else if (el.currentStyle) {
+            return el.currentStyle[propName];
+        }
+    }
+
+    x.getRange = function() {
+        var containerEl, sel;
+        if (window.getSelection) {
+            sel = window.getSelection();
+            if (sel.rangeCount) {
+                containerEl = sel.getRangeAt(0).commonAncestorContainer;
+                // Make sure we have an element rather than a text node
+                if (containerEl.nodeType == 3) {
+                    containerEl = containerEl.parentNode;
+                }
+            }
+        } else if ((sel = document.selection) && sel.type != "Control") {
+            containerEl = sel.createRange().parentElement();
+        }
+        return containerEl;
+    }
+
+    x.getFontSize = function() {
+        var containerEl = x.getRange();
+
+        if (containerEl) {
+            var fontSize = x.getComputedStyleProperty(containerEl, "fontSize");
+            return fontSize;
+        }
+    }
+    x.getFontFamily = function() {
+        var containerEl = x.getRange();
+
+        if (containerEl) {
+            var fontFamily = x.getComputedStyleProperty(containerEl, "fontFamily");
+            return fontFamily;
+        }
+    }
     // 버튼 클릭 이벤트 추가
     x.btnConfigDepth1 = function(target) {
         var _editor = document.getElementById(target);
         var btns = $('.hTDepth1 > button');
         btns.each(function(i, e) {
+            $(e).off('click');
             if ($(e).hasClass("d1noArgBtn")) {
                 var exec = $(e).attr("exec");
-                $(e).off('click');
                 $(e).click(function() {
                     _editor.setAttribute("contenteditable", "true");
                     _editor.focus();
@@ -47,11 +89,17 @@ $(function() {
     x.btnConfigDepth2 = function(target) {
         var _editor = document.getElementById(target);
         var _noArgBtn = document.getElementsByClassName("d2noArgBtn");
-
+        var btns = $('.hTDepth2 > button');
+        var selects = $('select');
+        btns.each(function(i, e) {
+            $(e).off('click');
+        });
+        selects.each(function(i, e) {
+            $(e).off('change');
+        });
         for (i = 0; i < _noArgBtn.length; i++) {
             _noArgBtn[i].onclick = function(e) {
                 var exec = this.getAttribute("exec");
-                console.log(exec)
                 _editor.focus();
                 document.execCommand(exec);
             }
@@ -66,7 +114,8 @@ $(function() {
             var html = _editor.innerHTML;
             alert(html);
         };
-        $('.hTDepth2 button[exec=createlink]').onclick = function() {
+        $('.hTDepth2 button[exec=creatorLink]').click(function() {
+            console.log("??")
             var selection = document.getSelection();
             //영역이 선택되었을때
             if ("" + selection != '') {
@@ -77,32 +126,49 @@ $(function() {
                     _editor.focus();
                 }
             }
-        }
-        $('.hTDepth2 button[exec=backColor]').onclick = function() {
+        });
+        $('.hTDepth2 button[exec=backColor]').click(function() {
             var color = prompt('색 입력: ', 'red') || null;
             if (color != null) {
                 document.execCommand('backColor', false, color);
                 _editor.focus();
             }
-        }
-        $('.hTDepth2 button[exec=foreColor]').onclick = function() {
+        });
+        $('.hTDepth2 button[exec=foreColor]').click(function() {
             var color = prompt('색 입력: ', 'red') || null;
             if (color != null) {
+                _editor.focus();
                 document.execCommand('foreColor', false, color);
-                _editor.focus();
             }
-        }
-        $('.hTDepth2 button[exec=fontName]').onclick = function() {
-            var name = prompt('폰트 입력 : ', 'NanumBarunGothic') || null;
+        });
+        $('.hTDepth2 #fontFamily').change(function() {
+            var name = $(this).children("option:selected").val() || null;
             if (name != null) {
-                document.execCommand('fontName', false, name);
                 _editor.focus();
+                document.execCommand('fontName', false, name);
             }
-        }
+        });
+        $('.hTDepth2 #fontSize').change(function() {
+            var spanString = $('<span/>', {
+                'text': document.getSelection()
+            }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
+            _editor.focus();
+            document.execCommand('insertHTML', false, spanString);
+        });
         $('.hTDepth2 button[exec=unlink]').onclick = function() {
             _editor.focus();
             document.execCommand('unlink');
         };
+
+        //셀렉트 박스 디폴트 설정
+        var getFontSize = x.getFontSize();
+        $('.hTDepth2 #fontSize option').each(function(i, e) {
+            $(e).prop('selected', false);
+            if ($(e).prop('value') == getFontSize) {
+                $(e).parents('.select-box').children('label').text($(e).text());
+                $(e).prop('selected', true);
+            }
+        });
     }
 
     //영역 선택 설정
