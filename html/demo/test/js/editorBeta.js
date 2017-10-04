@@ -14,7 +14,7 @@ $(function() {
         e.show().animate({
             'opacity': '1',
             'top': '20px'
-        }, 100);
+        }, 150);
         $('.header').addClass('mask').fadeIn();
     }
     x.toolTxtHide = function(e) {
@@ -22,7 +22,7 @@ $(function() {
             'opacity': '0',
             'top': '0px',
             'display': 'none'
-        }, 100);
+        }, 150);
         $('.header').removeClass('mask').fadeOut();
     }
 
