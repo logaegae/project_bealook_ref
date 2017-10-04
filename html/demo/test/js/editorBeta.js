@@ -25,12 +25,14 @@ $(function() {
             'opacity': '0',
             'top': '0px',
             'display': 'none'
-        }, 150);
+        }, 150, function() {
+            $(this).css('display', 'none');
+        });
         $('.header .mask').stop().animate({
             'opacity': '0',
             'display': 'none'
         }, 150, function() {
-            $('.header .mask').css('display', 'none');
+            $(this).css('display', 'none');
         });
     }
 
