@@ -16361,6 +16361,9 @@ form .rating-wrap .raty i
         margin-left:-150px;
         margin-top:-146.5px;
     }
+    .demo-info .row {
+        padding:0 5%;
+    }
 }
 @media screen and (max-width: 767px)
 {
