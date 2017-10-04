@@ -7,8 +7,8 @@ $(function() {
     x.init = function() {
         x.clickSet.forEach(function(e, i) {
             x.clickSet[i]();
-            x.default();
         });
+        x.default();
     }
     //애니메이션 함수
     x.toolTxtShow = function(e) {
@@ -79,22 +79,11 @@ $(function() {
     // 버튼 클릭 이벤트 추가
     x.default = function() {
         $('button[exec=redo]').click(function() {
-            var exec = $(e).attr("exec");
-            _editor.setAttribute("contenteditable", "true");
-            _editor.focus();
-            document.execCommand('selectAll', false, null);
-            document.execCommand(exec);
-            _editor.removeAttribute("contenteditable");
+            console.log("???");
+            document.execCommand('redo');
         });
         $('button[exec=undo]').click(function() {
-            var exec = $(e).attr("exec");
-            $(e).click(function() {
-                _editor.setAttribute("contenteditable", "true");
-                _editor.focus();
-                document.execCommand('selectAll', false, null);
-                document.execCommand(exec);
-                _editor.removeAttribute("contenteditable");
-            });
+            document.execCommand('undo');
         });
     }
     x.btnConfigDepth1 = function(target) {
