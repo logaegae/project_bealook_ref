@@ -38,11 +38,11 @@ button {cursor: pointer;}
 .header .actions {float:left;margin-left:20px;font-size:0;}
 .header .actions span {display:inline-block;height:38px;line-height:38px;vertical-align:middle;border:1px #979797 solid; border-radius: 5px;}
 .header .btn-icon {width:37px;height:38px;line-height:38px;background-size:78% !important;}
-.header .btn-undo {background: url('../img/btn_undo_03.png') no-repeat center;}
-.header .btn-redo {background: url('../img/btn_redo_03.png') no-repeat center;}
+.header .btn-undo {background: #fff url('../img/btn_undo_03.png') no-repeat center;}
+.header .btn-redo {background: #fff url('../img/btn_redo_03.png') no-repeat center;}
 .header .btn-undo {position:relative;}
 .header .btn-undo:before {position:absolute;display:block;content:"";top:5px;right:0;width:1px;height:28px;background: #979797;}
-.header .btn-txt {display:inline-block;margin-left:5px;padding:0 10px;height:40px;line-height:40px;font-size:13px;border-radius: 5px;}
+.header .btn-txt {display:inline-block;margin-left:5px;padding:0 10px;height:40px;line-height:40px;font-size:13px;border-radius: 5px;background: #fff;}
 .header .btn-save {border:0;color:#fff;background:#222;}
 .header .btn-save:hover {background:#63afa6;}
 .header .btn-preview {margin-right:8px;border:1px #979797 solid;}
@@ -50,7 +50,7 @@ button {cursor: pointer;}
 
 /*HEADER*/
 .header {overflow:hidden;position: absolute;top:0;left:0;width:100%;height:80px;display: -webkit-flex;display: flex;justify-content:space-between;align-items: center;}
-.header.mask:after {position:absolute; top:0; left:0; width:100%; height:80px; display:block; content: ""; background: rgba(255,255,255,0.7)}
+.header.mask:after {position:fixed; top:0; left:0; width:100%; height:80px; display:block; content: ""; background: rgba(255,255,255,0.7)}
 .header .menu {margin-left: 50px;}
 .header .menu span {display:block;margin-top:6px;width:27px;height:3px;background:#979797;}
 .header .menu span:first-child {margin-top:0;}
@@ -87,3 +87,53 @@ button {cursor: pointer;}
 .sec-img.img-max img {max-width:100%;}
 .sec-img.window-full {width:100%; min-width:1200px;}
 .sec-img.window-full img {width:100%;}
+
+/*tool fix*/
+
+.editable {
+    outline: 1px tomato solid;
+    cursor: pointer;
+    min-height: 20px;
+}
+
+.editable li {
+    float: none !important;
+    text-align: justify;
+}
+
+.editable ol {
+    list-style: initial;
+    list-style-type: decimal;
+}
+
+.editable ul {
+    overflow: inherit;
+    list-style: initial;
+    list-style-type: disc;
+}
+
+.editable.ed-selected {
+    cursor: auto;
+}
+
+.ed-selected {
+    outline: 3px tomato solid;
+}
+
+.listable {}
+
+b {
+    font-weight: bold !important;
+}
+
+i {
+    font-style: italic !important;
+}
+
+.hTDepth1 {
+    z-index: 1001;
+}
+
+.hTDepth2 {
+    z-index: 1001;
+}
