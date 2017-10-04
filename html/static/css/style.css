@@ -17185,6 +17185,11 @@ p.about {
         border-right: 6px solid transparent;
         border-left: 6px solid transparent;
     }
+    .main-slider .logo-box {
+        width:200px;
+        margin-left:-100px;
+        margin-top:-92.5px;
+    }
 }
 @media screen and (max-width: 479px)
 {
