@@ -92,7 +92,8 @@
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>2</i></div>
 					<h4>템플릿 선택</h4>
 					<div class="heading-divider gray"></div>
-					<p>마음에 드는 템플릿을 하나 선택합니다.</p>
+					<p>마음에 드는 템플릿을 하나 선택합니다.<br>
+						<span class="italic">※ 데모 체험은 PC에서만 지원합니다.</span></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>3</i></div>
