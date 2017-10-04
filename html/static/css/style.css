@@ -17164,7 +17164,7 @@ form .rating-wrap .raty i
         margin-bottom:10px;
         font-size:20px;
     }
-    .icon.icon-size-3.icon-rounded:first-child, .icon.icon-size-3.icon-square:first-child {
+    .col-md-3:first-child .icon.icon-size-3.icon-rounded, .icon.icon-size-3.icon-square {
         margin-top:0;
     }
 }
