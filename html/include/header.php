@@ -32,7 +32,7 @@
 
 		<!-- NAVBAR BRAND -->
 		<a class="navbar-brand pull-left" href="index.php">
-			 <img src="./static/images/logo_header_black_s.png" alt="Mexico">
+			 <img src="./static/images/logo_black_s.png" alt="비어룩">
 		</a>
 		<!-- /.navbar-brand -->
 
