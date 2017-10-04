@@ -15727,6 +15727,9 @@ form .rating-wrap .raty i
     color:#63afa6;
     font-family: 'Noto Sans KR Bold';
 }
+.quote-box {
+    overflow: hidden;
+}
 .quote-box i {
     display:block;
     float:left;
@@ -17113,6 +17116,9 @@ form .rating-wrap .raty i
         bottom:-24px;
         width:50px;
         height:24px;
+    }
+    .demo-info .row {
+
     }
 }
 @media screen and (max-width: 639px)
