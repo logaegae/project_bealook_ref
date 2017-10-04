@@ -17100,6 +17100,7 @@ form .rating-wrap .raty i
     }
     .pagetitle:after {
         width:50px;
+        height:24px;
         margin-left:-25px;
     }
 }
