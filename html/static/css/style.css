@@ -17333,4 +17333,9 @@ p.about {
     {
         margin-bottom: 15px;
     }
+    .main-slider .logo-box {
+        width:150px;
+        margin-left: -75px;
+        margin-top:-69.5px;
+    }
 }
