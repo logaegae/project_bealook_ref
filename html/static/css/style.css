@@ -17118,9 +17118,9 @@ form .rating-wrap .raty i
         height:24px;
     }
     .demo-info .row {
-        padding: 0 20%;
+        padding: 0 10%;
     }
-    .quote-box {
+    .col-sm-8.quote-box {
         margin-bottom:25px;
     }
     .quote-box i {
