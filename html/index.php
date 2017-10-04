@@ -103,7 +103,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>4</i></div>
-					<h4>설문조사</h4>
+					<h4>설문 참여</h4>
 					<div class="heading-divider gray"></div>
 					<p>메뉴에서 ‘설문조사’를 클릭하여<br>체험 후기에 대한 설문을 작성해주세요.</p>
 				</div>
