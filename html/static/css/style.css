@@ -17136,6 +17136,8 @@ form .rating-wrap .raty i
     .a-btn-demo {
         float: none;
         margin:0 auto;
+        height:40px;
+        line-height:40px;
         font-size:13px;
     }
 }
