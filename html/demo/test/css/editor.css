@@ -208,7 +208,7 @@ button {
     align-items: center;
     z-index: 1000;
 }
-.header.mask:after {
+.header:after {
     opacity: 0;
     position: absolute;
     top: 0;
