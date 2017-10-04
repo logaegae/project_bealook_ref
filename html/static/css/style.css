@@ -17167,6 +17167,9 @@ form .rating-wrap .raty i
     .col-md-3:first-child .icon.icon-size-3.icon-rounded, .icon.icon-size-3.icon-square {
         margin-top:0;
     }
+    .steps-1 [class*=col-] + [class*=col-] {
+        border:0;
+    }
 }
 @media screen and (max-width: 639px)
 {
