@@ -208,8 +208,9 @@ button {
     align-items: center;
     z-index: 1000;
 }
+
 .header .mask {
-    display:none;
+    display: none;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -219,6 +220,7 @@ button {
     content: "";
     background: rgba(255, 255, 255, 0.6)
 }
+
 .header .menu {
     margin-left: 50px;
 }
