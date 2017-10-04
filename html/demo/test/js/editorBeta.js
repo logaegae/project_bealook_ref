@@ -22,12 +22,15 @@ $(function() {
     x.toolTxtHide = function(e) {
         e.animate({
             'opacity': '0',
-            'top': '0px',
+            'top': '0px'
+        }, 150).css({
             'display': 'none'
-        }, 150);
+        });;
         $('.header .mask').animate({
-            'opacity': '0'
-        }, 150).hide();
+            'opacity': '0',
+        }, 150).css({
+            'display': 'none'
+        });
     }
 
     // 버튼 클릭 이벤트 추가
