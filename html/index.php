@@ -79,7 +79,6 @@
 					<div class="heading-divider"></div>
 				</div>
 			</div>
-			<hr class="hr-nobg"/>
 			<div class="row irow-sm text-center steps-1">
 				<div class="col-md-3 col-sm-6">
 					<div class="icon icon-step icon-inverse icon-size-3 icon-theme icon-rounded"><i>1</i></div>
