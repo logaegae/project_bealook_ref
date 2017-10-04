@@ -17118,7 +17118,14 @@ form .rating-wrap .raty i
         height:24px;
     }
     .demo-info .row {
-
+        padding: 0 20%;
+    }
+    .quote-box p {
+        text-align: left;
+    }
+    .a-btn-demo {
+        float: none;
+        margin:0 auto;
     }
 }
 @media screen and (max-width: 639px)
