@@ -17120,8 +17120,17 @@ form .rating-wrap .raty i
     .demo-info .row {
         padding: 0 20%;
     }
+    .quote-box {
+        margin-bottom:25px;
+    }
+    .quote-box i {
+        float: none;
+        width:100%;
+        margin-bottom:15px;
+    }
     .quote-box p {
-        text-align: left;
+        float: none;
+        text-align: center;
     }
     .a-btn-demo {
         float: none;
