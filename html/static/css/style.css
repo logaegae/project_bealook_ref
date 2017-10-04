@@ -16122,6 +16122,9 @@ p.about {
     {
         max-width: 707px;
     }
+    .irow-sm .col-md-3:nth-child(3){
+        border-left:0;
+    }
     .irow-sm [class*=col-]
     {
         margin-bottom: 25px;
