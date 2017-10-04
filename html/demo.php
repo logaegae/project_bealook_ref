@@ -123,6 +123,7 @@
 					</figure>
 				</div>
 			</div>
+			<hr class="hr-nobg"/>
 		</div>
 		<!-- /.container -->
 

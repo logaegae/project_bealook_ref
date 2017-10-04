@@ -102,6 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 					</form>
 				</div>
 			</div>
+			<hr class="hr-nobg"/>
 		</div>
 		<!-- /.container -->
 

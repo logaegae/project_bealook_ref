@@ -17094,6 +17094,7 @@ form .rating-wrap .raty i
     }
     .content {
         padding-top:50px;
+        padding-bottom:30px;
     }
     hr {
         margin: 20px auto;
@@ -17102,7 +17103,7 @@ form .rating-wrap .raty i
         margin-left:-25px;
         bottom:-24px;
         width:50px;
-        height:24px;        
+        height:24px;
     }
 }
 @media screen and (max-width: 639px)
