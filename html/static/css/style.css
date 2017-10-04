@@ -15769,7 +15769,9 @@ p.about {
     color:#63afa6;
     font-style: italic;
 }
-
+.steps .col-md-3 {
+    height:215px;
+}
 /*------------------------------------------------------------------
 [ FOOTER ]
 -------------------------------------------------------------------*/
@@ -16338,9 +16340,6 @@ p.about {
         display: block;
 
         margin-left: 0;
-    }
-    .steps .col-md-3 {
-        height:215px;
     }
 }
 @media screen and (max-width: 767px)
@@ -17065,6 +17064,9 @@ p.about {
     .place-order
     {
         text-align: center;
+    }
+    .steps .col-md-3 {
+        height:auto;
     }
 }
 @media screen and (max-width: 639px)
