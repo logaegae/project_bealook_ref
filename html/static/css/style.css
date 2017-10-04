@@ -17146,6 +17146,9 @@ form .rating-wrap .raty i
     .steps h4 {
         font-size:15px;
     }
+    .title-h2 {
+        margin-bottom:0;
+    }
 }
 @media screen and (max-width: 639px)
 {

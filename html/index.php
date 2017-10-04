@@ -74,7 +74,7 @@
 		<!-- CONTAINER -->
 		<div class="container steps">
 			<div class="row text-center">
-				<div class="col-sm-12">
+				<div class="col-sm-12 title-h2">
 					<h2>참여 방법</h2>
 					<div class="heading-divider"></div>
 				</div>
