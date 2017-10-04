@@ -8703,7 +8703,7 @@ body > .navbar-toggle:first-child
 }
 .no-menu .header:not(.header-vertical) .navbar-collapse .navbar-nav > li.active > a
 {
-    border-left-color: #63afa6;
+    border-left-color: #fff;
 }
 .no-menu .header:not(.header-vertical) .navbar-collapse .dropdown-menu
 {
