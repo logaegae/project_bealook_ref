@@ -49,8 +49,8 @@ button {cursor: pointer;}
 .header .btn-preview:hover {color:#63afa6; border: 1px #63afa6 solid;}
 
 /*HEADER*/
-.header {overflow:hidden;position: absolute;top:0;left:0;width:100%;height:80px;display: -webkit-flex;display: flex;justify-content:space-between;align-items: center;}
-.header.mask:after {position:fixed; top:0; left:0; width:100%; height:80px; display:block; content: ""; background: rgba(255,255,255,0.7)}
+.header {overflow:hidden;position: fixed;top:0;left:0;width:100%;height:80px;display: -webkit-flex;display: flex;justify-content:space-between;align-items: center;}
+.header.mask:after {position:absolute;; top:0; left:0; width:100%; height:80px; display:block; content: ""; background: rgba(255,255,255,0.7)}
 .header .menu {margin-left: 50px;}
 .header .menu span {display:block;margin-top:6px;width:27px;height:3px;background:#979797;}
 .header .menu span:first-child {margin-top:0;}
