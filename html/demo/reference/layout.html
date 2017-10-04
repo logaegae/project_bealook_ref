@@ -26,17 +26,24 @@
     		});
 
     		function toolTxtShow(e){
-    		    e.show().animate({
-    		        'opacity': '1',
-    		        'top':'20px'
-    		    },100);
+                e.show().animate({
+                    'opacity': '1',
+                    'top': '20px'
+                }, 150);
+                $('.header .mask').show().animate({
+                    'opacity': '1'
+                }, 150);
     		}
             function toolTxtHide(e){
-    		    e.animate({
-    		        'opacity': '0',
-    		        'top':'0px',
-                    'display':'none'
-    		    },100);
+                e.animate({
+                    'opacity': '0',
+                    'top': '0px',
+                    'display': 'none'
+                }, 150);
+                $('.header .mask').animate({
+                    'opacity': '0',
+                    'display': 'none'
+                }, 150);
     		}
 
     		$('.txt-click').click(function(){
@@ -84,6 +91,7 @@
             <div class="save">
                 <button type="button" class="btn btn-txt btn-save">저장하기</button>
             </div>
+            <div class="mask"></div>
         </div>
 
         <!-- tool-txt-click -->
