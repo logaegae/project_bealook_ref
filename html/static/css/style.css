@@ -17338,4 +17338,7 @@ p.about {
         margin-left: -75px;
         margin-top:-69.5px;
     }
+    a.navbar-brand img {
+        width:90px;
+    }
 }
