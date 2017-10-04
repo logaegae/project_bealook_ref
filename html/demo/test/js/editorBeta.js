@@ -26,9 +26,8 @@ $(function() {
             'display': 'none'
         }, 150);
         $('.header .mask').animate({
-            'opacity': '0',
-            'display': 'none'
-        }, 150);
+            'opacity': '0'
+        }, 150).hide();
     }
 
     // 버튼 클릭 이벤트 추가
