@@ -17140,6 +17140,12 @@ form .rating-wrap .raty i
         line-height:40px;
         font-size:13px;
     }
+    h2 {
+        font-size:20px;
+    }
+    .steps h4 {
+        font-size:15px;
+    }
 }
 @media screen and (max-width: 639px)
 {
