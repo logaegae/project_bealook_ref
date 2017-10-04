@@ -36,7 +36,7 @@ button {cursor: pointer;}
 .tool-txt .btn.bl {padding-left:10px;}
 
 .header .actions {float:left;margin-left:20px;font-size:0;}
-.header .actions span {display:inline-block;height:38px;line-height:38px;vertical-align:middle;border:1px #979797 solid; border-radius: 5px;}
+.header .actions span {overflow: hidden;display:inline-block;height:38px;line-height:38px;vertical-align:middle;border:1px #979797 solid; border-radius: 5px;}
 .header .btn-icon {width:37px;height:38px;line-height:38px;background-size:78% !important;}
 .header .btn-undo {background: #fff url('../img/btn_undo_03.png') no-repeat center;}
 .header .btn-redo {background: #fff url('../img/btn_redo_03.png') no-repeat center;}

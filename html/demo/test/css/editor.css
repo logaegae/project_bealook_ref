@@ -122,6 +122,7 @@ button {
 }
 
 .header .actions span {
+    overflow: hidden;
     display: inline-block;
     height: 38px;
     line-height: 38px;
