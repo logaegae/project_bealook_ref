@@ -17129,13 +17129,14 @@ form .rating-wrap .raty i
         margin-bottom:15px;
     }
     .quote-box p {
-        font-size:13px;
         float: none;
+        font-size:13px;
         text-align: center;
     }
     .a-btn-demo {
         float: none;
         margin:0 auto;
+        font-size:13px;
     }
 }
 @media screen and (max-width: 639px)
