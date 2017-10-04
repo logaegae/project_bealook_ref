@@ -7,6 +7,7 @@ $(function() {
     x.init = function() {
         x.clickSet.forEach(function(e, i) {
             x.clickSet[i]();
+            x.default();
         });
     }
     //애니메이션 함수
@@ -15,7 +16,7 @@ $(function() {
             'opacity': '1',
             'top': '20px'
         }, 150);
-        $('.header .mask').show().animate({
+        $('.header .mask').stop().show().animate({
             'opacity': '1'
         }, 150);
     }
@@ -25,10 +26,12 @@ $(function() {
             'top': '0px',
             'display': 'none'
         }, 150);
-        $('.header .mask').animate({
+        $('.header .mask').stop().animate({
             'opacity': '0',
             'display': 'none'
-        }, 150);
+        }, 150, function() {
+            $('.header .mask').css('display', 'none');
+        });
     }
 
     //적용된 스타일 가져오기
@@ -74,6 +77,26 @@ $(function() {
         }
     }
     // 버튼 클릭 이벤트 추가
+    x.default = function() {
+        $('button[exec=redo]').click(function() {
+            var exec = $(e).attr("exec");
+            _editor.setAttribute("contenteditable", "true");
+            _editor.focus();
+            document.execCommand('selectAll', false, null);
+            document.execCommand(exec);
+            _editor.removeAttribute("contenteditable");
+        });
+        $('button[exec=undo]').click(function() {
+            var exec = $(e).attr("exec");
+            $(e).click(function() {
+                _editor.setAttribute("contenteditable", "true");
+                _editor.focus();
+                document.execCommand('selectAll', false, null);
+                document.execCommand(exec);
+                _editor.removeAttribute("contenteditable");
+            });
+        });
+    }
     x.btnConfigDepth1 = function(target) {
         var _editor = document.getElementById(target);
         var btns = $('.hTDepth1 > button');
@@ -120,7 +143,7 @@ $(function() {
             var html = _editor.innerHTML;
             alert(html);
         };
-        $('.hTDepth2 button[exec=creatorLink]').click(function() {
+        $('.hTDepth2 button[exec=createLink]').click(function() {
             console.log("??")
             var selection = document.getSelection();
             //영역이 선택되었을때
@@ -167,6 +190,14 @@ $(function() {
         };
 
         //셀렉트 박스 디폴트 설정
+        var getFontFamily = x.getFontFamily();
+        $('.hTDepth2 #fontFamily option').each(function(i, e) {
+            $(e).prop('selected', false);
+            if ($(e).prop('value') == getFontFamily) {
+                $(e).parents('.select-box').children('label').text($(e).text());
+                $(e).prop('selected', true);
+            }
+        });
         var getFontSize = x.getFontSize();
         $('.hTDepth2 #fontSize option').each(function(i, e) {
             $(e).prop('selected', false);

@@ -208,18 +208,19 @@ button {
     align-items: center;
     z-index: 1000;
 }
+
 .header .mask {
-    display:none;
+    display: none;
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    display: block;
     content: "";
     background: rgba(255, 255, 255, 0.6)
 }
+
 .header .menu {
     margin-left: 50px;
 }

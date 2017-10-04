@@ -3,8 +3,8 @@ var header = `
     <div class="actions">
         <button type="button" class="btn btn-txt btn-preview">미리보기</button>
         <span>
-            <button type="button" class="btn btn-icon btn-undo" title="실행 취소">실행 취소</button>
-            <button type="button" class="btn btn-icon btn-redo" title="다시 실행">다시 실행</button>
+            <button type="button" exec="undo" class="btn btn-icon btn-undo" title="실행 취소">실행 취소</button>
+            <button type="button" exec="redo" class="btn btn-icon btn-redo" title="다시 실행">다시 실행</button>
         </span>
     </div>
     <div class="save">
@@ -78,7 +78,7 @@ var depth2 = `
     <button title="글씨 색" exec="foreColor" class="btn btn-icon btn-color bl">글씨 색</button>
     <button title="배경 색" exec="backColor" class="btn btn-icon btn-bgcolor">배경 색</button>
     <button title="글머리 불릿" exec="insertUnorderedList" class="btn btn-icon btn-ul bl d2noArgBtn">글머리 불릿</button>
-    <button title="글머리 숫자" exec="insertOrderedList" class="btn btn-icon btn-ol">글머리 숫자</button>
+    <button title="글머리 숫자" exec="insertOrderedList" class="btn btn-icon btn-ol d2noArgBtn">글머리 숫자</button>
     <button title="링크 걸기" exec="createLink" class="btn btn-icon btn-link2 bl br">링크 걸기</button>
 </div>
 `;
