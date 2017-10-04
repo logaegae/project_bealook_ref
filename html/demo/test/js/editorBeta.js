@@ -23,6 +23,7 @@ $(function() {
             'top': '0px',
             'display': 'none'
         }, 100);
+        $('.header').removeClass('mask');
     }
 
     // 버튼 클릭 이벤트 추가
