@@ -17117,6 +17117,10 @@ form .rating-wrap .raty i
         width:50px;
         height:24px;
     }
+    .demo-info {
+        padding-top:80px;
+        padding-bottom:60px;
+    }
     .demo-info .row {
         padding: 0 10%;
     }
