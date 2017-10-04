@@ -7506,6 +7506,8 @@ a.navbar-brand-rows img
     bottom:-45px; left:50%; margin-left:-47px;
     width:94px; height:45px;
     background: url(/static/images/triangle_down_gray.png) no-repeat;
+    background-size:100%;
+    -webkit-background-size:100%;
 }
 .pagetitle.pagetitle-xs
 {
@@ -17095,6 +17097,10 @@ form .rating-wrap .raty i
     }
     hr {
         margin: 20px auto;
+    }
+    .pagetitle:after {
+        width:50px;
+        margin-left:-25px;
     }
 }
 @media screen and (max-width: 639px)
