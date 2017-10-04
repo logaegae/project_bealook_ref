@@ -15721,11 +15721,15 @@ form .rating-wrap .raty i
     color:#63afa6;
     font-family: 'Noto Sans KR Bold';
 }
-/*.demo-info i {
+.quote-box i {
     display:block;
     float:left;
-    width:40px;
-}*/
+    width:30px;
+}
+.quote-box p {
+    float:left;
+    margin-left:30px;
+}
 .a-btn-demo {
     display:block;
     padding:0 35px;

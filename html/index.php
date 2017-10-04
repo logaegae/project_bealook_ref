@@ -53,7 +53,7 @@
 			<div class="container">
 				<div class="row irow-xs">
 					<div class="col-sm-2"></div>
-					<div class="col-sm-5">
+					<div class="col-sm-5 quote-box">
 						<i class="fa fa-quote-right"></i>
 						<p>
 							본 사이트는 기능을 테스트하기 위한 <b>데모 버전</b>입니다.<br>
