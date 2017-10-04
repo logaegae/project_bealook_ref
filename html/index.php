@@ -52,8 +52,7 @@
 		<div class="demo-info">
 			<div class="container">
 				<div class="row irow-xs">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-5 quote-box">
+					<div class="col-sm-7 quote-box">
 						<i class="fa fa-quote-right"></i>
 						<p>
 							본 사이트는 기능을 테스트하기 위한 <b>데모 버전</b>입니다.<br>
@@ -61,10 +60,9 @@
 							테스트 후 체험 후기에 대한 설문을 작성해주세요.
 						</p>
 					</div>
-					<div class="col-sm-3 text-right">
+					<div class="col-sm-5">
 						<a href="./demo.php" class="a-btn-demo">데모 테스트 하러 가기</a>
 					</div>
-					<div class="col-sm-2"></div>
 				</div>
 			</div>
 		</div>
