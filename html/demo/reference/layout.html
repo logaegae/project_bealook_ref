@@ -56,13 +56,13 @@
                 $('.header').addClass('mask')
     		})
 
-            $('.btn-plus').click(function(){
-                $(this).addClass('on')
-                $('.layout-btn-box').show().animate({
-                    'opacity': '1',
-    		        'top':'0px'
-                },200);
-    		})
+            // $('.btn-plus').click(function(){
+            //     $(this).addClass('on')
+            //     $('.layout-btn-box').show().animate({
+            //         'opacity': '1',
+    		//         'top':'0px'
+            //     },200);
+    		// })
             // $('body').click(function(){
             //     $(this).removeClass('on')
             //     $('.layout-btn-box').animate({
@@ -165,8 +165,8 @@
         </div>
         <!--// tool-txt-drag -->
 
-        <!-- tool-layout -->
-        <div class="tool-common tool-layout">
+        <!-- tool-layout type1 -->
+        <div class="tool-common tool-layout type1">
             <div class="layout-btn-box">
                 <button type="button" title="배경 색/이미지" class="btn btn-icon btn-bg">배경 색/이미지</button>
                 <button type="button" title="리스트" class="btn btn-icon btn-list">리스트</button>
@@ -180,7 +180,24 @@
             </div>
             <span class="btn btn-plus">+</span>
         </div>
-        <!--// tool-layout -->
+        <!--// tool-layout type1 -->
+
+        <!-- tool-layout type2 -->
+        <div class="tool-common tool-layout type2">
+            <span class="btn btn-plus">+</span>
+            <div class="layout-btn-box">
+                <button type="button" title="배경 색/이미지" class="btn btn-icon btn-bg">배경 색/이미지</button>
+                <button type="button" title="리스트" class="btn btn-icon btn-list">리스트</button>
+                <button type="button" title="그리드" class="btn btn-icon btn-grid">그리드</button>
+                <button type="button" title="사진" class="btn btn-icon btn-img">사진</button>
+                <button type="button" title="비디오" class="btn btn-icon btn-video">비디오</button>
+                <button type="button" title="지도" class="btn btn-icon btn-map">지도</button>
+                <button type="button" title="첨부파일" class="btn btn-icon btn-attach">첨부파일</button>
+                <button type="button" title="타이포그라피" class="btn btn-icon btn-typo">타이포그라피</button>
+                <button type="button" title="구분 선" class="btn btn-icon btn-hr">구분 선</button>
+            </div>
+        </div>
+        <!--// tool-layout type2 -->
 
         <div class="contents ex01">
             <div class="sec sec-txt">
