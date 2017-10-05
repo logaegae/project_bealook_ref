@@ -145,9 +145,6 @@ $(function() {
         });
 
         //셀렉트 박스 디폴트 설정
-        _editor.setAttribute("contenteditable", "true");
-        _editor.focus();
-        document.execCommand('selectAll', false, null);
         var getFontFamily = x.getFontFamily();
         $('.hTDepth1 #fontFamily option').each(function(i, e) {
             $(e).prop('selected', false);
@@ -164,7 +161,6 @@ $(function() {
                 $(e).prop('selected', true);
             }
         });
-        _editor.removeAttribute("contenteditable");
     }
 
     x.btnConfigDepth2 = function(target) {
