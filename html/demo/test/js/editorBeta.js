@@ -92,6 +92,7 @@ $(function() {
         var _noArgBtn = $(".d1noArgBtn");
         var btns = $('.hTDepth1 > button');
         var selects = $('select');
+        console.log(x.getRange());
 
         btns.each(function(i, e) {
             $(e).off('click');
