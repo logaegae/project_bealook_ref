@@ -30,11 +30,11 @@ var depth1 = `
     <div class="select-box">
         <label for="fontSize">제목 1 (30pt)</label>
         <select name="s02" id="fontSize" required="required">
-            <option value="30px">제목 1 (30pt) </option>
-            <option value="25px">제목 2 (25pt)</option>
-            <option value="20px">제목 3 (20pt)</option>
-            <option value="15px">본문 1 (15pt)</option>
-            <option value="12px">본문 2 (12pt)</option>
+            <option value="7">제목 1 (30pt) </option>
+            <option value="6">제목 2 (25pt)</option>
+            <option value="5">제목 3 (20pt)</option>
+            <option value="4">본문 1 (15pt)</option>
+            <option value="3">본문 2 (12pt)</option>
         </select>
     </div>
     <button title="두껍게" exec="bold" class="d1noArgBtn btn btn-icon btn-bold">두껍게</button>
@@ -64,11 +64,11 @@ var depth2 = `
     <div class="select-box">
         <label for="fontSize">제목 1 (30pt)</label>
         <select name="s02" id="fontSize" required="required">
-            <option value="30px">제목 1 (30pt) </option>
-            <option value="25px">제목 2 (25pt)</option>
-            <option value="20px">제목 3 (20pt)</option>
-            <option value="15px">본문 1 (15pt)</option>
-            <option value="12px">본문 2 (12pt)</option>
+            <option value="7">제목 1 (30pt) </option>
+            <option value="6">제목 2 (25pt)</option>
+            <option value="5">제목 3 (20pt)</option>
+            <option value="4">본문 1 (15pt)</option>
+            <option value="3">본문 2 (12pt)</option>
         </select>
     </div>
     <button title="두껍게" exec="bold" class="btn btn-icon btn-bold d2noArgBtn">두껍게</button>

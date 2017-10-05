@@ -135,11 +135,11 @@ $(function() {
             _editor.focus();
             document.execCommand('selectAll', false, null);
 
-            var spanString = $('<span/>', {
-                'text': document.getSelection()
-            }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
-
-            document.execCommand('insertHTML', false, spanString);
+            // var spanString = $('<span/>', {
+            //     'text': document.getSelection()
+            // }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
+            // document.execCommand('insertHTML', false, spanString);
+            document.execCommand('fontSize', false, $(this).children("option:selected").val());
             document.execCommand('selectAll', false, null);
             _editor.removeAttribute("contenteditable");
         });
@@ -226,11 +226,8 @@ $(function() {
             }
         });
         $('.hTDepth2 #fontSize').change(function() {
-            var spanString = $('<span/>', {
-                'text': document.getSelection()
-            }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
             _editor.focus();
-            document.execCommand('insertHTML', false, spanString);
+            document.execCommand('fontSize', false, $(this).children("option:selected").val());
         });
         $('.hTDepth2 button[exec=unlink]').onclick = function() {
             _editor.focus();
