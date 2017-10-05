@@ -18,9 +18,9 @@ var depth1 = `
     <div class="select-box">
         <label for="fontFamily">Noto Sans</label>
         <select name="s01" id="fontFamily" required="required">
-            <option selected>Noto Sans</option>
-            <option>나눔고딕</option>
-            <option>나눔바른고딕</option>
+            <option value="NotoSans">Noto Sans</option>
+            <option value="NanumGothic">나눔고딕</option>
+            <option value="NanumBarunGothic">나눔바른고딕</option>
             <option>한겨례체</option>
             <option>정음체</option>
             <option>대한체</option>
@@ -30,18 +30,18 @@ var depth1 = `
     <div class="select-box">
         <label for="fontSize">제목 1 (30pt)</label>
         <select name="s02" id="fontSize" required="required">
-            <option>제목 1 (30pt) </option>
-            <option>제목 2 (25pt)</option>
-            <option>제목 3 (20pt)</option>
-            <option>본문 1 (15pt)</option>
-            <option>본문 2 (12pt)</option>
+            <option value="30px">제목 1 (30pt) </option>
+            <option value="25px">제목 2 (25pt)</option>
+            <option value="20px">제목 3 (20pt)</option>
+            <option value="15px">본문 1 (15pt)</option>
+            <option value="12px">본문 2 (12pt)</option>
         </select>
     </div>
     <button title="두껍게" exec="bold" class="d1noArgBtn btn btn-icon btn-bold">두껍게</button>
     <button title="이탤릭" exec="italic" class="d1noArgBtn btn btn-icon btn-italic">이탤릭</button>
     <button title="가운데 줄" exec="StrikeThrough" class="d1noArgBtn btn btn-icon btn-linethrough">가운데 줄</button>
     <button title="밑 줄" exec="underline" class="d1noArgBtn btn btn-icon btn-underline">밑 줄</button>
-    <button title="글씨 색" exec="foreColor" class="d1noArgBtn btn btn-icon btn-color bl">글씨 색</button>
+    <button title="글씨 색" exec="foreColor" class="btn btn-icon btn-color bl">글씨 색</button>
     <button title="좌측 정렬" exec="justifyleft" class="d1noArgBtn btn btn-icon btn-ta-left bl">좌측 정렬</button>
     <button title="가운데 정렬" exec="justifycenter" class="d1noArgBtn btn btn-icon btn-ta-center">가운데 정렬</button>
     <button title="우측 정렬" exec="justifyright" class="d1noArgBtn btn btn-icon btn-ta-right br">우측 정렬</button>

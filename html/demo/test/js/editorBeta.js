@@ -81,7 +81,6 @@ $(function() {
     // 버튼 클릭 이벤트 추가
     x.default = function() {
         $('button[exec=redo]').click(function() {
-            console.log("???");
             document.execCommand('redo');
         });
         $('button[exec=undo]').click(function() {
@@ -90,20 +89,82 @@ $(function() {
     }
     x.btnConfigDepth1 = function(target) {
         var _editor = document.getElementById(target);
+        var _noArgBtn = $(".d1noArgBtn");
         var btns = $('.hTDepth1 > button');
+        var selects = $('select');
+
         btns.each(function(i, e) {
             $(e).off('click');
-            if ($(e).hasClass("d1noArgBtn")) {
-                var exec = $(e).attr("exec");
-                $(e).click(function() {
-                    _editor.setAttribute("contenteditable", "true");
-                    _editor.focus();
-                    document.execCommand('selectAll', false, null);
-                    document.execCommand(exec);
-                    _editor.removeAttribute("contenteditable");
-                });
+        });
+        selects.each(function(i, e) {
+            $(e).off('change');
+        });
+        _noArgBtn.each(function(i, e) {
+            var exec = $(e).attr("exec");
+            $(e).click(function() {
+                _editor.setAttribute("contenteditable", "true");
+                _editor.focus();
+                document.execCommand('selectAll', false, null);
+                document.execCommand(exec);
+                _editor.removeAttribute("contenteditable");
+            });
+        });
+
+        $('.hTDepth1 button[exec=foreColor]').click(function() {
+            var color = prompt('색 입력: ', 'red') || null;
+            if (color != null) {
+                _editor.setAttribute("contenteditable", "true");
+                _editor.focus();
+                document.execCommand('selectAll', false, null);
+                document.execCommand('foreColor', false, color);
+                _editor.removeAttribute("contenteditable");
             }
         });
+        $('.hTDepth1 #fontFamily').change(function() {
+            var name = $(this).children("option:selected").val() || null;
+            if (name != null) {
+                _editor.setAttribute("contenteditable", "true");
+                _editor.focus();
+                document.execCommand('selectAll', false, null);
+                document.execCommand('fontName', false, name);
+                _editor.removeAttribute("contenteditable");
+            }
+        });
+        $('.hTDepth1 #fontSize').change(function() {
+            _editor.setAttribute("contenteditable", "true");
+            _editor.focus();
+            document.execCommand('selectAll', false, null);
+
+            var spanString = $('<span/>', {
+                'text': document.getSelection()
+            }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
+
+            document.execCommand('insertHTML', false, spanString);
+            document.execCommand('selectAll', false, null);
+            _editor.removeAttribute("contenteditable");
+        });
+
+        //셀렉트 박스 디폴트 설정
+        _editor.setAttribute("contenteditable", "true");
+        _editor.focus();
+        document.execCommand('selectAll', false, null);
+        var getFontFamily = x.getFontFamily();
+        $('.hTDepth1 #fontFamily option').each(function(i, e) {
+            $(e).prop('selected', false);
+            if ($(e).prop('value') == getFontFamily) {
+                $(e).parents('.select-box').children('label').text($(e).text());
+                $(e).prop('selected', true);
+            }
+        });
+        var getFontSize = x.getFontSize();
+        $('.hTDepth1 #fontSize option').each(function(i, e) {
+            $(e).prop('selected', false);
+            if ($(e).prop('value') == getFontSize) {
+                $(e).parents('.select-box').children('label').text($(e).text());
+                $(e).prop('selected', true);
+            }
+        });
+        _editor.removeAttribute("contenteditable");
     }
 
     x.btnConfigDepth2 = function(target) {
