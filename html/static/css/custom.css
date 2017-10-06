@@ -2,3 +2,7 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
     border: 1px solid #999;
     border-radius: 5px;
 }
+
+.color-white {
+    color: white;
+}

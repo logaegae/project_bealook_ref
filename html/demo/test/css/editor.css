@@ -367,29 +367,29 @@ button {
 
 /*tool fix*/
 
-.editable {
+.text-editable {
     outline: 1px tomato solid;
     cursor: pointer;
     min-height: 20px;
 }
 
-.editable li {
+.text-editable li {
     float: none !important;
     text-align: justify;
 }
 
-.editable ol {
+.text-editable ol {
     list-style: initial;
     list-style-type: decimal;
 }
 
-.editable ul {
+.text-editable ul {
     overflow: inherit;
     list-style: initial;
     list-style-type: disc;
 }
 
-.editable.ed-selected {
+.text-editable.ed-selected {
     cursor: auto;
 }
 

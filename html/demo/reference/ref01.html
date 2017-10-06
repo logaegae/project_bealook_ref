@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/common.css" type="text/css" />
     <link rel="stylesheet" href="../test/css/editor.css?v=0.01" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../test/js/tool.js"></script>
-    <script type="text/javascript" src="../test/js/editorBeta.js"></script>
-
+    <script type="text/javascript" src="../test/js/text-editor-beta.js"></script>
+    <script type="text/javascript" src="../test/js/text-tool.js"></script>
 </head>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -39,11 +38,12 @@
     });
 
 </script>
-<body id="ref01">
+<body id="ref01" class="">
     <div class="prev">
         <button style="position:fixed; right:10px; bottom : 10px; padding:10px;" type="button" name="뒤로가기" onclick="window.history.back()">뒤로가기</button>
     </div>
-    <div class="wrapper ovh editor-wrapper">
+    <div class="editor-wrapper">
+      <div class="wrapper ovh">
         <div class="menu">
             <ul>
                 <li><button id="li-type-01">1</button></li>
@@ -61,8 +61,8 @@
                             <img src="img/basics03.jpg">
                         </div>
                         <div class="txt-box">
-                            <div id="a0" class="tit editable">Seoul</div>
-                            <span id="a1" class="con editable">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                            <div id="a0" class="tit text-editable">Seoul</div>
+                            <span id="a1" class="con text-editable">[기본] BASICS基本 Séoul - Paris 면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             <a href="#none">BUY IT</a>
                         </div>
                     </div>
@@ -170,5 +170,10 @@
 
         </div>
     </div>
+    </div>
+    <script>
+      textEditor = new TextEditor();
+      textEditor.init();
+    </script>
 </body>
 </html>
