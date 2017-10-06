@@ -92,6 +92,7 @@ $(function() {
         var _noArgBtn = $(".d1noArgBtn");
         var btns = $('.hTDepth1 > button');
         var selects = $('select');
+        console.log(x.getRange());
 
         btns.each(function(i, e) {
             $(e).off('click');
@@ -135,19 +136,16 @@ $(function() {
             _editor.focus();
             document.execCommand('selectAll', false, null);
 
-            var spanString = $('<span/>', {
-                'text': document.getSelection()
-            }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
-
-            document.execCommand('insertHTML', false, spanString);
+            // var spanString = $('<span/>', {
+            //     'text': document.getSelection()
+            // }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
+            // document.execCommand('insertHTML', false, spanString);
+            document.execCommand('fontSize', false, $(this).children("option:selected").val());
             document.execCommand('selectAll', false, null);
             _editor.removeAttribute("contenteditable");
         });
 
         //셀렉트 박스 디폴트 설정
-        _editor.setAttribute("contenteditable", "true");
-        _editor.focus();
-        document.execCommand('selectAll', false, null);
         var getFontFamily = x.getFontFamily();
         $('.hTDepth1 #fontFamily option').each(function(i, e) {
             $(e).prop('selected', false);
@@ -164,7 +162,6 @@ $(function() {
                 $(e).prop('selected', true);
             }
         });
-        _editor.removeAttribute("contenteditable");
     }
 
     x.btnConfigDepth2 = function(target) {
@@ -230,11 +227,8 @@ $(function() {
             }
         });
         $('.hTDepth2 #fontSize').change(function() {
-            var spanString = $('<span/>', {
-                'text': document.getSelection()
-            }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
             _editor.focus();
-            document.execCommand('insertHTML', false, spanString);
+            document.execCommand('fontSize', false, $(this).children("option:selected").val());
         });
         $('.hTDepth2 button[exec=unlink]').onclick = function() {
             _editor.focus();
