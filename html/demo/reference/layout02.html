@@ -30,9 +30,11 @@
         })
         $('.add').mouseenter(function () {
             $(this).addClass('on')
+            $(this).find('button').animate({'left':'-40px'},100)
         })
         $('.add').mouseleave(function () {
             $(this).removeClass('on')
+            $(this).find('button').animate({'left':'-58px'},100)
         })
 
         var handle01 = $( "#handle-01" );
@@ -73,7 +75,7 @@
                         <li>
                             <p class="label-dep1">좌우 너비</p>
                             <div class="value">
-                                <button type="button" class="btn-width">Full</button>
+                                <button type="button" class="btn btn-width">Full</button>
                             </div>
                         </li>
                         <li>
@@ -91,6 +93,12 @@
                                         <div id="handle-02" class="ui-slider-handle custom-handle"></div>
                                     </div>
                                 </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="label-dep1">타이틀 스타일</p>
+                            <div class="value">
+                                <button type="button" class="btn btn-tit-change">변경하기</button>
                             </div>
                         </li>
                     </ul>
