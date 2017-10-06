@@ -44,3 +44,7 @@ html, body {
 a {
     text-decoration: none;
 }
+button {
+    border:none;
+    outline:none;
+}
