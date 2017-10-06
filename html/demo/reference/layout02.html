@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Be A Look - Reference 2</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/layout02.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
+<style>
+
+ </style>
 <script type="text/javascript">
+
     $(document).ready(function () {
         $('.section').mouseenter(function () {
             $(this).addClass('on')
@@ -17,17 +23,78 @@
             $(this).removeClass('on')
         })
         $('.btn-width').click(function () {
-            $(this).parent().parent().toggleClass('w-full')
+            $(this).closest('.section').toggleClass('w-full')
         })
+        $('.btn-edit').click(function () {
+            $(this).parent().toggleClass('on')
+        })
+        $('.add').mouseenter(function () {
+            $(this).addClass('on')
+        })
+        $('.add').mouseleave(function () {
+            $(this).removeClass('on')
+        })
+
+        var handle01 = $( "#handle-01" );
+        $( "#slider-01" ).slider({
+          create: function() {
+            handle01.text( $( this ).slider( "value" ) );
+          },
+          slide: function( event, ui ) {
+            handle01.text( ui.value );
+          }
+        });
+        var handle02 = $( "#handle-02" );
+        $( "#slider-02" ).slider({
+          create: function() {
+            handle02.text( $( this ).slider( "value" ) );
+          },
+          slide: function( event, ui ) {
+            handle02.text( ui.value );
+          }
+        });
     })
 
 </script>
 <body id="layout02">
+
     <div class="wrapper">
 
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+
         <div class="section bg-white">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
+            <div class="edit">
+                <button type="button" class="btn-edit">EDIT</button>
+                <div class="options">
+                    <ul>
+                        <li>
+                            <p class="label-dep1">좌우 너비</p>
+                            <div class="value">
+                                <button type="button" class="btn-width">Full</button>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="label-dep1">상하 여백</p>
+                            <div class="value">
+                                <div class="value-rows">
+                                    <span class="label-dep2">상</span>
+                                    <div id="slider-01">
+                                        <div id="handle-01" class="ui-slider-handle custom-handle"></div>
+                                    </div>
+                                </div>
+                                <div class="value-rows">
+                                    <span class="label-dep2">하</span>
+                                    <div id="slider-02">
+                                        <div id="handle-02" class="ui-slider-handle custom-handle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="con-box">
                 <div class="tit-box type-01">
@@ -40,9 +107,15 @@
                 </div>
             </div>
         </div>
+
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+
         <div class="section bg-white">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
+            <div class="edit">
+                <button type="button" class="btn-edit">EDIT</button>
             </div>
             <div class="con-box">
                 <ul class="ul-list li-type-02 li-cell-05 li-circle mg2per">
@@ -94,6 +167,12 @@
                 </ul>
             </div>
         </div>
+
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+
         <div class="section bg-gray">
             <div class="btn-box">
                 <button type="button" class="btn-width">너비 100%</button>
@@ -109,6 +188,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+
         <div class="section bg-gray">
             <div class="btn-box">
                 <button type="button" class="btn-width">너비 100%</button>
@@ -119,6 +204,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+        
         <div class="section bg-white">
             <div class="btn-box">
                 <button type="button" class="btn-width">너비 100%</button>
@@ -134,6 +225,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+
         <div class="section bg-white">
             <div class="btn-box">
                 <button type="button" class="btn-width">너비 100%</button>
@@ -206,6 +303,12 @@
                 </ul>
             </div>
         </div>
+
+        <div class="add">
+            <button type="button" class="btn-add-section">+</button>
+            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+        </div>
+
         <div class="section bg-gray">
             <div class="btn-box">
                 <button type="button" class="btn-width">너비 100%</button>
