@@ -74,6 +74,7 @@
 						<a href="/demo/reference/layout02.html" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
 								<h4>기능2</h4>
+								<p class="color-white">레이아웃 편집</p>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -84,7 +85,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>기능3</h4> 
+								<h4>기능3</h4>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
