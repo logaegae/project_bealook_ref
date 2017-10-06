@@ -84,7 +84,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>기능3</h4>
+								<h4>기능3</h4> 
 								<div class="heading-divider"></div>
 							</div>
 						</a>
