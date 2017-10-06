@@ -245,28 +245,23 @@ body img {
     /*height:30px;*/
 }
 .add.on {
-    height:30px;
+    /*height:30px;*/
 }
 .add .btn-add-section {
     position:absolute;
     z-index:5;
-    top:-4px;
-    left:-20px;
-    width:40px;
+    top:-20px;
+    left:-58px;
+    width:87px;
     height:40px;
-    color:#44948b;
-    text-align: right;
-    font-size:15px;
-    background: #fff;
-    border:2px #44948b solid;
-    border-radius: 50%;
+    background: url(../img/btn_add_section_03.png);
     cursor:pointer;
 }
 .add p {
     display: none;
     z-index:3;
     position:absolute;
-    top:-2px;
+    top:-16px;
     left:0;
     width:100%;
     text-align: center;
