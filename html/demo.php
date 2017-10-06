@@ -62,7 +62,7 @@
 						<a href="/demo/reference/ref01.html" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
 								<h4>기능1</h4>
-								<p>텍스트 편집</p>
+								<p class="color-white">텍스트 편집</p>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
