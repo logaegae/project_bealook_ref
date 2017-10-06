@@ -330,7 +330,7 @@ body img {
     background-color: #fff;
 }
 
-#ref02 .contents .con-box-03:before {
+/*#ref02 .contents .con-box-03:before {
     position: absolute;
     top: 88%;
     bottom: 0;
@@ -339,7 +339,7 @@ body img {
     display: block;
     content: "";
     background-color: #a1363f;
-}
+}*/
 
 #ref02 .contents .con-box-05 {
     padding-top: 20px;
