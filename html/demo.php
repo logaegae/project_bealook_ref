@@ -62,6 +62,7 @@
 						<a href="/demo/reference/ref01.html" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
 								<h4>기능1</h4>
+								<p class="color-white">텍스트 편집</p>
 								<div class="heading-divider"></div>
 							</div>
 						</a>
@@ -69,8 +70,8 @@
 				</div>
 				<div class="col-xs-6 mix fn">
 					<figure class="figure">
-						<img src="http://placehold.it/2000x1333" alt="">
-						<a href="" class="mask mask-info mask-dark text-center">
+						<img src="/demo/reference/img/basics08.jpg" alt="">
+						<a href="/demo/reference/layout02.html" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
 								<h4>기능2</h4>
 								<div class="heading-divider"></div>
@@ -83,7 +84,7 @@
 						<img src="http://placehold.it/2000x1333" alt="">
 						<a href="" class="mask mask-info mask-dark text-center">
 							<div class="mask-info">
-								<h4>기능3</h4>
+								<h4>기능3</h4> 
 								<div class="heading-divider"></div>
 							</div>
 						</a>
