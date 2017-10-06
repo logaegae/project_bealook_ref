@@ -253,6 +253,8 @@ body img {
 
 #ref02 .wrapper {
     padding-top: 70px;
+    width:1200px;
+    margin:0 auto;
 }
 
 #ref02 .wrapper .header h1 img {
@@ -512,28 +514,28 @@ ul li .txt-box>span {
     display: block;
 }
 
-ul .li-circle li .img-wrap {
+ul.li-circle li .img-wrap {
     padding-bottom: 100%;
     border-radius: 50%;
 }
 
-ul .li-cell-01 li {
+ul.li-cell-01 li {
     width: 98%;
 }
 
-ul .li-cell-02 li {
+ul.li-cell-02 li {
     width: 48%;
 }
 
-ul .li-cell-03 li {
+ul.li-cell-03 li {
     width: 31.333333333%;
 }
 
-ul .li-cell-04 li {
+ul.li-cell-04 li {
     width: 23%;
 }
 
-ul .li-cell-05 li {
+ul.li-cell-05 li {
     width: 18%;
 }
 
