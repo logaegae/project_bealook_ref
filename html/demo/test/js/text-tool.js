@@ -16,10 +16,10 @@ var header = `
 var depth1 = `
 <div class="tool-common tool-txt tool-txt-click bl hTDepth1">
     <div class="select-box">
-        <label for="fontFamily">Noto Sans</label>
+        <label for="fontFamily"></label>
         <select name="s01" id="fontFamily" required="required">
-            <option value="NotoSans">Noto Sans</option>
-            <option value="NanumGothic">나눔고딕</option>
+            <option value="Noto Sans KR Light">Noto Sans</option>
+            <option value="Nanum Gothic">나눔고딕</option>
             <option value="NanumBarunGothic">나눔바른고딕</option>
             <option>한겨례체</option>
             <option>정음체</option>
@@ -28,7 +28,7 @@ var depth1 = `
         </select>
     </div>
     <div class="select-box">
-        <label for="fontSize">제목 1 (30pt)</label>
+        <label for="fontSize"></label>
         <select name="s02" id="fontSize" required="required">
             <option value="7">제목 1 (30pt) </option>
             <option value="6">제목 2 (25pt)</option>
@@ -52,8 +52,8 @@ var depth2 = `
     <div class="select-box">
         <label for="fontFamily">Noto Sans</label>
         <select name="s01" id="fontFamily" required="required">
-            <option value="NotoSans">Noto Sans</option>
-            <option value="NanumGothic">나눔고딕</option>
+            <option value="Noto Sans KR Light">Noto Sans</option>
+            <option value="Nanum Gothic">나눔고딕</option>
             <option value="NanumBarunGothic">나눔바른고딕</option>
             <option>한겨례체</option>
             <option>정음체</option>

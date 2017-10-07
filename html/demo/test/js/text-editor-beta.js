@@ -22,6 +22,14 @@ X.prototype.init = function() {
 // 버튼에 클릭 이벤트 추가
 //기본버튼 이벤트
 X.prototype.default = function() {
+    var _this = this;
+    $(document).on('click', '.hTDepth1 button', function() {
+        $(this).removeClass('on');
+        _this.getDepth1Styles();
+    });
+    $(document).on('change', '.hTDepth1 #fontFamily, .hTDepth1 #fontSize', function() {
+        _this.getDepth1Styles();
+    });
     $('button[exec=redo]').click(function() {
         document.execCommand('redo');
     });
@@ -32,7 +40,7 @@ X.prototype.default = function() {
 // depth1 버튼 이벤트
 X.prototype.btnConfigDepth1 = function(target) {
     var _this = this;
-    _this._editor = document.getElementById(target);
+    _this._editor = document.querySelector(target);
     var _noArgBtn = $(".d1noArgBtn");
     var btns = $('.hTDepth1 > button');
     var selects = $('select');
@@ -43,6 +51,9 @@ X.prototype.btnConfigDepth1 = function(target) {
     selects.each(function(i, e) {
         $(e).off('change');
     });
+    //버튼 off
+    _this.clearOn();
+
     _noArgBtn.each(function(i, e) {
         var exec = $(e).attr("exec");
         $(e).click(function() {
@@ -78,47 +89,17 @@ X.prototype.btnConfigDepth1 = function(target) {
         _this._editor.setAttribute("contenteditable", "true");
         _this._editor.focus();
         document.execCommand('selectAll', false, null);
-
-        // var spanString = $('<span/>', {
-        //     'text': document.getSelection()
-        // }).css('font-size', $(this).children("option:selected").val()).prop('outerHTML');
-        // document.execCommand('insertHTML', false, spanString);
         document.execCommand('fontSize', false, $(this).children("option:selected").val());
-        document.execCommand('selectAll', false, null);
         _this._editor.removeAttribute("contenteditable");
     });
 
-    //셀렉트 박스 디폴트 설정 ???
-    // var getFontFamily = _this.getFontFamily();
-    // $('.hTDepth1 #fontFamily option').each(function(i, e) {
-    //     $(e).prop('selected', false);
-    //     if ($(e).prop('value') == getFontFamily) {
-    //         $(e).parents('.select-box').children('label').text($(e).text());
-    //         $(e).prop('selected', true);
-    //     }
-    // });
-    // var getFontSize = _this.getFontSize();
-    // $('.hTDepth1 #fontSize option').each(function(i, e) {
-    //     $(e).prop('selected', false);
-    //     if ($(e).prop('value') == getFontSize) {
-    //         $(e).parents('.select-box').children('label').text($(e).text());
-    //         $(e).prop('selected', true);
-    //     }
-    // });
-
-    // console.log(this._editor);
-    // var styleVal = this.getComputedStyleProperty(this._editor, 'fontSize');
-    // console.log(styleVal);
-
-    getFontSize
-    _this._editor.setAttribute("contenteditable", "true");
-    _this._editor.focus();
-    document.execCommand('selectAll', false, null);
+    //버튼 on
+    _this.getDepth1Styles();
 }
 // depth2 버튼 이벤트
 X.prototype.btnConfigDepth2 = function(target) {
     var _this = this;
-    _this._editor = document.getElementById(target);
+    _this._editor = document.querySelector(target);
     var _noArgBtn = document.getElementsByClassName("d2noArgBtn");
     var btns = $('.hTDepth2 > button');
     var selects = $('select');
@@ -128,6 +109,9 @@ X.prototype.btnConfigDepth2 = function(target) {
     selects.each(function(i, e) {
         $(e).off('change');
     });
+    //버튼 off
+    _this.clearOn();
+
     for (i = 0; i < _noArgBtn.length; i++) {
         _noArgBtn[i].onclick = function(e) {
             var exec = this.getAttribute("exec");
@@ -187,23 +171,9 @@ X.prototype.btnConfigDepth2 = function(target) {
         document.execCommand('unlink');
     };
 
-    //셀렉트 박스 디폴트 설정
-    var getFontFamily = _this.getFontFamily();
-    $('.hTDepth2 #fontFamily option').each(function(i, e) {
-        $(e).prop('selected', false);
-        if ($(e).prop('value') == getFontFamily) {
-            $(e).parents('.select-box').children('label').text($(e).text());
-            $(e).prop('selected', true);
-        }
-    });
-    var getFontSize = _this.getFontSize();
-    $('.hTDepth2 #fontSize option').each(function(i, e) {
-        $(e).prop('selected', false);
-        if ($(e).prop('value') == getFontSize) {
-            $(e).parents('.select-box').children('label').text($(e).text());
-            $(e).prop('selected', true);
-        }
-    });
+    //버튼 on
+    _this.getDepth2Styles();
+
 }
 
 
@@ -246,9 +216,22 @@ X.prototype.clearSelection = function() {
         document.selection.empty();
     }
 }
+//버튼 on 초기화 함수
+X.prototype.clearOn = function() {
+    console.log("????")
+    $('.hTDepth1 button, .hTDepth2 button').each(function(i, e) {
+        $(e).removeClass('on');
+    });
+    $('.hTDepth1 .select-box label').each(function(i, e) {
+        $(e).text('');
+    });
+    $('.hTDepth1 #fontSize option, .hTDepth2 #fontSize option').each(function(i, e) {
+        $(e).removeAttr("selected");
+    });
+}
 
 //스타일 추출 함수
-//적용된 스타일 가져오는 함수
+//1.적용된 스타일 가져오는 함수
 X.prototype.getComputedStyleProperty = function(el, propName) {
     if (window.getComputedStyle) {
         return window.getComputedStyle(el, null)[propName];
@@ -256,7 +239,7 @@ X.prototype.getComputedStyleProperty = function(el, propName) {
         return el.currentStyle[propName];
     }
 }
-//범위 추출 함수
+//2.범위 추출 함수
 X.prototype.getRange = function() {
     var containerEl, sel;
     if (window.getSelection) {
@@ -273,23 +256,83 @@ X.prototype.getRange = function() {
     }
     return containerEl;
 }
-//폰트 사이즈 가져오기
-X.prototype.getFontSize = function() {
+//1+2 사이즈 가져오는 함수
+X.prototype.getSomthingStyle = function(something) {
     var containerEl = this.getRange();
 
     if (containerEl) {
-        var fontSize = this.getComputedStyleProperty(containerEl, "fontSize");
+        var fontSize = this.getComputedStyleProperty(containerEl, something);
         return fontSize;
     }
 }
-//폰트 패밀리 가져오기
-X.prototype.getFontFamily = function() {
-    var containerEl = this.getRange();
-
-    if (containerEl) {
-        var fontFamily = this.getComputedStyleProperty(containerEl, "fontFamily");
-        return fontFamily;
+//depth1 스타일 가져오는 함수 > 버튼 on
+X.prototype.getDepth1Styles = function() {
+    var _this = this;
+    _this._editor.setAttribute("contenteditable", "true");
+    var j_editor = $("[data-id=" + _this._editor.getAttribute("data-id") + "]");
+    _this._editor.focus();
+    document.execCommand('selectAll', false, null);
+    // console.log(_this.getSomthingStyle("fontSize"));
+    var fontVariable = {
+        "7": "30px",
+        "6": "25px",
+        "5": "20px",
+        "4": "15px",
+        "3": "12px"
     }
+    $('.hTDepth1 #fontSize option').each(function(i, e) {
+        if (j_editor.find('font').prop('size') === $(e).prop('value') || _this.getSomthingStyle("fontSize") === fontVariable[$(e).prop('value')]) {
+            $(e).parents('.select-box').children('label').text($(e).text());
+            $(e).prop('selected', true);
+        } else {
+            $(e).prop('selected', false);
+        }
+    });
+    console.log(_this.getSomthingStyle("fontFamily"));
+    $('.hTDepth1 #fontFamily option').each(function(i, e) {
+        console.log(_this.getSomthingStyle("fontFamily") + " : " + '"' + $(e).prop('value') + '"')
+        if (_this.getSomthingStyle("fontFamily") == '"' + $(e).prop('value') + '"') {
+            $(e).parents('.select-box').children('label').text($(e).text());
+            $(e).prop('selected', true);
+        } else {
+            $(e).prop('selected', false);
+        }
+
+    });
+
+    // console.log(_this.getSomthingStyle("fontWeight"));
+    if (_this.getSomthingStyle("fontWeight") === 'bold') $("button[exec=bold]").addClass('on');
+
+    // console.log(_this.getSomthingStyle("fontStyle"));
+    if (_this.getSomthingStyle("fontStyle") === 'italic') $("button[exec=italic]").addClass('on');
+
+    // console.log(j_editor.find("u").length != 0);
+    if (j_editor.find("u").text().length === j_editor.text().length) $("button[exec=underline]").addClass('on');
+
+    // console.log(j_editor.find("strike").length != 0);
+    if (j_editor.find("strike").text().length === j_editor.text().length) $("button[exec=StrikeThrough]").addClass('on');
+    _this.clearSelection();
+    _this._editor.removeAttribute("contenteditable");
+}
+//depth2 스타일 가져오는 함수 > 버튼 on
+X.prototype.getDepth2Styles = function() {
+    //셀렉트 박스 디폴트 설정
+    var getFontFamily = this.getSomthingStyle("fontFamily");
+    $('.hTDepth2 #fontFamily option').each(function(i, e) {
+        $(e).prop('selected', false);
+        if ($(e).prop('value') == getFontFamily) {
+            $(e).parents('.select-box').children('label').text($(e).text());
+            $(e).prop('selected', true);
+        }
+    });
+    var getFontSize = this.getSomthingStyle("fontSize");
+    $('.hTDepth2 #fontSize option').each(function(i, e) {
+        $(e).prop('selected', false);
+        if ($(e).prop('value') == getFontSize) {
+            $(e).parents('.select-box').children('label').text($(e).text());
+            $(e).prop('selected', true);
+        }
+    });
 }
 //스타일 추출 함수 끝
 
@@ -307,7 +350,7 @@ X.prototype.clickDepth1 = function() {
             $(this).addClass("ed-selected");
             _this.removed = true;
 
-            _this.btnConfigDepth1($(this).attr("id"));
+            _this.btnConfigDepth1("[data-id=" + $(this).attr("data-id") + "]");
 
             $(this).focus();
         }
@@ -333,7 +376,7 @@ X.prototype.clickDepth2 = function() {
         _this.toolTxtHide($('.tool-txt-click'));
         _this.toolTxtShow($('.tool-txt-drag'));
 
-        _this.btnConfigDepth2($(this).attr("id"));
+        _this.btnConfigDepth2("[data-id=" + $(this).attr("data-id") + "]");
 
         $("*[contenteditable=true]").removeAttr("contenteditable");
         $(this).attr("contenteditable", "true");

@@ -315,7 +315,7 @@ button {
     border-bottom: 3px #979797 solid;
 }
 
-.tool-txt .btn:hover {
+.tool-txt .btn.on {
     border-bottom: 3px #63afa6 solid;
     background-color: #f1f1f1;
 }
