@@ -371,9 +371,12 @@ button {
 /*tool fix*/
 
 .text-editable {
-    outline: 1px tomato solid;
+    /*border: 1px #9acac5 solid;*/
     cursor: pointer;
     min-height: 20px;
+}
+.text-editable:hover {
+    outline: 1px #9acac5 solid !important;
 }
 
 .text-editable li {

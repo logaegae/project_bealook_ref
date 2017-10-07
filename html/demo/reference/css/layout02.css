@@ -346,13 +346,27 @@ body.editing-page .wrapper  {
     padding-left:20px;
     padding-right:20px;
 }
+.section.on:before {
+    z-index:0;
+    position:absolute;
+    top:0;
+    width:100%;
+    left:0;
+    height:3px;
+    display:block;
+    content: "";
+    background:#63afa6;
+}
 .section.on:after {
-     position: absolute;
-     z-index:1;
-     top:0; left:0; bottom:0; right:0;
-     display:block;
-     content: "";
-     border:3px #63afa6 solid;
+    z-index:0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    left:0;
+    height:3px;
+    display:block;
+    content: "";
+    background:#63afa6;
 }
 .add {
     position:relative;
@@ -401,14 +415,11 @@ body.editing-page .wrapper  {
 }
 .edit {
     display:none;
-    z-index: 50;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    width:100%;
+    height:100%;
 }
 .edit .btn-edit {
+    z-index:50;
     position:absolute;
     display: block;
     top:50%;

@@ -93,7 +93,7 @@ $(function() {
     $(".wrapper").prepend(wrapperMask);
     $(".section").after(add);
     $(".section").eq(0).before(add);
-    $(".section").prepend(edit);
+    $(".con-box").after(edit);
 
     $('.section').mouseenter(function () {
         $(this).addClass('on')
