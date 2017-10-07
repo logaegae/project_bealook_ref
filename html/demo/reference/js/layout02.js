@@ -87,11 +87,17 @@ var wrapperMask = `
 <div class="wrapper-mask"></div>
 `;
 
+var sectionBdr = `
+<span class="sec-bdr top"></span>
+<span class="sec-bdr bottom"></span>
+`;
+
 $(function() {
     // $("body").prepend(lnbLeft);
     $("body").prepend(lnbTop);
     $(".wrapper").prepend(wrapperMask);
     $(".section").after(add);
+    $(".section").append(sectionBdr);
     $(".section").eq(0).before(add);
     $(".con-box").after(edit);
 

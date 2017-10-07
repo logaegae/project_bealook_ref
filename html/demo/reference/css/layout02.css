@@ -346,13 +346,32 @@ body.editing-page .wrapper  {
     padding-left:20px;
     padding-right:20px;
 }
+.section .sec-bdr {
+    display:none;
+    z-index:0;
+    position:absolute;
+    left:0;
+    width:100%;
+    height:3px;
+    content: "";
+    background:#63afa6;
+}
+.section .sec-bdr.top {
+    top:0;
+}
+.section .sec-bdr.bottom {
+    bottom:0;
+}
+.section.on .sec-bdr {
+    display:block;
+}
 .section.on:before {
     z-index:0;
     position:absolute;
     top:0;
-    width:100%;
+    width:3px;
     left:0;
-    height:3px;
+    bottom:0;
     display:block;
     content: "";
     background:#63afa6;
@@ -360,10 +379,10 @@ body.editing-page .wrapper  {
 .section.on:after {
     z-index:0;
     position:absolute;
+    top:0;
+    width:3px;
+    right:0;
     bottom:0;
-    width:100%;
-    left:0;
-    height:3px;
     display:block;
     content: "";
     background:#63afa6;
