@@ -223,6 +223,7 @@ body img {
 
 .wrapper {
     overflow:hidden;
+    padding-top:50px;
 }
 .section {
     position:relative;
@@ -237,22 +238,115 @@ body img {
      top:0; left:0; bottom:0; right:0;
      display:block;
      content: "";
-     border:5px #63afa6 solid;
+     border:4px #63afa6 solid;
 }
-.section .btn-box {
+.add {
+    position:relative;
+    /*height:30px;*/
+}
+.add.on {
+    /*height:30px;*/
+}
+.add .btn-add-section {
+    position:absolute;
+    z-index:5;
+    top:-20px;
+    left:-58px;
+    width:87px;
+    height:40px;
+    background: url(../img/btn_add_section_02_1.png);
+    cursor:pointer;
+}
+.add p {
+    display: none;
+    z-index:3;
+    position:absolute;
+    top:-16px;
+    left:0;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+    border:2px #44948b dashed;
+    background:rgba(98,174,166,0.6);
+    cursor:pointer;
+}
+.add.on p {
+    display: block;
+}
+.edit {
     display:none;
     z-index: 100;
     position:absolute;
-    top:30px;
-    right:30px;
+    top:0; left:0; right:0; bottom:0;
 }
-.section .btn-box button {
-    width:40px;
-    height:40px;
-    background: #fff;
+.edit .btn-edit {
+    position:absolute;
+    display: block;
+    top:50%;
+    right:-36px;
+    margin-top:-40px;
+    padding-left:9px;
+    width:80px;
+    height:80px;
+    text-align: left;
+    font-size:13px;
+    font-weight:400;
+    color:#fff;
+    background: #63afa6;
+    border:0;
+    border-radius: 50%;
+}
+.section.on .add, .section.on .edit {
+    display:block;
+}
+.edit .options {
+    position:absolute;
+    display:none;
+    top:10px;
+    right:60px;
+    width:350px;
     border:1px #979797 solid;
+    background: #fff;
 }
-.section.on .btn-box {
+.edit .options ul li {
+    float:none;
+    overflow:hidden;
+    padding:10px 20px;
+    font-size:15px;
+    border-top:1px #979797 solid;
+}
+.edit .options ul li:first-child {
+    border-top:0;
+}
+.edit .options ul li .label-dep1 {
+    float:left;
+    width:100px;
+}
+.edit .options ul li .value {
+    margin-left:100px;
+}
+.edit .options ul li .value-rows {
+    padding-top: 10px;
+}
+.edit .options ul li .value-rows:first-child {
+    padding-top: 0;
+}
+.edit .options .ui-widget.ui-widget-content {
+    float:right;
+    width:150px;
+}
+.edit .options .custom-handle {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  text-align: center;
+  line-height: 150%;
+}
+.edit.on .options {
     display:block;
 }
 .section .con-box {
