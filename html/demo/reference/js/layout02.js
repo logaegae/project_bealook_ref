@@ -29,7 +29,7 @@ var lnbTop = `
             <li><a href="#none" class="btn-hr"><span class="txt">구분선</span></a></li>
         </ul>
     </div>
-    <div class="lnb-dep2">
+    <div class="lnb-dep2 dep2-title">
         <ul>
             <li></li>
         </ul>
@@ -40,7 +40,7 @@ var lnbTop = `
 var add = `
 <div class="add">
     <button type="button" class="btn-add-section"></button>
-    <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
+    <p>여기에 원하는 레이아웃을 추가해 보세요&nbsp;&nbsp;&nbsp;<span>+</span></p>
 </div>
 `;
 
@@ -52,7 +52,7 @@ var edit = `
             <li>
                 <p class="label-dep1">좌우 너비</p>
                 <div class="value">
-                    <button type="button" class="btn btn-width">Full</button>
+                    <button type="button" class="btn-width">Full</button>
                 </div>
             </li>
             <li>
@@ -75,7 +75,7 @@ var edit = `
             <li>
                 <p class="label-dep1">타이틀 스타일</p>
                 <div class="value">
-                    <button type="button" class="btn btn-tit-change">변경하기</button>
+                    <button type="button" class="btn-title-change">변경하기</button>
                 </div>
             </li>
         </ul>
@@ -127,5 +127,11 @@ $(function() {
     $('.wrapper-mask').click(function () {
         $('.lnb').removeClass('on')
         $('.wrapper-mask').removeClass('on')
+    })
+    $('.btn-title-change').click(function () {
+        $('.lnb').addClass('on')
+        $('.wrapper-mask').addClass('on')
+        $('.lnb-dep2').addClass('on')
+        $('.btn-title').addClass('on').parent().siblings().children().removeClass('on')
     })
 })

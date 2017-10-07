@@ -368,7 +368,7 @@ body.editing-page .wrapper  {
     left:-58px;
     width:87px;
     height:40px;
-    background: url(../img/btn_add_section_02_1.png);
+    background: url('../img/btn_add_section_02_1.png') no-repeat;
     cursor:pointer;
 }
 .add p {
@@ -387,31 +387,41 @@ body.editing-page .wrapper  {
     background:rgba(98,174,166,0.6);
     cursor:pointer;
 }
+.add.on p span {
+    display: inline-block;
+    width:16px;
+    height:16px;
+    line-height: 16px;
+    font-size:15px;
+    border:2px #fff solid;
+    border-radius: 50%;
+}
 .add.on p {
     display: block;
 }
 .edit {
     display:none;
-    z-index: 100;
+    z-index: 50;
     position:absolute;
-    top:0; left:0; right:0; bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
 }
 .edit .btn-edit {
     position:absolute;
     display: block;
     top:50%;
-    right:-36px;
-    margin-top:-40px;
-    padding-left:9px;
-    width:80px;
-    height:80px;
-    text-align: left;
-    font-size:13px;
-    font-weight:400;
-    color:#fff;
-    background: #63afa6;
-    border:0;
-    border-radius: 50%;
+    right:0px;
+    margin-top:-33px;
+    width:47px;
+    height:66px;
+    font-size:0;
+    text-indent: -999999%;
+    background: url('../img/btn_edit.png') no-repeat center;
+}
+.edit.on .btn-edit {
+    background: url('../img/btn_edit_close.png') no-repeat center;
 }
 .section.on .add, .section.on .edit {
     display:block;
