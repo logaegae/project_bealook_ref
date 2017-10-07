@@ -6,9 +6,14 @@
     <title>Be A Look - Reference 2</title>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" />
     <link rel="stylesheet" href="css/layout02.css" type="text/css" />
+    <link rel="stylesheet" href="../test/css/editor.css?v=0.01" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/layout02.js"></script>
+    <script type="text/javascript" src="../test/js/text-editor-beta.js"></script>
+    <script type="text/javascript" src="../test/js/text-tool.js"></script>
 </head>
 <style>
 
@@ -16,26 +21,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        $('.section').mouseenter(function () {
-            $(this).addClass('on')
-        })
-        $('.section').mouseleave(function () {
-            $(this).removeClass('on')
-        })
-        $('.btn-width').click(function () {
-            $(this).closest('.section').toggleClass('w-full')
-        })
-        $('.btn-edit').click(function () {
-            $(this).parent().toggleClass('on')
-        })
-        $('.add').mouseenter(function () {
-            $(this).addClass('on')
-            $(this).find('button').animate({'left':'-40px'},100)
-        })
-        $('.add').mouseleave(function () {
-            $(this).removeClass('on')
-            $(this).find('button').animate({'left':'-58px'},100)
-        })
+
 
         var handle01 = $( "#handle-01" );
         $( "#slider-01" ).slider({
@@ -58,56 +44,17 @@
     })
 
 </script>
-<body id="layout02">
+<body id="layout02" class="editing-page">
+
 
     <div class="wrapper">
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
 
         <div class="section bg-white">
-            <div class="edit">
-                <button type="button" class="btn-edit">EDIT</button>
-                <div class="options">
-                    <ul>
-                        <li>
-                            <p class="label-dep1">좌우 너비</p>
-                            <div class="value">
-                                <button type="button" class="btn btn-width">Full</button>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="label-dep1">상하 여백</p>
-                            <div class="value">
-                                <div class="value-rows">
-                                    <span class="label-dep2">상</span>
-                                    <div id="slider-01">
-                                        <div id="handle-01" class="ui-slider-handle custom-handle"></div>
-                                    </div>
-                                </div>
-                                <div class="value-rows">
-                                    <span class="label-dep2">하</span>
-                                    <div id="slider-02">
-                                        <div id="handle-02" class="ui-slider-handle custom-handle"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="label-dep1">타이틀 스타일</p>
-                            <div class="value">
-                                <button type="button" class="btn btn-tit-change">변경하기</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="con-box">
                 <div class="tit-box type-01">
-                    <p class="tit">[기본]<br>BASICS</p>
-                    <p class="con">
+                    <p class="tit text-editable">[기본]<br>BASICS</p>
+                    <p class="con text-editable">
                         면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
                         면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
                         면 100%의 무명 소재로 담백한 제품을 만듭니다。
@@ -116,50 +63,15 @@
             </div>
         </div>
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
-
         <div class="section bg-white">
-            <div class="edit">
-                <button type="button" class="btn-edit">EDIT</button>
-                <div class="options">
-                    <ul>
-                        <li>
-                            <p class="label-dep1">좌우 너비</p>
-                            <div class="value">
-                                <button type="button" class="btn-width">Full</button>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="label-dep1">상하 여백</p>
-                            <div class="value">
-                                <div class="value-rows">
-                                    <span class="label-dep2">상</span>
-                                    <div id="slider-01">
-                                        <div id="handle-01" class="ui-slider-handle custom-handle"></div>
-                                    </div>
-                                </div>
-                                <div class="value-rows">
-                                    <span class="label-dep2">하</span>
-                                    <div id="slider-02">
-                                        <div id="handle-02" class="ui-slider-handle custom-handle"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="con-box">
                 <ul class="ul-list li-type-02 li-cell-05 li-circle mg2per">
                     <li>
                         <div class="li-box">
                             <div class="img-wrap img-wrap-rpsv img-bg"></div>
                             <div class="txt-box">
-                                <span class="tit">서울</span>
-                                <span class="con">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                                <span class="tit text-editable">서울</span>
+                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             </div>
                         </div>
                     </li>
@@ -167,8 +79,8 @@
                         <div class="li-box">
                             <div class="img-wrap img-wrap-rpsv img-bg"></div>
                             <div class="txt-box">
-                                <span class="tit">파리</span>
-                                <span class="con">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                                <span class="tit text-editable">파리</span>
+                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             </div>
                         </div>
                     </li>
@@ -176,8 +88,8 @@
                         <div class="li-box">
                             <div class="img-wrap img-wrap-rpsv img-bg"></div>
                             <div class="txt-box">
-                                <span class="tit">도쿄</span>
-                                <span class="con">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                                <span class="tit text-editable">도쿄</span>
+                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             </div>
                         </div>
                     </li>
@@ -185,8 +97,8 @@
                         <div class="li-box">
                             <div class="img-wrap img-wrap-rpsv img-bg"></div>
                             <div class="txt-box">
-                                <span class="tit">런던</span>
-                                <span class="con">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                                <span class="tit text-editable">런던</span>
+                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             </div>
                         </div>
                     </li>
@@ -194,8 +106,8 @@
                         <div class="li-box">
                             <div class="img-wrap img-wrap-rpsv img-bg"></div>
                             <div class="txt-box">
-                                <span class="tit">뉴욕</span>
-                                <span class="con">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
+                                <span class="tit text-editable">뉴욕</span>
+                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
                             </div>
                         </div>
                     </li>
@@ -203,15 +115,7 @@
             </div>
         </div>
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
-
         <div class="section bg-gray">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
-            </div>
             <div class="con-box">
                  <div class="tit-box type-01">
                     <p class="tit">[기본]<br>基本</p>
@@ -224,15 +128,7 @@
             </div>
         </div>
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
-
         <div class="section bg-gray">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
-            </div>
             <div class="con-box">
                 <div class="img-box mgauto">
                     <img src="./img/basics08.jpg" class="w100per">
@@ -240,15 +136,7 @@
             </div>
         </div>
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
-
         <div class="section bg-white">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
-            </div>
             <div class="con-box">
                 <div class="tit-box type-01">
                     <p class="tit">[기본]<br>Séoul - Paris</p>
@@ -261,15 +149,7 @@
             </div>
         </div>
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
-
         <div class="section bg-white">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
-            </div>
             <div class="con-box">
                 <ul class="ul-list li-cell-03">
                     <li>
@@ -339,15 +219,7 @@
             </div>
         </div>
 
-        <div class="add">
-            <button type="button" class="btn-add-section"></button>
-            <p>여기에 원하는 레이아웃을 추가해 보세요.</p>
-        </div>
-
         <div class="section bg-gray">
-            <div class="btn-box">
-                <button type="button" class="btn-width">너비 100%</button>
-            </div>
             <div class="con-box">
                 <div class="tit-box type-02">
                     <p class="tit">GIFT</p></p>
