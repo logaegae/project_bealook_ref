@@ -226,7 +226,7 @@ X.prototype.clearOn = function() {
         $(e).text('');
     });
     $('.hTDepth1 #fontSize option, .hTDepth2 #fontSize option').each(function(i, e) {
-        $(e).prop('selected', false);
+        $(e).removeAttr("selected");
     });
 }
 
@@ -290,8 +290,8 @@ X.prototype.getDepth1Styles = function() {
     });
     console.log(_this.getSomthingStyle("fontFamily"));
     $('.hTDepth1 #fontFamily option').each(function(i, e) {
-        if (_this.getSomthingStyle("fontFamily") == $(e).prop('value') + '') {
-            console.log($(e).text())
+        console.log(_this.getSomthingStyle("fontFamily") + " : " + '"' + $(e).prop('value') + '"')
+        if (_this.getSomthingStyle("fontFamily") == '"' + $(e).prop('value') + '"') {
             $(e).parents('.select-box').children('label').text($(e).text());
             $(e).prop('selected', true);
         } else {
