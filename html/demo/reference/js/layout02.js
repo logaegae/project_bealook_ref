@@ -15,13 +15,14 @@ var lnbLeft = `
 `;
 
 var lnbTop = `
-<div class="lnb lnb-top">
+<div class="lnb">
     <div class="lnb-dep1">
         <ul>
-            <li><a href="#none" class="btn-title on"><span class="txt">제목</span></a></li>
+            <li><a href="#none" class="btn-logo on"><span class="txt">로고</span></a></li>
+            <li><a href="#none" class="btn-title"><span class="txt">제목</span></a></li>
             <li><a href="#none" class="btn-text"><span class="txt">본문</span></a></li>
             <li><a href="#none" class="btn-list"><span class="txt">리스트</span></a></li>
-            <li><a href="#none" class="btn-grid"><span class="txt">그리드</span></a></li>
+            <li><a href="#none" class="btn-grid"><span class="txt">갤러리</span></a></li>
             <li><a href="#none" class="btn-img"><span class="txt">이미지</span></a></li>
             <li><a href="#none" class="btn-video"><span class="txt">비디오</span></a></li>
             <li><a href="#none" class="btn-map"><span class="txt">지도</span></a></li>
