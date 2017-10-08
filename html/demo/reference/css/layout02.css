@@ -263,16 +263,84 @@ body img {
 }
 
 .lnb-dep2 {
-    display:block;
+    display:none;
     position: fixed;
     top:65px;
     left:50%;
+    background: #fff;
+    border:1px #dadada solid;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.lnb-dep2.on {
+    display:block;
+}
+.lnb-dep2.dep2-panel-l {
     margin-left:-400px;
     width:800px;
     height:400px;
-    background: #fff;
-    border:1px #dadada solid;
-    box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+}
+.lnb-dep2.dep2-panel-s {
+    margin-left:-230px;
+    width:400px;
+    padding:30px;
+}
+.lnb-dep2 .btn-confirm {
+    float:right;
+    width:80px;
+    height:34px;
+    font-size:12px;
+    color:#222;
+    line-height:32px;
+    text-align:center;
+    border:1px solid #aaa;
+    background: #aad8d6;
+    vertical-align:middle;
+}
+.lnb-dep2 .file-box {
+    overflow: hidden;
+    font-size:0;
+}
+.lnb-dep2 .file-box .fileName {
+    display:inline-block;
+    width:206px;
+    height:30px;
+    padding-left:10px;
+    padding-right:10px;
+    line-height:30px;
+    font-size:13px;
+    border:1px solid #aaa;
+    border-right:0;
+    background-color:#fff;
+    vertical-align:middle;
+}
+.lnb-dep2 .file-box .btn-file {
+    display:inline-block;
+    width:80px;
+    height:32px;
+    font-size:12px;
+    color:#222;
+    line-height:30px;
+    text-align:center;
+    border:1px solid #aaa;
+    background: #e4e4e4;
+    vertical-align:middle;
+    cursor:pointer;
+}
+.lnb-dep2 .file-box input[type="file"] {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+}
+.lnb-dep2 p.upload-info {
+    clear:both;
+    margin-top:20px;
+    text-align: center;
+    font-size:12px;
+    color:#63afa6;
 }
 
 .btn-logo {background: #fff url('../img/btn_logo.png') no-repeat center top 5px;}
