@@ -30,6 +30,13 @@ X.prototype.default = function() {
     $(document).on('change', '.hTDepth1 #fontFamily, .hTDepth1 #fontSize', function() {
         _this.getDepth1Styles();
     });
+    $(document).on('click', '.hTDepth2 button', function() {
+        $(this).removeClass('on');
+        _this.getDepth2Styles();
+    });
+    $(document).on('change', '.hTDepth2 #fontFamily, .hTDepth2 #fontSize', function() {
+        _this.getDepth2Styles();
+    });
     $('button[exec=redo]').click(function() {
         document.execCommand('redo');
     });
@@ -156,6 +163,7 @@ X.prototype.btnConfigDepth2 = function(target) {
         }
     });
     $('.hTDepth2 #fontFamily').change(function() {
+        console.log("changed")
         var name = $(this).children("option:selected").val() || null;
         if (name != null) {
             _this._editor.focus();
@@ -163,6 +171,7 @@ X.prototype.btnConfigDepth2 = function(target) {
         }
     });
     $('.hTDepth2 #fontSize').change(function() {
+        console.log("changed")
         _this._editor.focus();
         document.execCommand('fontSize', false, $(this).children("option:selected").val());
     });
@@ -218,16 +227,16 @@ X.prototype.clearSelection = function() {
 }
 //버튼 on 초기화 함수
 X.prototype.clearOn = function() {
-    console.log("????")
     $('.hTDepth1 button, .hTDepth2 button').each(function(i, e) {
         $(e).removeClass('on');
     });
     $('.hTDepth1 .select-box label').each(function(i, e) {
         $(e).text('');
     });
-    $('.hTDepth1 #fontSize option, .hTDepth2 #fontSize option').each(function(i, e) {
-        $(e).removeAttr("selected");
+    $(".hTDepth1 select option:first-child, .hTDepth2 select option:first-child").each(function(i, e) {
+        $(e).prop('selected', true);
     });
+
 }
 
 //스타일 추출 함수
@@ -256,78 +265,158 @@ X.prototype.getRange = function() {
     }
     return containerEl;
 }
-//1+2 사이즈 가져오는 함수
+//1+2 범위의 스타일 가져오는 함수
 X.prototype.getSomthingStyle = function(something) {
     var containerEl = this.getRange();
 
     if (containerEl) {
-        var fontSize = this.getComputedStyleProperty(containerEl, something);
-        return fontSize;
+        var style = this.getComputedStyleProperty(containerEl, something);
+        return style;
     }
 }
 //depth1 스타일 가져오는 함수 > 버튼 on
 X.prototype.getDepth1Styles = function() {
+    var fontFamilyFound = false;
     var _this = this;
-    _this._editor.setAttribute("contenteditable", "true");
     var j_editor = $("[data-id=" + _this._editor.getAttribute("data-id") + "]");
-    _this._editor.focus();
-    document.execCommand('selectAll', false, null);
-    // console.log(_this.getSomthingStyle("fontSize"));
-    var fontVariable = {
+    var fontMap = {
         "7": "30px",
         "6": "25px",
         "5": "20px",
         "4": "15px",
         "3": "12px"
     }
+    var fontFamilyCount = {},
+        left = 0,
+        center = 0,
+        right = 0,
+        count = 0;
+
+    _this._editor.setAttribute("contenteditable", "true");
+    _this._editor.focus();
+    document.execCommand('selectAll', false, null);
+    // console.log(_this.getSomthingStyle("fontSize"));
     $('.hTDepth1 #fontSize option').each(function(i, e) {
-        if (j_editor.find('font').prop('size') === $(e).prop('value') || _this.getSomthingStyle("fontSize") === fontVariable[$(e).prop('value')]) {
+        if (j_editor.find('font').prop('size') === $(e).prop('value') || _this.getSomthingStyle("fontSize") === fontMap[$(e).prop('value')]) {
             $(e).parents('.select-box').children('label').text($(e).text());
             $(e).prop('selected', true);
-        } else {
-            $(e).prop('selected', false);
         }
     });
-    console.log(_this.getSomthingStyle("fontFamily"));
+
+    // console.log(_this.getSomthingStyle("fontFamily"));
+    //전체 폰트 스타일이 일치할 경우
     $('.hTDepth1 #fontFamily option').each(function(i, e) {
-        console.log(_this.getSomthingStyle("fontFamily") + " : " + '"' + $(e).prop('value') + '"')
+        // console.log(_this.getSomthingStyle("fontFamily") + " : " + '"' + $(e).prop('value') + '"');
         if (_this.getSomthingStyle("fontFamily") == '"' + $(e).prop('value') + '"') {
             $(e).parents('.select-box').children('label').text($(e).text());
             $(e).prop('selected', true);
-        } else {
-            $(e).prop('selected', false);
+            fontFamilyFound = true;
+            return false;
         }
-
     });
+    //전체 폰트 스타일이 일치 안할 경우
+    if (!fontFamilyFound) {
+        j_editor.find("font").each(function(i, e) {
+            var font = $(e).prop('face');
+            $('.hTDepth1 #fontFamily option').each(function(j, f) {
+                if (font == $(f).prop('value')) {
+                    if (fontFamilyCount['"' + $(f).prop('value') + '"']) {
+                        fontFamilyCount['"' + $(f).prop('value') + '"']["count"]++;
+                    } else {
+                        fontFamilyCount['"' + $(f).prop('value') + '"'] = {
+                            count: 1,
+                            name: $(f).text(),
+                            index: $(f).index()
+                        };
+                    }
+                }
+            });
+            count++;
+        });
+    }
+    if (Object.keys(fontFamilyCount).length) {
+        for (e in fontFamilyCount) {
+            if (count == fontFamilyCount[e].count) {
+                $('.hTDepth1 #fontFamily').closest(".select-box").children('label').text(fontFamilyCount[e].name);
+                $('.hTDepth1 #fontFamily option').eq(fontFamilyCount[e].index).prop('selected', true);
+            }
+        }
+    }
 
     // console.log(_this.getSomthingStyle("fontWeight"));
-    if (_this.getSomthingStyle("fontWeight") === 'bold') $("button[exec=bold]").addClass('on');
+    if (j_editor.find("b").text().length === j_editor.text().length) $("button[exec=bold]").addClass('on');
 
     // console.log(_this.getSomthingStyle("fontStyle"));
-    if (_this.getSomthingStyle("fontStyle") === 'italic') $("button[exec=italic]").addClass('on');
+    if (j_editor.find("i").text().length === j_editor.text().length) $("button[exec=italic]").addClass('on');
 
     // console.log(j_editor.find("u").length != 0);
     if (j_editor.find("u").text().length === j_editor.text().length) $("button[exec=underline]").addClass('on');
 
     // console.log(j_editor.find("strike").length != 0);
     if (j_editor.find("strike").text().length === j_editor.text().length) $("button[exec=StrikeThrough]").addClass('on');
+
+    //left, center right check
+    j_editor.children("div").each(function(i, e) {
+        $(e).css('textAlign') == 'left' ? left++ : '';
+        $(e).css('textAlign') == 'center' ? center++ : '';
+        $(e).css('textAlign') == 'right' ? right++ : '';
+        count++;
+    });
+    if (left == count && count != 0) {
+        $("button[exec=justifyLeft]").addClass('on');
+        $("button[exec=justifyCenter]").removeClass('on');
+        $("button[exec=justifyRight]").removeClass('on');
+    }
+    if (center == count && count != 0) {
+        $("button[exec=justifyLeft]").removeClass('on');
+        $("button[exec=justifyCenter]").addClass('on');
+        $("button[exec=justifyRight]").removeClass('on');
+    }
+    if (right == count && count != 0) {
+        $("button[exec=justifyLeft]").removeClass('on');
+        $("button[exec=justifyCenter]").removeClass('on');
+        $("button[exec=justifyRight]").addClass('on');
+    }
+
     _this.clearSelection();
     _this._editor.removeAttribute("contenteditable");
 }
 //depth2 스타일 가져오는 함수 > 버튼 on
 X.prototype.getDepth2Styles = function() {
+    var _this = this;
+    //임시저장
+    // document.onmouseup = function(evt) {
+    //     var range = document.caretRangeFromPoint(evt.clientX, evt.clientY);
+    //     var sel = window.getSelection();
+    //     var selRange;
+
+    // Save initial selection
+    // if (sel.rangeCount > 0) {
+    //     selRange = sel.getRangeAt(0);
+    // }
+    //
+    //
+    // sel.addRange(range);
+    // document.getElementById("info").innerHTML = "Word: " + range + ", bold: " + document.queryCommandState("bold");
+    //
+    // Restore original selection
+    //     sel.removeAllRanges();
+    //     if (selRange ) {
+    //         selRange = sel.addRange(selRange);
+    //     }
+    // };
+
+    // console.log(_this.getSomthingStyle("fontWeight"))
     //셀렉트 박스 디폴트 설정
-    var getFontFamily = this.getSomthingStyle("fontFamily");
+    var getFontFamily = _this.getSomthingStyle("fontFamily");
     $('.hTDepth2 #fontFamily option').each(function(i, e) {
-        $(e).prop('selected', false);
         if ($(e).prop('value') == getFontFamily) {
             $(e).parents('.select-box').children('label').text($(e).text());
             $(e).prop('selected', true);
         }
     });
-    var getFontSize = this.getSomthingStyle("fontSize");
+    var getFontSize = _this.getSomthingStyle("fontSize");
     $('.hTDepth2 #fontSize option').each(function(i, e) {
-        $(e).prop('selected', false);
         if ($(e).prop('value') == getFontSize) {
             $(e).parents('.select-box').children('label').text($(e).text());
             $(e).prop('selected', true);
@@ -397,6 +486,7 @@ X.prototype.remove = function() {
         _this.toolTxtHide($('.tool-txt-drag'));
 
         _this.removed = false;
+        _this.clearSelection();
     }
     $(".editor-wrapper").on('mousedown', '*', function(e) {
         if (!_this.removed && $(this).parents(".text-editable").length == 0) {
@@ -412,6 +502,7 @@ X.prototype.remove = function() {
             removeCommon();
         }
     });
+
 }
 //영역 선택 설정 끝
 

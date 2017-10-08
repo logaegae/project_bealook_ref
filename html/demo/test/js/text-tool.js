@@ -18,6 +18,7 @@ var depth1 = `
     <div class="select-box">
         <label for="fontFamily"></label>
         <select name="s01" id="fontFamily" required="required">
+            <option value="" disabled class="hidden"></option>
             <option value="Noto Sans KR Light">Noto Sans</option>
             <option value="Nanum Gothic">나눔고딕</option>
             <option value="NanumBarunGothic">나눔바른고딕</option>
@@ -30,6 +31,7 @@ var depth1 = `
     <div class="select-box">
         <label for="fontSize"></label>
         <select name="s02" id="fontSize" required="required">
+            <option value="" disabled class="hidden"></option>
             <option value="7">제목 1 (30pt) </option>
             <option value="6">제목 2 (25pt)</option>
             <option value="5">제목 3 (20pt)</option>
@@ -42,9 +44,9 @@ var depth1 = `
     <button title="가운데 줄" exec="StrikeThrough" class="d1noArgBtn btn btn-icon btn-linethrough">가운데 줄</button>
     <button title="밑 줄" exec="underline" class="d1noArgBtn btn btn-icon btn-underline">밑 줄</button>
     <button title="글씨 색" exec="foreColor" class="btn btn-icon btn-color bl">글씨 색</button>
-    <button title="좌측 정렬" exec="justifyleft" class="d1noArgBtn btn btn-icon btn-ta-left bl">좌측 정렬</button>
-    <button title="가운데 정렬" exec="justifycenter" class="d1noArgBtn btn btn-icon btn-ta-center">가운데 정렬</button>
-    <button title="우측 정렬" exec="justifyright" class="d1noArgBtn btn btn-icon btn-ta-right br">우측 정렬</button>
+    <button title="좌측 정렬" exec="justifyLeft" class="d1noArgBtn btn btn-icon btn-ta-left bl">좌측 정렬</button>
+    <button title="가운데 정렬" exec="justifyCenter" class="d1noArgBtn btn btn-icon btn-ta-center">가운데 정렬</button>
+    <button title="우측 정렬" exec="justifyRight" class="d1noArgBtn btn btn-icon btn-ta-right br">우측 정렬</button>
 </div>
 `;
 var depth2 = `
@@ -52,6 +54,7 @@ var depth2 = `
     <div class="select-box">
         <label for="fontFamily">Noto Sans</label>
         <select name="s01" id="fontFamily" required="required">
+            <option value="" disabled class="hidden"></option>
             <option value="Noto Sans KR Light">Noto Sans</option>
             <option value="Nanum Gothic">나눔고딕</option>
             <option value="NanumBarunGothic">나눔바른고딕</option>
@@ -64,6 +67,7 @@ var depth2 = `
     <div class="select-box">
         <label for="fontSize">제목 1 (30pt)</label>
         <select name="s02" id="fontSize" required="required">
+            <option value="" disabled class="hidden"></option>
             <option value="7">제목 1 (30pt) </option>
             <option value="6">제목 2 (25pt)</option>
             <option value="5">제목 3 (20pt)</option>
@@ -79,6 +83,11 @@ var depth2 = `
     <button title="배경 색" exec="backColor" class="btn btn-icon btn-bgcolor">배경 색</button>
     <button title="글머리 불릿" exec="insertUnorderedList" class="btn btn-icon btn-ul bl d2noArgBtn">글머리 불릿</button>
     <button title="글머리 숫자" exec="insertOrderedList" class="btn btn-icon btn-ol d2noArgBtn">글머리 숫자</button>
+
+    <button title="좌측 정렬" exec="justifyLeft" class="d2noArgBtn btn btn-icon btn-ta-left bl">좌측 정렬</button>
+    <button title="가운데 정렬" exec="justifyCenter" class="d2noArgBtn btn btn-icon btn-ta-center">가운데 정렬</button>
+    <button title="우측 정렬" exec="justifyRight" class="d2noArgBtn btn btn-icon btn-ta-right br">우측 정렬</button>
+
     <button title="링크 걸기" exec="createLink" class="btn btn-icon btn-link2 bl br">링크 걸기</button>
 </div>
 `;

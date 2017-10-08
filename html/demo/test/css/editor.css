@@ -207,9 +207,9 @@ button {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background: rgba(255,255,255,0.82);
-    border-bottom:1px #d4d4d4 solid;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.82);
+    border-bottom: 1px #d4d4d4 solid;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header .mask {
@@ -375,6 +375,7 @@ button {
     cursor: pointer;
     min-height: 20px;
 }
+
 .text-editable:hover {
     outline: 1px #9acac5 solid !important;
 }
@@ -400,7 +401,7 @@ button {
 }
 
 .ed-selected {
-    outline: 3px tomato solid;
+    outline: 1px #9acac5 solid;
 }
 
 .listable {}
@@ -439,4 +440,12 @@ font[size="4"] {
 
 font[size="3"] {
     font-size: 13px !important;
+}
+
+select option.hidden {
+    display: none;
+}
+
+.text-editable li {
+    width: inherit !important;
 }
