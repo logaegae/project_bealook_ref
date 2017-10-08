@@ -173,9 +173,15 @@ body img {
 .mb60 {
     margin-bottom: 60px;
 }
-
+.pt0 {
+    padding-top:0 !important;
+}
+.pb0 {
+    padding-bottom:0 !important;
+}
 .p60-0 {
-    padding: 60px 0;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 .pb50per {
@@ -477,6 +483,9 @@ body.editing-page .wrapper  {
 .section.w-full .con-box {
     max-width:100% !important;
 }
+
+
+/*layout style*/
 
 .tit-box.type-01 {
     display: table;
