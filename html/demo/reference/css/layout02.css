@@ -232,12 +232,16 @@ body img {
     z-index:1000;
     left:50%;
     top:0;
-    margin-left:-325.5px;
+    margin-left:-330px;
     background: #fff;
     border-right:1px #dadada solid;
 }
 .lnb.on {
     display: block;
+}
+.lnb-dep1 ul {
+    margin:0;
+    padding:0;
 }
 .lnb-dep1 ul li {
     float:left;
@@ -245,10 +249,10 @@ body img {
 .lnb-dep1 ul li a {
     display:block;
     text-align: center;
-    padding:5px 12px;
-    width:40px;
+    padding:5px 10px;
+    width:45px;
     height:55px;
-    font-size:10px;
+    font-size:11px;
     color:#222;
     border-left:1px #dadada solid;
     border-bottom:0;
