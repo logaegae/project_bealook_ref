@@ -239,10 +239,6 @@ body img {
 .lnb.on {
     display: block;
 }
-.lnb-dep1 ul {
-    margin:0;
-    padding:0;
-}
 .lnb-dep1 ul li {
     float:left;
 }

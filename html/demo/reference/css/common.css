@@ -774,3 +774,11 @@ ul.mg2per.li-cell-05 li {
 .ul-grid.grid-type-02 li:nth-child(5) .img-wrap-rpsv {
     padding-bottom: 31.333333%;
 }
+.text-editable ul, .text-editable ol {
+    padding-left:30px;
+}
+.text-editable ul li, .text-editable ol li{
+    margin:0;
+    padding:0;
+}
+
