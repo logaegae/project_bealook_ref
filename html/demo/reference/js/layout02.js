@@ -187,6 +187,8 @@ $(function() {
     })
     $('.wrapper-mask').click(function () {
         $('.lnb').removeClass('on')
+        $('.lnb-dep1 li a').removeClass('on')
+        $('.lnb-dep2').removeClass('on')
         $('.wrapper-mask').removeClass('on')
     })
     $('.btn-title-change').click(function () {

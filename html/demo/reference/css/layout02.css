@@ -393,7 +393,7 @@ body.editing-page .wrapper  {
     position:absolute;
     left:0;
     width:100%;
-    height:3px;
+    height:2px;
     content: "";
     background:#63afa6;
 }
@@ -410,7 +410,7 @@ body.editing-page .wrapper  {
     z-index:0;
     position:absolute;
     top:0;
-    width:3px;
+    width:2px;
     left:0;
     bottom:0;
     display:block;
@@ -421,7 +421,7 @@ body.editing-page .wrapper  {
     z-index:0;
     position:absolute;
     top:0;
-    width:3px;
+    width:2px;
     right:0;
     bottom:0;
     display:block;
@@ -442,7 +442,7 @@ body.editing-page .wrapper  {
     left:-58px;
     width:87px;
     height:40px;
-    background: url('../img/btn_add_section_02_1.png') no-repeat;
+    background: url('../img/btn_add_section_02_2.png') no-repeat;
     cursor:pointer;
 }
 .add p {
