@@ -100,7 +100,15 @@ var add = `
 
 var edit = `
 <div class="edit">
-    <button type="button" class="btn-edit">EDIT</button>
+    <div class="sec-control">
+        <button type="button" title="설정" class="btn-section-edit">설정</button>
+        <button type="button" title="위로" class="btn-section-up">위로</button>
+        <button type="button" title="아래로" class="btn-section-down">아래로</button>
+        <button type="button" title="복제" class="btn-section-copy">복제</button>
+        <button type="button" title="삭제" class="btn-section-delete">삭제</button>
+    </div>
+
+    <!-- <button type="button" class="btn-edit">EDIT</button> -->
     <div class="options">
         <ul>
             <li>
@@ -164,8 +172,9 @@ $(function() {
     $('.btn-width').click(function () {
         $(this).closest('.section').toggleClass('w-full')
     })
-    $('.btn-edit').click(function () {
-        $(this).parent().toggleClass('on')
+    $('.btn-section-edit').click(function () {
+        $(this).parent().parent().toggleClass('on')
+        $(this).toggleClass('on')
     })
     $('.add').mouseenter(function () {
         $(this).addClass('on')
