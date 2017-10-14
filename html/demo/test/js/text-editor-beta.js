@@ -16,6 +16,31 @@ X.prototype.init = function() {
     this.drag();
     this.remove();
     this.default();
+
+    function selectionIsBold() {
+        var range, isBold = false;
+        if (window.getSelection) {
+            var sel = window.getSelection();
+            if (sel && sel.getRangeAt && sel.rangeCount) {
+                range = sel.getRangeAt(0);
+                document.designMode = "on";
+                sel.removeAllRanges();
+                sel.addRange(range);
+            }
+        }
+        if (document.queryCommandState) {
+            isBold = document.queryCommandState("bold");
+        }
+        if (document.designMode == "on") {
+            document.designMode = "off";
+        }
+        return isBold;
+    }
+
+    $(".editor-wrapper").on('click', '*', function(e) {
+        if (selectionIsBold()) console.log('it has bold');
+        e.stopPropagation();
+    });
 }
 
 
@@ -248,7 +273,7 @@ X.prototype.getComputedStyleProperty = function(el, propName) {
         return el.currentStyle[propName];
     }
 }
-//2.범위 추출 함수
+//2.커서가 있는 테그 추출 함수
 X.prototype.getRange = function() {
     var containerEl, sel;
     if (window.getSelection) {
@@ -505,7 +530,6 @@ X.prototype.remove = function() {
 
 }
 //영역 선택 설정 끝
-
 function TextEditor() {
     X.apply(this, arguments);
 }
