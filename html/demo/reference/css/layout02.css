@@ -567,7 +567,7 @@ body.editing-page .wrapper  {
     position:relative;
 }
 .img-div.on:after {
-    z-index:1000;
+    z-index:1;
     position:absolute;
     top:0;
     left:0;
@@ -576,7 +576,7 @@ body.editing-page .wrapper  {
     display:block;
     content: "";
     background:rgba(154,202,197,0.7);
-    /*outline: 2px #9acac5 solid !important;*/
+    border: 1px #63afa6 solid !important;
 }
 
 .tit-box.type-01 {

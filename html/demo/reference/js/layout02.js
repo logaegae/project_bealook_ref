@@ -154,6 +154,12 @@ var sectionBdr = `
 <span class="sec-bdr bottom"></span>
 `;
 
+var imgEdit = `
+<span class="img-edit">
+    <button type="button" class="btn-img-edit">이미지 변경</button>
+</span>
+`;
+
 $(function() {
     // $("body").prepend(lnbLeft);
     $("body").prepend(lnbTop);
@@ -162,6 +168,7 @@ $(function() {
     $(".section").append(sectionBdr);
     $(".section").eq(0).before(add);
     $(".con-box").after(edit);
+    $('.img-div').append(imgEdit);
 
     $('.section').mouseenter(function () {
         $(this).addClass('on')
