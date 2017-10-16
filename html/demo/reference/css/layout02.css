@@ -363,7 +363,6 @@ body img {
 .btn-section-delete {background: #fff url('../img/btn_section_delete.png') no-repeat center;}
 
 /*layout*/
-
 .wrapper {
     position:relative;
     overflow:hidden;
@@ -436,7 +435,6 @@ body.editing-page .wrapper  {
 }
 .add {
     position:relative;
-    /*height:30px;*/
 }
 .add.on {
     /*height:30px;*/
@@ -456,6 +454,7 @@ body.editing-page .wrapper  {
     z-index:3;
     position:absolute;
     top:-16px;
+    /*top:0;*/
     left:0;
     width:100%;
     text-align: center;
@@ -503,43 +502,11 @@ body.editing-page .wrapper  {
 .edit .sec-control button:hover, .edit .sec-control button.on {
     background-color: #9acac5;
 }
-/*.edit .sec-control {
-    position:absolute;
-    top:50%;
-    margin-top:-79px;
-    right:0;
-    font-size:0;
-}
-.edit .sec-control button {
-    display:block;
-    margin-top:-1px;
-    width:40px;
-    height:40px;
-    font-size:0;
-    text-indent: -999999%;
-    background-color: #63afa6;
-    border:1px #4d9e96 solid;
-}*/
-/*.edit .btn-edit {
-    z-index:50;
-    position:absolute;
-    display: none;
-    top:50%;
-    right:0px;
-    margin-top:-33px;
-    width:47px;
-    height:66px;
-    font-size:0;
-    text-indent: -999999%;
-    background: url('../img/btn_edit.png') no-repeat center;
-}
-.edit.on .btn-edit {
-    background: url('../img/btn_edit_close.png') no-repeat center;
-}*/
 .section.on .add, .section.on .edit {
     display:block;
 }
 .edit .options {
+    z-index:10;
     position:absolute;
     display:none;
     top:39px;
@@ -596,6 +563,21 @@ body.editing-page .wrapper  {
 
 
 /*layout style*/
+.img-div {
+    position:relative;
+}
+.img-div.on:after {
+    z-index:1000;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display:block;
+    content: "";
+    background:rgba(154,202,197,0.7);
+    /*outline: 2px #9acac5 solid !important;*/
+}
 
 .tit-box.type-01 {
     display: table;
@@ -668,7 +650,6 @@ body.editing-page .wrapper  {
 
 
 /*ul li style*/
-
 ul {
     overflow: hidden;
 }
@@ -684,7 +665,6 @@ ul li {
 ul li .img-wrap {
     font-size: 0;
 }
-
 ul li .img-wrap-rpsv {
     overflow: hidden;
     position: relative;

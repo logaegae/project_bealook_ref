@@ -135,15 +135,15 @@ button {
     width: 37px;
     height: 38px;
     line-height: 38px;
-    background-size: 78% !important;
+    /*background-size: 78% !important;*/
 }
 
 .header .btn-undo {
-    background: #fff url('../../reference/img/btn_undo_03.png') no-repeat center;
+    background: #fff url('../../reference/img/btn_undo.png') no-repeat center;
 }
 
 .header .btn-redo {
-    background: #fff url('../../reference/img/btn_redo_03.png') no-repeat center;
+    background: #fff url('../../reference/img/btn_redo.png') no-repeat center;
 }
 
 .header .btn-undo {

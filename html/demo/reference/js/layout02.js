@@ -178,10 +178,12 @@ $(function() {
     })
     $('.add').mouseenter(function () {
         $(this).addClass('on')
+        // $(this).find('button').animate({'left':'-40px', 'top':'-3px'},100)
         $(this).find('button').animate({'left':'-40px'},100)
     })
     $('.add').mouseleave(function () {
         $(this).removeClass('on')
+        // $(this).find('button').animate({'left':'-58px', 'top':'-20px'},100)
         $(this).find('button').animate({'left':'-58px'},100)
     })
     $('.add').click(function () {
@@ -205,6 +207,12 @@ $(function() {
         $('.wrapper-mask').addClass('on')
         $('.lnb-dep2').addClass('on')
         $('.btn-title').addClass('on').parent().siblings().children().removeClass('on')
+    })
+    $('.img-div').mouseenter(function() {
+        $(this).addClass('on')
+    })
+    $('.img-div').mouseleave(function() {
+        $(this).removeClass('on')
     })
 
 
