@@ -156,7 +156,7 @@ var sectionBdr = `
 
 var imgEdit = `
 <span class="img-edit">
-    <button type="button" class="btn-img-edit">이미지 변경</button>
+    <button type="button" class="btn-img-edit" title="이미지 수정">수정</button>
 </span>
 `;
 

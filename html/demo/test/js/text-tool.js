@@ -8,7 +8,8 @@ var header = `
         </span>
     </div>
     <div class="save">
-        <button type="button" class="btn btn-txt btn-save">저장하기</button>
+        <button type="button" class="btn btn-txt btn-save" title="저장하기">저장하기</button>
+        <button type="button" class="btn btn-icon btn-exit" title="나가기">나가기</button>
     </div>
     <div class="mask"></div>
 </div>

@@ -131,7 +131,7 @@ button {
     border-radius: 5px;
 }
 
-.header .btn-icon {
+.header .actions .btn-icon {
     width: 37px;
     height: 38px;
     line-height: 38px;
@@ -148,6 +148,15 @@ button {
 
 .header .btn-undo {
     position: relative;
+}
+.header .btn-exit {
+    margin-left:5px;
+    width:40px;
+    height:40px;
+    /*border:1px #4d9e96 solid;*/
+    border:1px #979797 solid;
+    border-radius: 5px;
+    background: #fff url('../../reference/img/btn_exit.png') no-repeat center;
 }
 
 .header .btn-undo:before {
