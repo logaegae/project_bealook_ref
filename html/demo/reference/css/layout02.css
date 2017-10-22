@@ -275,6 +275,7 @@ body img {
     display:block;
 }
 .lnb-dep2.dep2-panel-l {
+    display:none;
     margin-left:-400px;
     width:800px;
     height:400px;
@@ -348,10 +349,12 @@ body img {
 .btn-title {background: #fff url('../img/btn_title_2.png') no-repeat center top 5px;}
 .btn-text {background: #fff url('../img/btn_text_2.png') no-repeat center top 5px;}
 .btn-list {background: #fff url('../img/btn_list.png') no-repeat center top 5px;}
+.btn-contents {background: #fff url('../img/btn_contents.png') no-repeat center top 5px;}
 .btn-grid {background: #fff url('../img/btn_grid.png') no-repeat center top 5px;}
 .btn-img {background: #fff url('../img/btn_img.png') no-repeat center top 5px;}
 .btn-video {background: #fff url('../img/btn_video.png') no-repeat center top 5px;}
 .btn-map {background: #fff url('../img/btn_map_2.png') no-repeat center top 5px;}
+.btn-social {background: #fff url('../img/btn_social.png') no-repeat center top 5px;}
 .btn-attach {background: #fff url('../img/btn_attach.png') no-repeat center top 5px;}
 .btn-typo {background: #fff url('../img/btn_typo.png') no-repeat center top 5px;}
 .btn-hr {background: #fff url('../img/btn_hr.png') no-repeat center top 5px;}
@@ -507,7 +510,7 @@ body.editing-page .wrapper  {
 }
 .edit .options {
     z-index:10;
-    position:absolute;
+    position:fixed;
     display:none;
     top:39px;
     right:2px;

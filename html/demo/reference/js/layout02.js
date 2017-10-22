@@ -1,7 +1,7 @@
 var lnbLeft = `
 <div class="lnb lnb-left">
     <ul class="lnb-dep1">
-        <li><a href="#none" class="btn-typo on"><span class="txt">제목</span></a></li>
+        <li><a href="#none" class="btn-typo"><span class="txt">제목</span></a></li>
         <li><a href="#none" class="btn-typo"><span class="txt">본문</span></a></li>
         <li><a href="#none" class="btn-list"><span class="txt">리스트</span></a></li>
         <li><a href="#none" class="btn-grid"><span class="txt">그리드</span></a></li>
@@ -21,12 +21,12 @@ var lnbTop = `
             <li><a href="#none" class="btn-logo"><span class="txt">로고</span></a></li>
             <li><a href="#none" class="btn-title"><span class="txt">제목</span></a></li>
             <li><a href="#none" class="btn-text"><span class="txt">본문</span></a></li>
-            <li><a href="#none" class="btn-list"><span class="txt">리스트</span></a></li>
+            <li><a href="#none" class="btn-contents"><span class="txt">컨텐츠</span></a></li>
             <li><a href="#none" class="btn-grid"><span class="txt">갤러리</span></a></li>
             <li><a href="#none" class="btn-img"><span class="txt">이미지</span></a></li>
             <li><a href="#none" class="btn-video"><span class="txt">비디오</span></a></li>
             <li><a href="#none" class="btn-map"><span class="txt">지도</span></a></li>
-            <li><a href="#none" class="btn-attach"><span class="txt">첨부파일</span></a></li>
+            <li><a href="#none" class="btn-social"><span class="txt">소셜</span></a></li>
             <li><a href="#none" class="btn-hr"><span class="txt">구분선</span></a></li>
         </ul>
     </div>
@@ -75,13 +75,9 @@ var lnbTop = `
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-attach">
-        <div class="file-box ov">
-            <input type="text" class="fileName" readonly="readonly">
-            <label for="uploadBtn" class="btn-file">파일 찾기</label>
-            <input type="file" id="uploadBtn" class="uploadBtn">
-            <button type="button" class="btn-confirm">업로드</button>
-        </div>
-        <p class="upload-info">※ 파일은 최대 100MB(메가바이트)까지 업로드 가능합니다.</p>
+        <ul>
+            <li></li>
+        </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-hr">
         <ul>
