@@ -16,31 +16,6 @@ X.prototype.init = function() {
     this.drag();
     this.remove();
     this.default();
-
-    function selectionIsBold() {
-        var range, isBold = false;
-        if (window.getSelection) {
-            var sel = window.getSelection();
-            if (sel && sel.getRangeAt && sel.rangeCount) {
-                range = sel.getRangeAt(0);
-                document.designMode = "on";
-                sel.removeAllRanges();
-                sel.addRange(range);
-            }
-        }
-        if (document.queryCommandState) {
-            isBold = document.queryCommandState("bold");
-        }
-        if (document.designMode == "on") {
-            document.designMode = "off";
-        }
-        return isBold;
-    }
-
-    $(".editor-wrapper").on('click', '*', function(e) {
-        if (selectionIsBold()) console.log('it has bold');
-        e.stopPropagation();
-    });
 }
 
 
@@ -409,29 +384,7 @@ X.prototype.getDepth1Styles = function() {
 //depth2 스타일 가져오는 함수 > 버튼 on
 X.prototype.getDepth2Styles = function() {
     var _this = this;
-    //임시저장
-    // document.onmouseup = function(evt) {
-    //     var range = document.caretRangeFromPoint(evt.clientX, evt.clientY);
-    //     var sel = window.getSelection();
-    //     var selRange;
 
-    // Save initial selection
-    // if (sel.rangeCount > 0) {
-    //     selRange = sel.getRangeAt(0);
-    // }
-    //
-    //
-    // sel.addRange(range);
-    // document.getElementById("info").innerHTML = "Word: " + range + ", bold: " + document.queryCommandState("bold");
-    //
-    // Restore original selection
-    //     sel.removeAllRanges();
-    //     if (selRange ) {
-    //         selRange = sel.addRange(selRange);
-    //     }
-    // };
-
-    // console.log(_this.getSomthingStyle("fontWeight"))
     //셀렉트 박스 디폴트 설정
     var getFontFamily = _this.getSomthingStyle("fontFamily");
     $('.hTDepth2 #fontFamily option').each(function(i, e) {
@@ -481,9 +434,30 @@ X.prototype.drag = function() {
         e.stopPropagation();
     });
 }
+X.prototype.selectionIsBold = function() {
+    var range, isBold = false;
+    if (window.getSelection) {
+        var sel = window.getSelection();
+        if (sel && sel.getRangeAt && sel.rangeCount) {
+            range = sel.getRangeAt(0);
+            document.designMode = "on";
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+    }
+    if (document.queryCommandState) {
+        isBold = document.queryCommandState("bold");
+    }
+    if (document.designMode == "on") {
+        document.designMode = "off";
+    }
+    console.log(range)
+    return isBold;
+}
 //depth2 노출
 X.prototype.clickDepth2 = function() {
     var _this = this;
+
     $(".editor-wrapper").on('mousedown', '.text-editable.ed-selected', function(e) {
         console.log("editable");
 
@@ -495,6 +469,8 @@ X.prototype.clickDepth2 = function() {
         $("*[contenteditable=true]").removeAttr("contenteditable");
         $(this).attr("contenteditable", "true");
         $(this).focus();
+        console.log("isBold : " + _this.selectionIsBold());
+
         _this.removed = true;
         e.stopPropagation();
     });
