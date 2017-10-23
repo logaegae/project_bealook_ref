@@ -1,20 +1,4 @@
-var lnbLeft = `
-<div class="lnb lnb-left">
-    <ul class="lnb-dep1">
-        <li><a href="#none" class="btn-typo"><span class="txt">제목</span></a></li>
-        <li><a href="#none" class="btn-typo"><span class="txt">본문</span></a></li>
-        <li><a href="#none" class="btn-list"><span class="txt">리스트</span></a></li>
-        <li><a href="#none" class="btn-grid"><span class="txt">그리드</span></a></li>
-        <li><a href="#none" class="btn-img"><span class="txt">이미지</span></a></li>
-        <li><a href="#none" class="btn-video"><span class="txt">비디오</span></a></li>
-        <li><a href="#none" class="btn-map"><span class="txt">지도</span></a></li>
-        <li><a href="#none" class="btn-attach"><span class="txt">첨부파일</span></a></li>
-        <li><a href="#none" class="btn-hr"><span class="txt">구분선</span></a></li>
-    </ul>
-</div>
-`;
-
-var lnbTop = `
+var lnb = `
 <div class="lnb">
     <div class="lnb-dep1">
         <ul>
@@ -32,7 +16,12 @@ var lnbTop = `
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-logo">
         <ul>
-            <li></li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_logo_img.png"><span>이미지로 삽입</span></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_logo_txt.png"><span>텍스트로 삽입</span></a>
+            </li>
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-title">
@@ -45,7 +34,7 @@ var lnbTop = `
             <li></li>
         </ul>
     </div>
-    <div class="lnb-dep2 dep2-panel-l dep2-list">
+    <div class="lnb-dep2 dep2-panel-l dep2-contents">
         <ul>
             <li></li>
         </ul>
@@ -74,7 +63,7 @@ var lnbTop = `
             <li></li>
         </ul>
     </div>
-    <div class="lnb-dep2 dep2-panel-s dep2-attach">
+    <div class="lnb-dep2 dep2-panel-s dep2-social">
         <ul>
             <li></li>
         </ul>
@@ -157,8 +146,7 @@ var imgEdit = `
 `;
 
 $(function() {
-    // $("body").prepend(lnbLeft);
-    $("body").prepend(lnbTop);
+    $("body").prepend(lnb);
     $(".wrapper").prepend(wrapperMask);
     $(".section").after(add);
     $(".section").append(sectionBdr);
@@ -166,12 +154,16 @@ $(function() {
     $(".con-box").after(edit);
     $('.img-div').append(imgEdit);
 
+    
+    // section
     $('.section').mouseenter(function () {
         $(this).addClass('on')
     })
     $('.section').mouseleave(function () {
         $(this).removeClass('on')
     })
+    
+    // btn
     $('.btn-width').click(function () {
         $(this).closest('.section').toggleClass('w-full')
     })
@@ -179,6 +171,8 @@ $(function() {
         $(this).parent().parent().toggleClass('on')
         $(this).toggleClass('on')
     })
+    
+    // add
     $('.add').mouseenter(function () {
         $(this).addClass('on')
         // $(this).find('button').animate({'left':'-40px', 'top':'-3px'},100)
@@ -193,7 +187,9 @@ $(function() {
         $('.lnb').addClass('on')
         $('.wrapper-mask').addClass('on')
     })
-
+    
+    
+    // lnb
     $('.lnb-dep1 li a').click(function () {
         var lnbLiIndex = $(this).parent().index();
         $('.lnb-dep2').removeClass('on').eq(lnbLiIndex).addClass('on')
@@ -205,12 +201,22 @@ $(function() {
         $('.lnb-dep2').removeClass('on')
         $('.wrapper-mask').removeClass('on')
     })
+    $('.lnb-dep2 li a').mouseenter(function() {
+        $(this).parent().addClass('on')
+    })
+    $('.lnb-dep2 li a').mouseleave(function() {
+        $(this).parent().removeClass('on')
+    })
+    
+    
     $('.btn-title-change').click(function () {
         $('.lnb').addClass('on')
         $('.wrapper-mask').addClass('on')
         $('.lnb-dep2').addClass('on')
         $('.btn-title').addClass('on').parent().siblings().children().removeClass('on')
     })
+    
+    
     $('.img-div').mouseenter(function() {
         $(this).addClass('on')
     })
