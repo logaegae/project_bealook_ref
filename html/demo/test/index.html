@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
-<head> 
+<head>
     <title>WYSIWYG Editor</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+
     <link rel="stylesheet" href="./css/editor.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/headTool.js"></script>
@@ -19,8 +19,19 @@
             margin:0;
             padding:0;
         }
+        .block{
+            border:1px solid #F00;
+            margin-bottom:10px;
+        }
     </style>
-    
+
+    <script>
+        $(document).ready(function({
+            $('.block').click(function(e){
+                console.log(e);
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="content-wrapper">
@@ -33,5 +44,6 @@
         <a href="#">ㅎㅎㅎ</a>
     </div>
 </div>
+
 </body>
 </html>
