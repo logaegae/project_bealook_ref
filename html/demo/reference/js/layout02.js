@@ -174,6 +174,8 @@ var imgEdit = `
 
 var section = `
 <div class="section">
+    <div class="con-box">
+    </div>
 </div>
 `;
 
@@ -188,10 +190,10 @@ $(function() {
 
 
     // section
-    $('.section').mouseenter(function () {
+    $(document).on('mouseenter', '.section', function () {
         $(this).addClass('on')
     })
-    $('.section').mouseleave(function () {
+    $(document).on('mouseleave', '.section', function () {
         $(this).removeClass('on')
     })
 
