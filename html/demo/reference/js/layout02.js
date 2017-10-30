@@ -172,6 +172,11 @@ var imgEdit = `
 </span>
 `;
 
+var section = `
+<div class="section">
+</div>
+`;
+
 $(function() {
     $("body").prepend(lnb);
     $(".wrapper").prepend(wrapperMask);
@@ -200,21 +205,32 @@ $(function() {
     })
 
     // add
-    $('.add').mouseenter(function () {
+    $(document).on('mouseenter', '.add', function () {
         $(this).addClass('on')
         // $(this).find('button').animate({'left':'-40px', 'top':'-3px'},100)
         $(this).find('button').animate({'left':'-40px'},100)
     })
-    $('.add').mouseleave(function () {
+    $(document).on('mouseleave', '.add', function () {
         $(this).removeClass('on')
         // $(this).find('button').animate({'left':'-58px', 'top':'-20px'},100)
         $(this).find('button').animate({'left':'-58px'},100)
     })
-    $('.add').click(function () {
+
+    var _this =  null;
+
+    $(document).on('click', '.add', function () {
+        _this = $(this)
         $('.lnb').addClass('on')
         $('.wrapper-mask').addClass('on')
     })
-
+    $('.lnb-dep2 ul li').click(function () {
+        console.log(_this)
+        _this.after(add).after(section)
+        $('.lnb').removeClass('on')
+        $('.lnb-dep1 li a').removeClass('on')
+        $('.lnb-dep2').removeClass('on')
+        $('.wrapper-mask').removeClass('on')
+    })
 
     // lnb
     $('.lnb-dep1 li a').click(function () {
@@ -250,7 +266,6 @@ $(function() {
     $('.img-div').mouseleave(function() {
         $(this).removeClass('on')
     })
-
 
     var uploadFile = $('.file-box .uploadBtn');
     uploadFile.on('change', function(){
