@@ -58,6 +58,20 @@
                     }
                 });
             }
+            var form = $('#idsearch');
+            form.on('submit', function(e) {
+                var q = this.id.value;
+                if (q.length) {
+                    grabImages1(q);
+                }
+                e.preventDefault();
+            });
+
+            function grabImages1(id) {
+                var instagramUrl = "https://api.instagram.com/oauth/authorize/?client_id=" + id + "&redirect_uri=http://bealook.net/demo/reference/insta.html&response_type=code";
+                window.open(instagramUrl, '_blank');
+            }
+
         });
     </script>
 
@@ -72,6 +86,7 @@
                     return n = window.location.hash, !!(n.length && n.indexOf("access_token") > -1)
                 }, t = function() {
                     var n;
+                    console.log(n)
                     return n = window.location.hash.split("#access_token=")[1], $(".instagram-access-token").val(n).on("click", function() {
                         return $(this).select()
                     })
@@ -80,19 +95,26 @@
         }).call(this);
     </script>
 </head>
+<style media="screen">
+    .token-received{
+
+    }
+</style>
 <body>
     <h1>인스타 Feed 가져오기 테스트</h1>
-    <a href="https://instagram.com/oauth/authorize/?client_id=19c899edf4464bd9b9daf544d7aa71b7&redirect_uri=http://bealook.net/demo/reference/insta.html&response_type=token" title="Generate Instagram Access Token">토큰받기</a>
-    <br>
-    토큰 :
-    <span class="instagram-access-token" style="border:1px solid orange">
-
-    </span>
-    <br>
-    인스타 정보 들어갈 자리
+    <form id="idsearch">
+        <label for="insta-id">
+    인스타 아이디 입력
+    <input type="text" data-id="insta" name="id">
+    </label>
+        <input type="submit" value="연결하기" />
+        <br>
+        <a href="https://instagram.com/oauth/authorize/?client_id=19c899edf4464bd9b9daf544d7aa71b7&redirect_uri=http://bealook.net/demo/reference/insta.html&response_type=token" title="Generate Instagram Access Token">Generate Access Token</a>
+    </form>
+    <br> 인스타 정보 들어갈 자리
     <br>
     <div id="instaPics"></div>
-
+    
 </body>
 
 </html>
