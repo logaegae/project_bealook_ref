@@ -75,12 +75,15 @@ var lnb = `
             <input type="file" id="uploadBtn" class="uploadBtn" multiple>
             <button type="button" class="btn-confirm">업로드</button>
         </div>
-        <p class="upload-info">※ 파일은 최대 100MB(메가바이트)까지 업로드 가능합니다.</p>
+        <p class="upload-info">※ 파일은 <b>최대 100MB(메가바이트)</b>까지 업로드 가능합니다.</p>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-video">
-        <ul>
-            <li></li>
-        </ul>
+        <div class="url-box">
+            <span>URL 주소</span>
+            <input type="text" class="input-video">
+            <button type="button" class="btn-confirm">업로드</button>
+        </div>
+        <p class="upload-info">※ <b>유튜브 동영상</b>만 가능하며, 해당 url을 복사하여 붙여넣기 하세요.</p>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-map">
         <ul>

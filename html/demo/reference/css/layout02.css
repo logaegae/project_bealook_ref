@@ -329,6 +329,9 @@ body img {
     border-radius: 5px;
     /*background:rgba(99,175,166,0.2);*/
 }
+.lnb-dep2 ul.snb-li-02 li:first-child {
+    margin-left:140px;
+}
 .lnb-dep2 ul.snb-li-02 li a {
     width:145px;
     height:70px;
@@ -367,22 +370,25 @@ body img {
     background: #aad8d6;
     vertical-align:middle;
 }
-.lnb-dep2 .file-box {
-    overflow: hidden;
-    font-size:0;
-}
-.lnb-dep2 .file-box .fileName {
+.lnb-dep2 input[type="text"] {
     display:inline-block;
-    width:206px;
     height:30px;
     padding-left:10px;
     padding-right:10px;
     line-height:30px;
     font-size:13px;
     border:1px solid #aaa;
-    border-right:0;
     background-color:#fff;
     vertical-align:middle;
+    outline:none;
+}
+.lnb-dep2 .file-box {
+    overflow: hidden;
+    font-size:0;
+}
+.lnb-dep2 .file-box .fileName {
+    width:206px;
+    border-right:0;
 }
 .lnb-dep2 .file-box .btn-file {
     display:inline-block;
@@ -405,6 +411,26 @@ body img {
     margin:-1px;
     overflow:hidden;
     clip:rect(0,0,0,0);
+}
+.lnb-dep2 .url-box {
+    font-size:0;
+}
+.lnb-dep2 .url-box span {
+    display: inline-block;
+    width:65px;
+    height:32px;
+    font-size:12px;
+    color:#222;
+    line-height:32px;
+    text-align: center;
+    border:1px #aaa solid;
+    border-right:0;
+    background: #e4e4e4;
+    vertical-align:middle;
+    border-radius: 5px 0 0 5px;
+}
+.lnb-dep2 .url-box input[type="text"] {
+    width:221px;
 }
 .lnb-dep2 p.upload-info {
     clear:both;
