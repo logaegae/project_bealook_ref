@@ -120,7 +120,6 @@ var edit = `
         <button type="button" title="삭제" class="btn-section-delete">삭제</button>
     </div>
 
-    <!-- <button type="button" class="btn-edit">EDIT</button> -->
     <div class="options">
         <ul>
             <li>
@@ -157,14 +156,16 @@ var edit = `
 </div>
 `;
 
-var wrapperMask = `
-<div class="wrapper-mask"></div>
-`;
-
 var sectionBdr = `
 <span class="sec-bdr top"></span>
 <span class="sec-bdr bottom"></span>
 `;
+
+var wrapperMask = `
+<div class="wrapper-mask"></div>
+`;
+
+
 
 var imgEdit = `
 <span class="img-edit">
@@ -180,28 +181,31 @@ var section = `
 `;
 
 $(function() {
-    $("body").prepend(lnb);
-    $(".wrapper").prepend(wrapperMask);
-    $(".section").after(add);
-    $(".section").append(sectionBdr);
-    $(".section").eq(0).before(add);
-    $(".con-box").after(edit);
+    $('body').prepend(lnb);
+    $('.wrapper').prepend(wrapperMask);
+    $('.section').after(add);
+    $('.section').eq(0).before(add);
     $('.img-div').append(imgEdit);
 
 
     // section
     $(document).on('mouseenter', '.section', function () {
         $(this).addClass('on')
+        $(this).children('.con-box').after(edit)
+        $(this).append(sectionBdr);
     })
     $(document).on('mouseleave', '.section', function () {
         $(this).removeClass('on')
+        $(this).find('.edit').remove();
+        $(this).find('.sec-bdr').remove();
     })
 
     // btn
-    $('.btn-width').click(function () {
+    $(document).on('click', '.btn-width', function () {
         $(this).closest('.section').toggleClass('w-full')
-    })
-    $('.btn-section-edit').click(function () {
+        // $(this).closest('.section').attr('data-width','full');
+    });
+    $(document).on('click', '.btn-section-edit', function () {
         $(this).parent().parent().toggleClass('on')
         $(this).toggleClass('on')
     })
@@ -216,41 +220,6 @@ $(function() {
         $(this).removeClass('on')
         // $(this).find('button').animate({'left':'-58px', 'top':'-20px'},100)
         $(this).find('button').animate({'left':'-58px'},100)
-    })
-
-    var _this =  null;
-
-    $(document).on('click', '.add', function () {
-        _this = $(this)
-        $('.lnb').addClass('on')
-        $('.wrapper-mask').addClass('on')
-    })
-    $('.lnb-dep2 ul li').click(function () {
-        console.log(_this)
-        _this.after(add).after(section)
-        $('.lnb').removeClass('on')
-        $('.lnb-dep1 li a').removeClass('on')
-        $('.lnb-dep2').removeClass('on')
-        $('.wrapper-mask').removeClass('on')
-    })
-
-    // lnb
-    $('.lnb-dep1 li a').click(function () {
-        var lnbLiIndex = $(this).parent().index();
-        $('.lnb-dep2').removeClass('on').eq(lnbLiIndex).addClass('on')
-        $(this).addClass('on').parent().siblings().children().removeClass('on')
-    })
-    $('.wrapper-mask').click(function () {
-        $('.lnb').removeClass('on')
-        $('.lnb-dep1 li a').removeClass('on')
-        $('.lnb-dep2').removeClass('on')
-        $('.wrapper-mask').removeClass('on')
-    })
-    $('.lnb-dep2 li a').mouseenter(function() {
-        $(this).parent().addClass('on')
-    })
-    $('.lnb-dep2 li a').mouseleave(function() {
-        $(this).parent().removeClass('on')
     })
 
 

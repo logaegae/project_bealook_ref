@@ -22,26 +22,6 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-
-
-        var handle01 = $( "#handle-01" );
-        $( "#slider-01" ).slider({
-          create: function() {
-            handle01.text( $( this ).slider( "value" ) );
-          },
-          slide: function( event, ui ) {
-            handle01.text( ui.value );
-          }
-        });
-        var handle02 = $( "#handle-02" );
-        $( "#slider-02" ).slider({
-          create: function() {
-            handle02.text( $( this ).slider( "value" ) );
-          },
-          slide: function( event, ui ) {
-            handle02.text( ui.value );
-          }
-        });
     })
 
 </script>
@@ -50,10 +30,19 @@
 
     <div class="wrapper">
 
-        <div class="section bg-gray pb0">
+        <div class="section">
             <div class="con-box">
-                <div class="img-div logo-box ta-c">
+                .logo-box-img: 로고 이미지
+                <div class="logo-box-img img-div">
                     <img src="./img/basics_logo.png" alt="기본 로고">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="con-box">
+                .logo-box-txt: 로고 텍스트
+                <div class="logo-box-txt">
+                    <p class="text-editable">[기본] BASICS</p>
                 </div>
             </div>
         </div>
