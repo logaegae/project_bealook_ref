@@ -15,7 +15,7 @@ var lnb = `
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-logo">
-        <ul>
+        <ul class="snb-li-02">
             <li>
                 <a href="#none" class=""><img src="./img/snb_logo_img.png"><span>이미지로 삽입</span></a>
             </li>
@@ -25,18 +25,42 @@ var lnb = `
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-title">
-        <ul>
-            <li></li>
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_tit_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_tit_02.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_tit_03.png"></a>
+            </li>
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-text">
-        <ul>
-            <li></li>
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_txt_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_txt_02.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_txt_03.png"></a>
+            </li>
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-contents">
-        <ul>
-            <li></li>
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_con_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_con_02.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_con_03.png"></a>
+            </li>
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-l dep2-grid">
@@ -51,12 +75,15 @@ var lnb = `
             <input type="file" id="uploadBtn" class="uploadBtn" multiple>
             <button type="button" class="btn-confirm">업로드</button>
         </div>
-        <p class="upload-info">※ 파일은 최대 100MB(메가바이트)까지 업로드 가능합니다.</p>
+        <p class="upload-info">※ 파일은 <b>최대 100MB(메가바이트)</b>까지 업로드 가능합니다.</p>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-video">
-        <ul>
-            <li></li>
-        </ul>
+        <div class="url-box">
+            <span>URL 주소</span>
+            <input type="text" class="input-video">
+            <button type="button" class="btn-confirm">업로드</button>
+        </div>
+        <p class="upload-info">※ <b>유튜브 동영상</b>만 가능하며, 해당 url을 복사하여 붙여넣기 하세요.</p>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-map">
         <ul>
@@ -154,7 +181,7 @@ $(function() {
     $(".con-box").after(edit);
     $('.img-div').append(imgEdit);
 
-    
+
     // section
     $('.section').mouseenter(function () {
         $(this).addClass('on')
@@ -162,7 +189,7 @@ $(function() {
     $('.section').mouseleave(function () {
         $(this).removeClass('on')
     })
-    
+
     // btn
     $('.btn-width').click(function () {
         $(this).closest('.section').toggleClass('w-full')
@@ -171,7 +198,7 @@ $(function() {
         $(this).parent().parent().toggleClass('on')
         $(this).toggleClass('on')
     })
-    
+
     // add
     $('.add').mouseenter(function () {
         $(this).addClass('on')
@@ -187,8 +214,8 @@ $(function() {
         $('.lnb').addClass('on')
         $('.wrapper-mask').addClass('on')
     })
-    
-    
+
+
     // lnb
     $('.lnb-dep1 li a').click(function () {
         var lnbLiIndex = $(this).parent().index();
@@ -207,16 +234,16 @@ $(function() {
     $('.lnb-dep2 li a').mouseleave(function() {
         $(this).parent().removeClass('on')
     })
-    
-    
+
+
     $('.btn-title-change').click(function () {
         $('.lnb').addClass('on')
         $('.wrapper-mask').addClass('on')
         $('.lnb-dep2').addClass('on')
         $('.btn-title').addClass('on').parent().siblings().children().removeClass('on')
     })
-    
-    
+
+
     $('.img-div').mouseenter(function() {
         $(this).addClass('on')
     })
