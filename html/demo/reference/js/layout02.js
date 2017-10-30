@@ -1,4 +1,107 @@
-var lnb = `<div id="lnb"></div>`;
+var lnb = `
+<div class="lnb">
+    <div class="lnb-dep1">
+        <ul>
+            <li><a href="#none" class="btn-logo"><span class="txt">로고</span></a></li>
+            <li><a href="#none" class="btn-title"><span class="txt">제목</span></a></li>
+            <li><a href="#none" class="btn-text"><span class="txt">본문</span></a></li>
+            <li><a href="#none" class="btn-contents"><span class="txt">컨텐츠</span></a></li>
+            <li><a href="#none" class="btn-grid"><span class="txt">갤러리</span></a></li>
+            <li><a href="#none" class="btn-img"><span class="txt">이미지</span></a></li>
+            <li><a href="#none" class="btn-video"><span class="txt">비디오</span></a></li>
+            <li><a href="#none" class="btn-map"><span class="txt">지도</span></a></li>
+            <li><a href="#none" class="btn-social"><span class="txt">소셜</span></a></li>
+            <li><a href="#none" class="btn-hr"><span class="txt">구분선</span></a></li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-l dep2-logo">
+        <ul class="snb-li-02">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_logo_img.png"><span>이미지로 삽입</span></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_logo_txt.png"><span>텍스트로 삽입</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-l dep2-title">
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_tit_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_tit_02.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_tit_03.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-l dep2-text">
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_txt_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_txt_02.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_txt_03.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-l dep2-contents">
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_con_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_con_02.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_con_03.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-l dep2-grid">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-s dep2-img">
+        <div class="file-box">
+            <input type="text" class="fileName" readonly="readonly">
+            <label for="uploadBtn" class="btn-file">파일 찾기</label>
+            <input type="file" id="uploadBtn" class="uploadBtn" multiple>
+            <button type="button" class="btn-confirm">업로드</button>
+        </div>
+        <p class="upload-info">※ 파일은 <b>최대 100MB(메가바이트)</b>까지 업로드 가능합니다.</p>
+    </div>
+    <div class="lnb-dep2 dep2-panel-s dep2-video">
+        <div class="url-box">
+            <span>URL 주소</span>
+            <input type="text" class="input-video">
+            <button type="button" class="btn-confirm">업로드</button>
+        </div>
+        <p class="upload-info">※ <b>유튜브 동영상</b>만 가능하며, 해당 url을 복사하여 붙여넣기 하세요.</p>
+    </div>
+    <div class="lnb-dep2 dep2-panel-s dep2-map">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-s dep2-social">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div class="lnb-dep2 dep2-panel-l dep2-hr">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</div>
+`;
 
 var add = `
 <div class="add">
@@ -78,10 +181,7 @@ var section = `
 `;
 
 $(function() {
-    // $('body').prepend(lnb);
-    $('#lnb').load( "ajax/lnb.html", function() {
-    //   alert( "Load was performed." );
-    });
+    $('body').prepend(lnb);
     $('.wrapper').prepend(wrapperMask);
     $('.section').after(add);
     $('.section').eq(0).before(add);
@@ -103,7 +203,8 @@ $(function() {
     // btn
     $(document).on('click', '.btn-width', function () {
         $(this).closest('.section').toggleClass('w-full')
-    })
+        // $(this).closest('.section').attr('data-width','full');
+    });
     $(document).on('click', '.btn-section-edit', function () {
         $(this).parent().parent().toggleClass('on')
         $(this).toggleClass('on')
@@ -119,41 +220,6 @@ $(function() {
         $(this).removeClass('on')
         // $(this).find('button').animate({'left':'-58px', 'top':'-20px'},100)
         $(this).find('button').animate({'left':'-58px'},100)
-    })
-
-
-    var _thisAdd =  null;
-    $(document).on('click', '.add', function () {
-        _thisAdd = $(this)
-        $('.lnb').addClass('on')
-        $('.wrapper-mask').addClass('on')
-    })
-    $('.lnb-dep2 ul li').click(function () {
-        console.log(_this)
-        _thisAdd.after(add).after(section)
-        $('.lnb').removeClass('on')
-        $('.lnb-dep1 li a').removeClass('on')
-        $('.lnb-dep2').removeClass('on')
-        $('.wrapper-mask').removeClass('on')
-    })
-
-    // lnb
-    $('.lnb-dep1 li a').click(function () {
-        var lnbLiIndex = $(this).parent().index();
-        $('.lnb-dep2').removeClass('on').eq(lnbLiIndex).addClass('on')
-        $(this).addClass('on').parent().siblings().children().removeClass('on')
-    })
-    $('.wrapper-mask').click(function () {
-        $('.lnb').removeClass('on')
-        $('.lnb-dep1 li a').removeClass('on')
-        $('.lnb-dep2').removeClass('on')
-        $('.wrapper-mask').removeClass('on')
-    })
-    $('.lnb-dep2 li a').mouseenter(function() {
-        $(this).parent().addClass('on')
-    })
-    $('.lnb-dep2 li a').mouseleave(function() {
-        $(this).parent().removeClass('on')
     })
 
 
