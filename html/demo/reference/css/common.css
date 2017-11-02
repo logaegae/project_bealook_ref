@@ -173,7 +173,9 @@ body img {
 .mb60 {
     margin-bottom: 60px;
 }
-
+.pd1 {
+    padding:1px;
+}
 .p60-0 {
     padding: 60px 0;
 }

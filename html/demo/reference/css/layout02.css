@@ -6,57 +6,6 @@ body img {
     vertical-align: top;
 }
 
-.bold {
-    font-family: "Noto Sans KR Medium", "Nanum Gothic Bold";
-}
-
-.noto-black {
-    font-family: "Noto Sans KR Black"
-}
-
-.hankc {
-    font-family: 'Hankc';
-    line-height: 150%;
-}
-
-.hankc-bold {
-    font-family: 'Hankc';
-    font-weight: bold;
-    line-height: 150%;
-}
-
-.jeongum {
-    font-family: 'Jeongum';
-    line-height: 150%;
-}
-
-.jeongum-bold {
-    font-family: 'Jeongum';
-    font-weight: bold;
-    line-height: 150%;
-}
-
-.daehan {
-    font-family: 'Daehan Regular';
-    line-height: 150%;
-}
-
-.daehan-bold {
-    font-family: 'Daehan Bold';
-    line-height: 150%;
-}
-
-.iropke {
-    font-family: 'Iropke';
-    line-height: 150%;
-}
-
-.iropke-bold {
-    font-family: 'Iropke';
-    font-weight: bold;
-    line-height: 150%;
-}
-
 .ovh {
     overflow: hidden;
 }
@@ -173,6 +122,9 @@ body img {
 .mb60 {
     margin-bottom: 60px;
 }
+.pd1 {
+    padding:1px;
+}
 .pt0 {
     padding-top:0 !important;
 }
@@ -199,7 +151,15 @@ body img {
 .ta-r {
     text-align: right;
 }
-
+.va-t {
+    vertical-align: top;
+}
+.va-m {
+    vertical-align: middle;
+}
+.va-b {
+    vertical-align: bottom;
+}
 .bg-white {
     background: #ffffff;
 }
@@ -245,10 +205,11 @@ body img {
 .lnb-dep1 ul li a {
     display:block;
     text-align: center;
-    padding:5px 10px;
+    padding:3px 10px 7px;
     width:45px;
     height:55px;
-    font-size:11px;
+    font-size:12px;
+    font-family: 'Noto Sans KR Regular';
     color:#222;
     border-left:1px #dadada solid;
     border-bottom:0;
@@ -699,16 +660,16 @@ body.editing-page .wrapper  {
     left:50%;
     background: #fff;
 }
-.tit-box.type-01 {
+#layout02 .tit-box.type-01 {
     display: table;
 }
 
-.tit-box.type-01 p {
+#layout02 .tit-box.type-01 p {
     display: table-cell;
     padding: 5px 0;
 }
 
-.tit-box.type-01 .tit {
+#layout02 .tit-box.type-01 .tit {
     position: relative;
     padding-right: 60px;
     text-align: right;
@@ -717,7 +678,7 @@ body.editing-page .wrapper  {
     color: #a1363f;
 }
 
-.tit-box.type-01 .tit:before {
+#layout02 .tit-box.type-01 .tit:before {
     position: absolute;
     right: 30px;
     top: 0;
@@ -728,21 +689,21 @@ body.editing-page .wrapper  {
     background-color: #222;
 }
 
-.tit-box.type-01 .con {
+#layout02 .tit-box.type-01 .con {
     vertical-align: bottom;
 }
 
-.tit-box.type-02 {
+#layout02 .tit-box.type-02 {
     text-align: center;
 }
 
-.tit-box.type-02 .tit {
+#layout02 .tit-box.type-02 .tit {
     font-size: 38px;
     font-weight: 500;
     color: #fff;
 }
 
-.tit-box.type-02 .con {
+#layout02 .tit-box.type-02 .con {
     color: #fff;
 }
 

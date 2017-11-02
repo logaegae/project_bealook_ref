@@ -1,0 +1,47 @@
+.info {margin-bottom:15px;color:#4d9e96;font-size:14px;}
+.info li {float:inherit;}
+
+.img-bg {background: url(../img/basics06.jpg);}
+
+/**/
+/*.section {overflow: hidden;}*/
+
+.tit {font-size:30px;} /*기본 30px*/
+.con {font-size:15px;} /*기본 15px*/
+
+.logo-box.type-txt {font-size:35px;} /*기본 35px*/
+
+.tit-box.type-01 .tit-line {margin:10px auto 15px; line-height:0 !important;}
+.tit-box.type-01 .line {display: inline-block;  width:30px; height:1px; background:#666;}
+.tit-box.type-02 .tit-line {position: relative;}
+.tit-box.type-02 .tit-line:before {z-index:-1; position: absolute; display: block; content: ""; top:58%; margin-top:-1px; left:0; width:100%; height:1px; background: #666;}
+.tit-box.type-02 .tit {display: inline-block; padding: 0 20px; text-align: center !important; background-color: #fff;}
+.tit-box.type-02.ta-l .tit {padding-left:0;}
+.tit-box.type-02.ta-r .tit {padding-right:0;}
+.tit-box.type-02 .con {margin-top:25px;}
+.tit-box.type-03 {display: table;}
+.tit-box.type-03 > * {display: table-cell;}
+.tit-box.type-03 .tit {text-align: right;}
+.tit-box.type-03 .con {vertical-align: bottom; text-align: left;}
+.tit-box.type-03 .tit-line {padding:0 20px; text-align: center !important;}
+.tit-box.type-03 .line {display: inline-block;  width:1px; height:50px; vertical-align: middle; background:#666;}
+
+.txt-box ul li {position: relative;}
+.txt-box ul li:before {position: absolute; top:50%; margin-top: -50px; width:1px; height:100px;display: block; content: "";  background: #666;}
+.txt-box ul li.first:before {display: none;}
+.txt-box ul.li-cell-02 li:before {left:-4.4%;}
+.txt-box ul.li-cell-03 li:before {left:-6.8%;}
+.txt-box ul.li-cell-04 li:before {left:-9.7%;}
+.txt-box ul.li-cell-05 li:before {left:-12.8%;}
+.txt-box.type-02 ul li:before {background:transparent;}
+
+.conts-box .con {margin-top:30px;}
+.conts-box.type-01 {display: table; width:100%;}
+.conts-box.type-01 .cell {display: table-cell; width:48%;}
+.conts-box.type-01 .cell:nth-child(1) {padding-right:2%;}
+.conts-box.type-01 .cell:nth-child(2) {padding-left:2%;}
+.conts-box.type-01 img {width:100%;}
+
+.conts-box.type-02 .img-div {text-align: center !important;}
+.conts-box.type-02 .img-div img {width:inherit; max-width:100%;}
+.conts-box.type-02 .img-div img.w-full {width:100%;}

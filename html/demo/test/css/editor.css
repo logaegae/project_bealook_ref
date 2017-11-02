@@ -386,8 +386,9 @@ button {
 
 .text-editable {
     /*border: 1px #9acac5 solid;*/
-    cursor: pointer;
+    cursor:text;
     min-height: 20px;
+    word-break: break-all;
 }
 
 .text-editable:hover {
