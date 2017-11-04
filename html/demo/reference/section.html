@@ -6,8 +6,10 @@
     <title>Be A Look - Reference 2</title>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/layout.css" type="text/css" />
     <link rel="stylesheet" href="css/layout02.css" type="text/css" />
+    <link rel="stylesheet" href="css/section.css" type="text/css" />
     <link rel="stylesheet" href="../test/css/editor.css?v=0.01" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -22,102 +24,80 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
+        $('.txt-box ul li:first-child').addClass('first')
     })
 
 </script>
-<body id="layout02" class="editing-page">
+<body class="">
     <div id="lnb"></div>
 
     <div class="wrapper">
 
+        <!--로고-->
         <div class="section">
             <div class="con-box">
-                .logo-box-img: 로고 이미지
-                <div class="logo-box-img img-div">
+                <ul class="info">
+                    <li><b>로고 이미지 (.logo-box-img)</b></li>
+                    <li>옵션: ta-l / ta-c (default) / ta-r</li>
+                </ul>
+                
+                <div class="logo-box type-img img-div ta-c">
                     <img src="./img/basics_logo.png" alt="기본 로고">
                 </div>
             </div>
         </div>
+        
         <div class="section">
             <div class="con-box">
-                .logo-box-txt: 로고 텍스트
-                <div class="logo-box-txt">
+                <ul class="info">
+                    <li><b>로고 텍스트 (.logo-box-txt)</b></li>
+                    <li>옵션: ta-l / ta-c (default) / ta-r</li>
+                </ul>
+                
+                <div class="logo-box type-txt ta-c">
                     <p class="text-editable">[기본] BASICS</p>
                 </div>
             </div>
         </div>
-
-        <div class="section bg-white">
+        
+         
+        <!--타이틀-->
+        <div class="section">
             <div class="con-box">
-                <div class="tit-box type-01">
-                    <p class="tit text-editable">[기본]<br>BASICS</p>
-                    <p class="con text-editable">
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section bg-white">
-            <div class="con-box">
-                <ul class="ul-list li-type-02 li-cell-05 li-circle mg2per">
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
-                            <div class="txt-box">
-                                <span class="tit text-editable">서울</span>
-                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
-                            <div class="txt-box">
-                                <span class="tit text-editable">파리</span>
-                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
-                            <div class="txt-box">
-                                <span class="tit text-editable">도쿄</span>
-                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
-                            <div class="txt-box">
-                                <span class="tit text-editable">런던</span>
-                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
-                            <div class="txt-box">
-                                <span class="tit text-editable">뉴욕</span>
-                                <span class="con text-editable">면 100%의 무명 소재로 담백한 제품을 만듭니다。</span>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="info">
+                    <li><b>타이틀 1 (.tit-box.type-01)</b></li>
+                    <li>옵션: ta-l / ta-c (default) / ta-r</li>
+                    <li>line 옵션: 너비 / 굵기 / 색상-색, 투명 / *타입</li>
                 </ul>
+                
+                <div class="tit-box type-01 ta-c">
+                    <p class="tit text-editable">[기본] BASICS</p>
+                    <div class="tit-line">
+                        <span class="line"></span>
+                    </div>
+                    <p class="con text-editable">
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="section bg-gray">
+      
+        <div class="section">
             <div class="con-box">
-                 <div class="tit-box type-01">
-                    <p class="tit text-editable">[기본]<br>基本</p>
+                <ul class="info">
+                    <li><b>타이틀 2 (.tit-box.type-02)</b></li>
+                    <li>옵션: ta-l / ta-c (default) / ta-r</li>
+                    <li>line 옵션: 굵기 / 색상-색, 투명 / *타입</li>
+                </ul>
+                
+                <div class="tit-box type-02 ta-c">
+                    <div class="tit-line">
+                        <span class="tit text-editable">[기본] BASICS</span>
+                    </div>
                     <p class="con text-editable">
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다
                         면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
                         면 100%의 무명 소재로 담백한 제품을 만듭니다。
                     </p>
@@ -125,114 +105,359 @@
             </div>
         </div>
 
-        <div class="section bg-gray">
+        <div class="section">
+            <div class="con-box ovh pd1">
+                <ul class="info">
+                    <li><b>타이틀 3 (.tit-box.type-03)</b></li>
+                    <li>옵션: .fl / .mgauto (default) / .fr </li>
+                    <li>line 옵션: 굵기 / 색상-색, 투명 / *높이 / *타입</li>
+                </ul>
+                
+                <div class="tit-box type-03 mgauto">
+                    <p class="tit text-editable">[기본] BASICS</p>
+                    <div class="tit-line">
+                        <span class="line"></span>
+                    </div>
+                    <p class="con text-editable">
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
+                        면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--본문-->
+        <div class="section">
             <div class="con-box">
-                <div class="img-div img-box mgauto">
+                <ul class="info">
+                    <li><b>본문 1 (.txt-box.type-01)</b></li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                </ul>
+                
+                <div class="txt-box type-01 ta-l">
+                    <ul class="ul-list li-cell-01 mg2per">
+                        <li>
+                            <p class="con text-editable">
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            </p>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>본문 2 (.txt-box.type-02)</b></li>
+                    <li><b>* ul.li-cell-02</b></li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                    <li>li 옵션: 개수 1 ~ 5개</li>
+                </ul>
+                
+                <div class="txt-box type-02 ta-l">
+                    <ul class="ul-list li-cell-02 mg2per">
+                        <li>
+                            <p class="con text-editable">
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            </p>
+                        </li>
+                        <li>
+                            <p class="con text-editable">
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>본문 3 (.txt-box.type-03)</b></li>
+                    <li><b>* ul.li-cell-03</b></li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                    <li>li 옵션: 개수 1 ~ 5개</li>
+                    <li>line 옵션: 굵기 / 색상-색, 투명 / *높이 / *타입</li>
+                </ul>
+                
+                <div class="txt-box type-03 ta-l">
+                    <ul class="ul-list li-cell-03 mg2per">
+                        <li>
+                            <p class="con text-editable">
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            </p>
+                        </li>
+                        <li>
+                            <p class="con text-editable">
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            </p>
+                        </li>
+                        <li>
+                            <p class="con text-editable">
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--컨텐츠-->
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>컨텐츠 1 (.conts-box.type-01)</b></li>
+                    <li>옵션: 이미지 왼 - 텍스트 오른 / 텍스트 왼 - 이미지 오른 (*스크립트로 위치 변경)</li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                    <li>.cell-txt 옵션: va-t (default) / va-m / va-b</li>
+                </ul>
+                
+                <div class="conts-box type-01 ta-l img-left">
+                    <div class="cell cell-img">
+                        <div class="img-div img-wrap">
+                            <img src="./img/basics08.jpg">
+                        </div>
+                    </div>
+                    <div class="cell cell-txt">
+                        <p class="con text-editable">
+                            면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                            면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>컨텐츠 2 (.conts-box.type-02)</b></li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                </ul>
+                
+                <div class="conts-box type-02 ta-l">
+                    <ul class="ul-list li-type-02 li-cell-01 mg2per">
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap">
+                                    <img src="./img/basics08.jpg">
+                                </div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>컨텐츠 3 (.conts-box.type-03)</b></li>
+                    <li><b>* ul.li-cell-02</b></li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                    <li>li 옵션: 개수 1 ~ 5개</li>
+                </ul>
+                
+                <div class="conts-box type-03 ta-l">
+                    <ul class="ul-list li-type-02 li-cell-02 mg2per">
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。면 100%의 무명 소재로 담백한 제품을 만듭니다。 면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>컨텐츠 3-1 (.conts-box.type-03)</b></li>
+                    <li><b>* ul.li-cell-05.li-circle</b></li>
+                    <li>옵션: ta-l (default) / ta-c / ta-r</li>
+                    <li>li 옵션: 개수 1 ~ 5개</li>
+                </ul>
+                
+                <div class="conts-box type-03 ta-l">
+                    <ul class="ul-list li-type-02 li-cell-05 li-circle mg2per">
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap img-wrap-rpsv img-bg"></div>
+                                <p class="con text-editable">
+                                    면 100%의 무명 소재로 담백한 제품을 만듭니다。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--갤러리-->
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>갤러리 1 (.gallery-box.type-01)</b></li>
+                    <li><b>* ul.li-cell-03</b></li>
+                    <li>li 옵션: 개수 1 ~ 5개</li>
+                </ul>
+                
+                <div class="gallery-box type-01">
+                    <ul class="ul-list li-cell-03">
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics01.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics02.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics03.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics04.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics05.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics11.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics01.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics02.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-box">
+                                <div class="img-div img-wrap-rpsv img-wrap">
+                                    <img src="./img/basics03.jpg">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--이미지-->
+        <div class="section">
+            <div class="con-box">
+                <ul class="info">
+                    <li><b>이미지 (.img-box)</b></li>
+                    <li>옵션: 원본 크기 / wdith 100per / window full</li>
+                </ul>
+                
+                <div class="img-box img-div img-wrap mgauto">
                     <img src="./img/basics08.jpg" class="w100per">
                 </div>
             </div>
         </div>
-
-        <div class="section bg-white">
-            <div class="con-box">
-                <div class="tit-box type-01">
-                    <p class="tit text-editable">[기본]<br>Séoul - Paris</p>
-                    <p class="con text-editable">
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section bg-white">
-            <div class="con-box">
-                <ul class="ul-list li-cell-03">
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics01.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics02.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics03.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics04.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics05.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics11.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics01.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics02.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-box">
-                            <div class="img-div img-wrap-rpsv img-wrap">
-                                <img src="./img/basics03.jpg">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section bg-gray">
-            <div class="con-box">
-                <div class="tit-box type-02">
-                    <p class="tit text-editable">GIFT</p></p>
-                    <p class="con text-editable mt20">
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。<br>
-                        면 100%의 무명 소재로 담백한 제품을 만듭니다。
-                    </p>
-                </div>
-            </div>
-        </div>
+        
 
 
-        <div class="footer">
-
-        </div>
     </div>
 </body>
 </html>

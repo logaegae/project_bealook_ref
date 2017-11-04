@@ -69,18 +69,18 @@
 @font-face {
     font-family: 'NanumBarunGothic';
     font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothicBold';
+    font-style: normal;
     font-weight: 700;
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
 }
 
-@font-face {
-    font-family: 'NanumBarunGothic';
-    font-style: normal;
-    font-weight: 300;
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
-    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'Hankc';
@@ -115,4 +115,74 @@
     src: url('../fonts/IropkeBatangM.eot');
     src: local(※), url('../fonts/IropkeBatangM.eot') format('woff');
     src: local(※), url('../fonts/IropkeBatangM.woff') format('woff');
+}
+
+.noto {
+    font-family: "Noto Sans KR Light";
+}
+
+.noto-bold {
+    font-family: "Noto Sans KR Medium";
+}
+
+.noto-black {
+    font-family: "Noto Sans KR Black"
+}
+.nanum {
+    font-family: "Nanum Gothic";
+    line-height: 150%;
+}
+.nanum-bold {
+    font-family: "Nanum Gothic Bold";
+    line-height: 150%;
+}
+.nanumbarun {
+    font-family: 'NanumBarunGothic';
+    line-height: 150%;
+}
+.nanumbarun-bold {
+    font-family: 'NanumBarunGothicBold';
+    line-height: 150%;
+}
+.hankc {
+    font-family: 'Hankc';
+    line-height: 150%;
+}
+
+.hankc-bold {
+    font-family: 'Hankc';
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.jeongum {
+    font-family: 'Jeongum';
+    line-height: 150%;
+}
+
+.jeongum-bold {
+    font-family: 'Jeongum';
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.daehan {
+    font-family: 'Daehan Regular';
+    line-height: 150%;
+}
+
+.daehan-bold {
+    font-family: 'Daehan Bold';
+    line-height: 150%;
+}
+
+.iropke {
+    font-family: 'Iropke';
+    line-height: 150%;
+}
+
+.iropke-bold {
+    font-family: 'Iropke';
+    font-weight: bold;
+    line-height: 150%;
 }
