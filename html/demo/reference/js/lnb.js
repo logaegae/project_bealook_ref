@@ -6,6 +6,7 @@ $(function () {
             $('.lnb-dep2').removeClass('on')
             $('.wrapper-mask').removeClass('on')
         }
+
         var _thisAdd =  null;
         $(document).on('click', '.add', function () {
             _thisAdd = $(this)
