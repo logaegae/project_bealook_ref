@@ -86,8 +86,13 @@ var lnb = `
         <p class="upload-info">※ <b>유튜브 동영상</b>만 가능하며, 해당 url을 복사하여 붙여넣기 하세요.</p>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-map">
-        <ul>
-            <li></li>
+        <ul class="snb-li-03">
+            <li>
+                <a href="#none" class=""><img src="./img/snb_map_01.png"></a>
+            </li>
+            <li>
+                <a href="#none" class=""><img src="./img/snb_map_02.png"></a>
+            </li>
         </ul>
     </div>
     <div class="lnb-dep2 dep2-panel-s dep2-social">
