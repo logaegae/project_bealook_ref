@@ -13,7 +13,6 @@ body img {
 .fl {
     float: left;
 }
-
 .fr {
     float: right;
 }
@@ -558,6 +557,7 @@ body.editing-page .wrapper  {
     text-indent: -999999%;
     background-color: #63afa6;
     border:1px #4d9e96 solid;
+    border-radius: inherit;
 }
 .edit .sec-control button:hover, .edit .sec-control button.on {
     background-color: #9acac5;

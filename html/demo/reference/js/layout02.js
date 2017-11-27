@@ -191,6 +191,7 @@ $(function() {
     $('.section').after(add);
     $('.section').eq(0).before(add);
     $('.img-div').append(imgEdit);
+    // $('.con-box').after(edit);
 
 
     // section
