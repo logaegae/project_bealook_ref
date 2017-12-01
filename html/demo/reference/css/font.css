@@ -186,3 +186,60 @@
     font-weight: bold;
     line-height: 150%;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vibwml');
+  src:  url('../fonts/icomoon.eot?vibwml#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vibwml') format('truetype'),
+    url('../fonts/icomoon.woff?vibwml') format('woff'),
+    url('../fonts/icomoon.svg?vibwml#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-svg-"], [class*=" icon-svg-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-svg-band:before {
+  content: "\e900";
+}
+.icon-svg-facebook:before {
+  content: "\e901";
+}
+.icon-svg-homepage:before {
+  content: "\e902";
+}
+.icon-svg-instagram:before {
+  content: "\e903";
+}
+.icon-svg-kakaoplus:before {
+  content: "\e904";
+}
+.icon-svg-kakaostory:before {
+  content: "\e905";
+}
+.icon-svg-naverblog:before {
+  content: "\e906";
+}
+.icon-svg-tistoryblog:before {
+  content: "\e907";
+}
+.icon-svg-twitter:before {
+  content: "\e908";
+}
+.icon-svg-youtube:before {
+  content: "\e909";
+}

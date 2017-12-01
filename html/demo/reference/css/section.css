@@ -3,9 +3,6 @@
 
 .img-bg {background: url(../img/basics06.jpg);}
 
-/**/
-/*.section {overflow: hidden;}*/
-
 .tit {font-size:30px;} /*기본 30px*/
 .con {font-size:15px;} /*기본 15px*/
 
@@ -27,7 +24,7 @@
 .tit-box.type-03 .line {display: inline-block;  width:1px; height:50px; vertical-align: middle; background:#666;}
 
 .txt-box ul li {position: relative;}
-.txt-box ul li:before {position: absolute; top:50%; margin-top: -50px; width:1px; height:100px;display: block; content: "";  background: #666;}
+.txt-box ul li:before {position: absolute; top:50%; margin-top: -50px; width:1px; height:100px; display: block; content: "";  background: #666;}
 .txt-box ul li.first:before {display: none;}
 .txt-box ul.li-cell-02 li:before {left:-4.4%;}
 .txt-box ul.li-cell-03 li:before {left:-6.8%;}
@@ -48,3 +45,15 @@
 .conts-box.type-02 .img-div img.w-full {width:100%;}
 
 .map-box.type-02 .con {margin-top:30px;}
+
+.sns-box.type-01 .li-box {position:relative; display:block;border:1px #e4e4e4 solid;}
+.sns-box.type-01 li.on .li-box:after {position:absolute; display:block; content:""; top:0; left:0; bottom:0; right:0; background:rgba(255,255,255,0.5);}
+.sns-box.type-01 .sns-info {padding:6px 0; color:#959595; font-size:13px;}
+.sns-box.type-01 .sns-info span {vertical-align:middle;}
+.sns-box.type-01 .sns-info .icon-sns {font-size:35px;}
+.sns-box.type-01 .sns-info .profile {margin:2px 10px 0 0;float:right; display:block; width:30px; height:30px; border:1px #e4e4e4 solid; border-radius:50%; background: url(../img/basics10.jpg); background-size:cover; -webkit-background-size:cover;}
+.sns-box.type-01 .con {margin:10px; color:#000; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word;} /*IE에서 안됨*/
+.sns-box.type-02 {overflow:hidden;}
+.sns-box.type-02 a {display:inline-block; margin:5px;}
+.sns-box.type-02 .icon-sns  {font-size:50px; background: #959595; border-radius: 50%;}
+.sns-box.type-02 .icon-sns:before {color:#fff;}
