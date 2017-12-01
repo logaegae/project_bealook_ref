@@ -266,4 +266,12 @@ $(function() {
     	}
     	$(this).siblings('.fileName').val(text);
     });
+    
+    $(document).on('mouseenter', '.sns-box.type-01 li', function () {
+        $(this).addClass('on').siblings().removeClass('on')
+    })
+    
+    $(document).on('mouseleave', '.sns-box.type-01 li', function () {
+        $(this).removeClass('on')
+    })
 })
